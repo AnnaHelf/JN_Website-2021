@@ -1115,16 +1115,19 @@ header.voice_over {
 /* Gallery */
 .gallery_wrapper {
   border: solid 1px yellow;
-  width: 30rem;
+  width: 80%;
+  height: 50rem;
   bottom: -60rem;
   left: 5rem;
 }
 
 .bigImg {
-  width: 70%;
+  width: 50%;
+  height: 100%;
 }
 
 .smallImg {
+  width: 50%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[6];
@@ -1132,12 +1135,17 @@ header.voice_over {
   gap: 5px;
 }
 
-img {
-  max-width: 100%;
+img.small {
+  cursor: pointer;
+  width: 100%;
 }
 
-img:hover {
+img.small:hover {
   opacity: 0.7;
+}
+
+img.bigImg_img {
+  height: 100%;
 }
 
 .nextToGallery {
@@ -1270,60 +1278,24 @@ img:hover {
   color: #620101;
 }
 
-/* GALERRY */
-section.gallery {
-  /*  border: solid 1px goldenrod; */
+/* simple gallery */
+/* 
+section.images {
+  border: solid 1px yellow;
   width: 100%;
-  height: auto;
-  bottom: -90rem;
+  margin: auto;
+  top: 80rem;
 }
-
-img {
-  width: 100%;
-  cursor: pointer;
-}
-
-.gallery_wrapper {
-  /*  border: solid 1px yellow; */
-  padding-bottom: 2rem;
-  width: 70%;
+.grid_gallery {
+  width: 60%;
   height: 100%;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
-
-.gallery_wrapper-img:hover {
-  opacity: 0.7;
-}
-
-.gallery_wrapper-images {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: (1fr)[3];
-      grid-template-rows: repeat(3, 1fr);
-  gap: 5px;
-}
-
-.gallery_info {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-column: 1/5;
-  margin-top: 5rem;
+.firstSemImg {
   width: 100%;
-  height: 5rem;
-  background-color: #870b08;
-}
-
-.gallery_info-h3 {
-  color: white;
-  font-weight: 500;
-  font-size: 1.3rem;
-}
-
+} */
 #secondSemester {
   background-color: #b7c3d1;
 }

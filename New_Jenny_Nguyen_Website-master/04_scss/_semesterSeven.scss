@@ -53,23 +53,30 @@ header.voice_over {
 /* Gallery */
 .gallery_wrapper {
   border: solid 1px yellow;
-  width: 30rem;
+  width: 80%;
+  height: 50rem;
   bottom: -60rem;
   left: 5rem;
 }
 .bigImg {
-  width: 70%;
+  width: 50%;
+  height: 100%;
 }
 .smallImg {
+  width: 50%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 5px;
 }
-img {
-  max-width: 100%;
+img.small {
+  cursor: pointer;
+  width: 100%;
   &:hover {
     opacity: 0.7;
   }
+}
+img.bigImg_img {
+  height: 100%;
 }
 
 .nextToGallery {
