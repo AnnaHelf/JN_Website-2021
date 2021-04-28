@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../02_css/normalize.css" />
     <link rel="stylesheet" href="../04_scss/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
     <title>1. Semester</title>
   </head>
   <body>
@@ -85,7 +91,7 @@
     </div>
 
     <!-- GALLERY -->
-    <section class="images position flex flex-jc-c">
+    <section class="images position-r flex flex-jc-c">
       <div class="grid_gallery">
         <img src="../05_images/01_Semester/01.jpg" alt="" class="firstSemImg" />
         <img src="../05_images/01_Semester/02.jpg" alt="" class="firstSemImg" />
@@ -96,14 +102,19 @@
         <img src="../05_images/01_Semester/07.jpg" alt="" class="firstSemImg" />
         <img src="../05_images/01_Semester/08.jpg" alt="" class="firstSemImg" />
       </div>
+      <div class="lightBox position flex flex-jc-se flex-ai-c">
+        <img src="" alt="" class="lightBox_img" />
+        <div class="lightBox_info">
+          The self-immolation (1963) of the Vietnamese buddhist monk against
+          <br />
+          religious oppression was the main inspiration for the semester
+          project.
+        </div>
+        <div class="lightBox_close position">
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
     </section>
-
-    <!--    <div class="gallery_info flex flex-ai-c">
-      <h3 class="gallery_info-h3 text-c">
-        The self-immolation (1963) of the Vietnamese buddhist monk against
-        religious oppression was the main inspiration for the semester project.
-      </h3>
-    </div> -->
 
     <!-- Script -->
     <script
@@ -112,5 +123,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="../03_js/nav_dropdown.js"></script>
+    <script src="../03_js/01semester.js"></script>
   </body>
 </html>
