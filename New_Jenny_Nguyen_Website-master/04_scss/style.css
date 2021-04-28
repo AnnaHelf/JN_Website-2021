@@ -1066,7 +1066,7 @@ h1.lets_talk {
 }
 
 .twentytwenty-wrap {
-  border: solid 1px #a8a813;
+  /*   border: solid 1px rgb(168, 168, 19); */
   width: auto;
   height: auto;
   right: 1rem;
@@ -1076,7 +1076,7 @@ h1.lets_talk {
 
 /* HEADER */
 header.voice_over {
-  border: solid 1px yellow;
+  /* border: solid 1px yellow; */
   width: 90%;
   height: 30rem;
   top: 10rem;
@@ -1114,7 +1114,7 @@ header.voice_over {
 
 /* Gallery */
 .gallery_wrapper {
-  border: solid 1px yellow;
+  /*  border: solid 1px yellow; */
   width: 80%;
   height: 50rem;
   bottom: -60rem;
@@ -1149,7 +1149,7 @@ img.bigImg_img {
 }
 
 .nextToGallery {
-  border: solid 1px sandybrown;
+  /*  border: solid 1px sandybrown; */
   right: 20rem;
   width: 30rem;
   bottom: 0;
@@ -1346,8 +1346,9 @@ section.images {
 /* HEADER GRID */
 .header_grid {
   border: solid 1px yellow;
+  height: 100vh;
   width: auto;
-  margin: 5rem;
+  margin: 10rem 5rem 5rem 5rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[9];
@@ -1437,10 +1438,11 @@ h6.line_two {
   animation: oppacity 3s infinite ease-in-out alternate reverse;
 }
 
-section {
-  /* border: solid 1px yellow; */
+.middle {
+  border: solid 1px yellow;
   width: 90%;
-  margin: auto;
+  margin: 5rem;
+  bottom: -60rem;
 }
 
 .middle-words_div {
@@ -1457,7 +1459,9 @@ section {
 }
 
 .middle-image-grid {
+  border: solid 1px pink;
   width: 100%;
+  bottom: -100rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -1494,6 +1498,8 @@ section {
 }
 
 .end_text {
+  width: 80vw;
+  left: 0;
   margin: 4rem;
 }
 
