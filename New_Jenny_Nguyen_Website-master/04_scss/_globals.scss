@@ -1,0 +1,375 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
+/* @import url("../css/font_stylesheet.css"); */
+@import url("./_variables.scss");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+
+  &-ai-c {
+    align-items: center;
+  }
+  &-ai-s {
+    align-items: stretch;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+  &-jc-fe {
+    justify-content: flex-end;
+  }
+  &-jc-fs {
+    justify-content: flex-start;
+  }
+
+  &-fd-c {
+    flex-direction: column;
+  }
+  &-jc-sb {
+    justify-content: space-between;
+  }
+  &-jc-se {
+    justify-content: space-evenly;
+  }
+}
+.float {
+  float: left;
+
+  &-r {
+    float: right;
+  }
+}
+.position {
+  position: absolute;
+
+  &-r {
+    position: relative;
+  }
+  &-f {
+    position: fixed;
+  }
+}
+
+.text-c {
+  text-align: center;
+}
+
+.h-100 {
+  height: 100%;
+}
+.bottom {
+  bottom: 0;
+}
+.top {
+  top: 0;
+}
+
+.bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  max-width: 100vw;
+  height: 100%;
+  font-family: $main_font;
+  font-stretch: ultra-expanded;
+  background-color: $homepage_bk;
+  overflow-x: hidden;
+  cursor: default;
+}
+/* MIXIN */
+body {
+  @include breakpoint-down("xllarge") {
+    background-color: rgb(226, 226, 149);
+  }
+  @include breakpoint-down("large") {
+    background-color: violet;
+  }
+
+  @include breakpoint-down("medium") {
+    background-color: rgb(145, 158, 145);
+  }
+  @include breakpoint-down("small") {
+    background-color: rgb(127, 176, 209);
+  }
+  @include breakpoint-down("xsSmall") {
+    background-color: rgb(170, 135, 135);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $darker_font;
+}
+a.semester_collections {
+  color: $darker_font;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-right: 1.5rem;
+  @include breakpoint-down("large") {
+    padding: 1rem 0.5rem;
+    background-color: $homepage_bk;
+  }
+  &:hover {
+    color: #000;
+  }
+}
+a.jenny_nguyen_logo {
+  font-weight: 800;
+  letter-spacing: 10px;
+  color: $darker_font;
+  &:hover {
+    background-color: $homepage_bk;
+  }
+}
+
+/* Navigation */
+
+.nav_top {
+  /* border: solid 1px yellow; */
+  width: 51%;
+  height: 5rem;
+  margin-left: 7rem;
+  margin-top: 1rem;
+  z-index: 10;
+  @include breakpoint-down("small") {
+    top: 0;
+  }
+  &-left_side {
+    /*  border: solid 1px red; */
+    width: 80%;
+    height: 80%;
+
+    &-dropdown_container {
+      &-dropdownbtn {
+        font-size: 1.3rem;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        color: $darker_font;
+        font-weight: 600;
+        letter-spacing: 3px;
+      }
+    }
+  }
+  &-dropdown_items {
+    /* border: solid 1px violet; */
+    background-color: $color_bright;
+    width: 100%;
+    height: 2rem;
+    margin-top: 0.5rem;
+    opacity: 0;
+    @include breakpoint-down("large") {
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0);
+    }
+  }
+}
+
+.nav_logo_link {
+  /* border: solid 1px white; */
+  height: 100%;
+  right: 0;
+}
+
+/* .icons_left { */
+/*  border: solid 1px white; */
+/*   width: 5rem;
+  height: 70vh;
+  @include breakpoint-down("small") {
+    display: none;
+  }
+}
+em {
+  font-size: 1.7rem;
+  color: $icons;
+}
+a.facebook {
+  &:hover {
+    font-size: 1.9rem;
+  }
+} */
+/* button more */
+
+a {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-stretch: ultra-expanded;
+  color: $darker_font;
+
+  &.more_about {
+    border: solid 1px $color_greyish_blue;
+    padding: 5px 20px;
+    font-size: 1.3rem;
+    transition: all 0.3s;
+    &:hover,
+    &:active {
+      letter-spacing: 2px;
+      color: #f3e3e1;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-in-out;
+
+      border: solid 1px #c0b0b0;
+      background-color: #c0b0b0;
+      border-radius: 3px;
+    }
+  }
+}
+.btn_more_about {
+  margin: 2rem 0;
+}
+
+.transition {
+  transition: all 0.7s ease-in-out;
+}
+
+.transition_slow {
+  transition: all 2s ease-in-out;
+}
+
+/* contact form */
+
+.contact_me {
+  /* border: solid 1px white; */
+  bottom: -50rem;
+  margin: auto;
+  width: 90%;
+  height: 30rem;
+  z-index: 100;
+  @include breakpoint-down("xsSmall") {
+    bottom: -20rem;
+    height: 45rem;
+  }
+  &-nameEtc {
+    /* border: solid 1px yellow; */
+    background-color: $color_grey;
+    width: 50%;
+    height: 20rem;
+    @include breakpoint-down("xsSmall") {
+      width: 100%;
+    }
+  }
+  &-message {
+    /*  border: solid 1px yellow; */
+    background-color: $color_greyish_blue;
+    width: 50%;
+    height: 20rem;
+    right: 0;
+    @include breakpoint-down("xsSmall") {
+      bottom: 0;
+      width: 100%;
+    }
+  }
+}
+
+form label {
+  font-size: 1.3rem;
+  letter-spacing: 5px;
+  font-weight: 400;
+  margin: 1rem 0;
+  color: #fff;
+}
+
+form input {
+  width: 15rem;
+  height: 2rem;
+  border: #fff solid 1px;
+  background-color: $homepage_bk;
+  text-align: center;
+  letter-spacing: 2px;
+  &:active {
+    border: none;
+  }
+  @include breakpoint-down("medium") {
+    width: 10rem;
+  }
+}
+
+textarea {
+  width: 80%;
+  background-color: $homepage_bk;
+  text-align: center;
+  @include breakpoint-down("medium") {
+    width: 50%;
+  }
+}
+
+input[type="submit"],
+input[type="reset"] {
+  margin: 1rem;
+  letter-spacing: 5px;
+}
+
+/* Footer */
+
+#footer-wrapper {
+  /* border: solid 1px yellow; */
+  min-height: 100vh;
+  position: relative;
+
+  /*  z-index: -5; */
+}
+#footer_icon {
+  font-size: 1.3rem;
+  @include breakpoint-down("medium") {
+    font-size: 2rem;
+  }
+  & > a {
+    color: white;
+    margin: 1rem;
+    @include breakpoint-down("large") {
+      font-size: 1rem;
+    }
+    @include breakpoint-down("medium") {
+      font-size: 0rem;
+    }
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: $aside_right;
+  z-index: 100;
+}
+
+.footer {
+  &_socialMedia {
+    width: 30%;
+    height: 100%;
+  }
+  &_jennysName {
+    width: 30%;
+    background-image: url("../05_images/png_logo/logo_transparent_background.png");
+    background-size: contain;
+  }
+  &_top {
+    font-size: 2rem;
+    z-index: 100;
+    & p {
+      font-weight: 300;
+      font-size: 1rem;
+      display: none;
+    }
+    &:hover {
+      color: white;
+    }
+  }
+  &_arrow {
+    width: 5rem;
+  }
+}

@@ -1,0 +1,68 @@
+@keyframes fade-in {
+  to {
+    color: blue;
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(500px);
+  }
+}
+
+@keyframes oppacity {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes oppacity_fromZero {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes widthDiv {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes topToBottom {
+  from {
+    margin-top: -5rem;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+
+@keyframes fromLeft {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 25%;
+  }
+}
+
+@keyframes toRight {
+  from {
+    right: 100%;
+  }
+  to {
+    right: 0;
+  }
+}

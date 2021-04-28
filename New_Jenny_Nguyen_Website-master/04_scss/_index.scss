@@ -1,0 +1,353 @@
+.aside_right {
+  width: 50%;
+  height: 80rem;
+  background-color: $aside_right;
+  right: 0;
+  top: 0;
+  z-index: -5;
+  @include breakpoint-down("medium") {
+    height: 50rem;
+  }
+  @include breakpoint-down("small") {
+    height: 40rem;
+  }
+  &-slideshow {
+    &_container {
+      /*  border: soldi 1px blueviolet; */
+      width: 60%;
+      margin-top: 10rem;
+    }
+  }
+  &-circle {
+    width: 20rem;
+    height: 20rem;
+    border: solid 2px white;
+    border-radius: 50%;
+    left: -10%;
+    top: 40%;
+    @include breakpoint-down("small") {
+      width: 15rem;
+      height: 15rem;
+    }
+  }
+}
+
+em.fa-arrow-down {
+  color: white;
+  margin: 0;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Header left side */
+.left_side {
+  /* border: solid 1px white; */
+  width: 50%;
+  height: 50rem;
+  top: 0;
+  @include breakpoint-down("medium") {
+    height: 30rem;
+  }
+  &-h1 {
+    font-size: 8rem;
+    font-weight: 500;
+    color: $dark_font;
+    text-transform: uppercase;
+    @include breakpoint-down("medium") {
+      font-size: 5rem;
+    }
+    @include breakpoint-down("small") {
+      font-size: 3rem;
+    }
+    @include breakpoint-down("xsSmall") {
+      font-size: 10rem;
+      text-align: center;
+    }
+  }
+  &-info {
+    font-size: 1.3rem;
+    color: $darker_font;
+
+    @include breakpoint-down("small") {
+      font-size: 1.5rem;
+    }
+    @include breakpoint-down("xsSmall") {
+      display: none;
+    }
+  }
+}
+
+/* section bachelor */
+
+.bachelor {
+  /*  border: solid 1px yellow; */
+  width: 80%;
+  height: 50rem;
+  bottom: -60rem;
+  margin: auto;
+
+  @include breakpoint-down("medium") {
+    bottom: -20rem;
+    height: 30rem;
+  }
+  @include breakpoint-down("small") {
+    margin-top: 20rem;
+  }
+
+  &-h2 {
+    @include breakpoint-down("xllarge") {
+      z-index: -10;
+    }
+  }
+
+  &-h2 > h2 {
+    width: auto;
+    font-size: 10rem;
+    text-transform: uppercase;
+    color: #d5c1ba;
+    text-shadow: 1px 1px 0px $dark_font;
+
+    @include breakpoint-down("medium") {
+      font-size: 5rem;
+    }
+    @include breakpoint-down("xsSmall") {
+      font-size: 4rem;
+    }
+  }
+  &_info {
+    width: 40%;
+    height: 50%;
+    right: 0;
+    top: 12rem;
+    transition: all 0.3s ease-in-out;
+    @include breakpoint-down("medium") {
+      height: 60%;
+    }
+    @include breakpoint-down("xsSmall") {
+      height: 70%;
+    }
+    &-title {
+      font-size: 2rem;
+      @include breakpoint-down("small") {
+        font-size: 4rem;
+      }
+      @include breakpoint-down("xsSmall") {
+        font-size: 5rem;
+        text-align: center;
+      }
+    }
+    &-year {
+      font-size: 2rem;
+      font-weight: 400;
+      margin-top: 1rem;
+      @include breakpoint-down("small") {
+        font-size: 4rem;
+      }
+    }
+    &-info {
+      font-size: 1.3rem;
+      margin-top: 3rem;
+      @include breakpoint-down("small") {
+        display: none;
+      }
+      @include breakpoint-down("medium") {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+a.bachelor_btn {
+  font-size: 1.5rem;
+  z-index: 100;
+  bottom: 2rem;
+}
+/* SEMESTER */
+
+/* SELECTION */
+
+.selection_container {
+  border: solid 1px white;
+  margin: 20rem 3rem 10rem 3rem;
+  top: 50rem;
+}
+img.semester {
+  width: 20rem;
+  height: 30rem;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+}
+
+/* SEMESTER */
+
+.semester_container {
+  /*  border: solid 1px black; */
+
+  margin: 5rem 0 10rem 0;
+
+  width: 90%;
+  height: 30em;
+
+  &-color_div {
+    &-first {
+      background-color: #8d8d8c;
+      z-index: -5;
+      width: 20rem;
+      height: 60rem;
+      right: 1rem;
+      top: 0;
+    }
+
+    &-third {
+      background-color: #beada5;
+      z-index: -5;
+      width: 20rem;
+      height: 60rem;
+      left: -6rem;
+      top: 5rem;
+    }
+
+    &-sixth {
+      background-color: #b3b0bc;
+      z-index: -5;
+      width: 20rem;
+      height: 60rem;
+      right: 1rem;
+      bottom: -10rem;
+    }
+  }
+
+  &-slide_info {
+    width: 40%;
+    height: 50%;
+
+    /*  border: solid 1px yellow; */
+  }
+
+  &-preinfo {
+    font-family: $main_font;
+    font-weight: $middle;
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+  }
+
+  &-titel {
+    font-family: $main_font;
+    font-weight: $middle;
+    font-size: 2rem;
+    margin: 2rem;
+  }
+
+  &-image_wraper {
+    border: 1px;
+
+    &-year {
+      z-index: 10;
+    }
+  }
+}
+
+h4.year {
+  font-size: 10rem;
+  font-family: $main_font_exp;
+  font-weight: $bold;
+  color: rgba(255, 255, 255, 0.459);
+  margin-left: 2rem;
+}
+
+/* circle nr 2 */
+.afterSemester_circle {
+  width: 30rem;
+  height: 30rem;
+  border: solid 2px white;
+  border-radius: 50%;
+  bottom: -30rem;
+  margin: 0 0 0 30rem;
+  @include breakpoint-down("medium") {
+    width: 20rem;
+    height: 20rem;
+    margin: 0 0 0 20rem;
+  }
+  @include breakpoint-down("xsSmall") {
+    bottom: -90rem;
+  }
+}
+
+/* Jenny Nguyen */
+.jennyNguyen {
+  z-index: -1;
+  width: 30%;
+  height: 60rem;
+  background-color: $color_bright_greyish_blue;
+  bottom: -20rem;
+  left: 5rem;
+  @include breakpoint-down("small") {
+    width: 50%;
+  }
+  @include breakpoint-down("xsSmall") {
+    bottom: -80rem;
+  }
+  &_portrait {
+    /* border: solid 1px black; */
+    width: 80%;
+    margin-top: 5rem;
+  }
+  &-name {
+    font-size: 4rem;
+    font-weight: 400;
+    margin: 2rem 0;
+  }
+  &-infos {
+    border: solid 3px $aside_right;
+    width: 30%;
+    display: block;
+    float: right;
+    margin-right: 10rem;
+    cursor: none;
+    @include breakpoint-down("small") {
+      margin-right: 5rem;
+    }
+    @include breakpoint-down("xsSmall") {
+      height: auto;
+      margin-top: 40rem;
+    }
+    &-p {
+      font-size: 3rem;
+      color: $homepage_bk;
+      @include breakpoint-down("xsSmall") {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+/* cursor hidden message */
+.hiddenCursor {
+  width: 15rem;
+  height: 15rem;
+  border: solid 1px $aside_right;
+  background-color: $darker_font;
+  z-index: -5;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition-duration: 100ms;
+  transition-timing-function: ease-out;
+}
+
+/* lets talk */
+
+h1.lets_talk {
+  bottom: -40rem;
+  margin-left: 2rem;
+  font-size: 10rem;
+  letter-spacing: 50px;
+  color: $color_darker_grey;
+  @include breakpoint-down("xsSmall") {
+    bottom: -20rem;
+  }
+}
