@@ -852,7 +852,7 @@ a.bachelor_btn {
 /* SEMESTER */
 /* SELECTION */
 .selection_container {
-  border: solid 1px white;
+  /*   border: solid 1px white; */
   margin: 20rem 3rem 10rem 3rem;
   top: 50rem;
 }
@@ -962,7 +962,7 @@ h4.year {
 
 /* Jenny Nguyen */
 .jennyNguyen {
-  border: solid 1px yellow;
+  /*  border: solid 1px yellow; */
   z-index: -1;
   width: 30%;
   height: 60rem;
@@ -984,7 +984,7 @@ h4.year {
 }
 
 .jennyNguyen_portrait {
-  border: solid 1px black;
+  /* border: solid 1px black; */
   width: 80%;
   margin-top: 5rem;
 }
