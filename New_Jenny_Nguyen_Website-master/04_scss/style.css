@@ -1666,4 +1666,22 @@ a.button_next {
   border-radius: 2px 0 0 2px;
   right: 0;
 }
+
+/* More infos */
+.baptiste {
+  border: solid 1px orange;
+  width: 80%;
+  height: 30rem;
+  margin: auto;
+  bottom: -100rem;
+}
+
+.baptiste div {
+  width: 50rem;
+  margin: 5rem;
+}
+
+.baptiste p {
+  font-size: 1.5rem;
+}
 /*# sourceMappingURL=style.css.map */
