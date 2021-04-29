@@ -64,7 +64,6 @@
 
     <!-- Karlsruhe -->
     <div class="karlsruhe position-r flex flex-ai-c flex-jc-sb">
-      <div class="karlsruhe_img bg"></div>
       <div class="karlsruhe_info text-c">
         <h1>IN COOPORATION WITH THE ART GALLERY OF KARLSRUHE</h1>
         <p>
@@ -72,12 +71,26 @@
           The pieces of clothing are exhibited in the Art Gallery of Karlsruh
         </p>
       </div>
+      <div class="karlsruhe_img bg"></div>
     </div>
+
+    <div id="slideshow" class="position-r">
+      <a href="#" class="button_next">&gt;</a>
+      <a href="#" class="button_prev">&lt;</a>
+      <ul>
+        <li><div class="img_one bg"></div></li>
+        <li><div class="img_two bg"></div></li>
+        <li><div class="img_three bg"></div></li>
+        <li><div class="img_four bg"></div></li>
+      </ul>
+    </div>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
       integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
       crossorigin="anonymous"
     ></script>
     <script src="../03_js/nav_dropdown.js"></script>
+    <script src="../03_js/sliderGallery.js"></script>
   </body>
 </html>

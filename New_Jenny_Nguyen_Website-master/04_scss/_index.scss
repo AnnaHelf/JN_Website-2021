@@ -282,7 +282,7 @@ h4.year {
   z-index: -1;
   width: 30%;
   height: 60rem;
-  left: -30rem;
+  left: 5rem;
   background-color: $color_bright_greyish_blue;
   bottom: -20rem;
   @include breakpoint-down("small") {
