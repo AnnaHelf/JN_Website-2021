@@ -5,6 +5,7 @@
 /* Darker */
 /* FIRST SEMESTER */
 /* SECOND SEMESTER */
+/* Third SEMESTER */
 /* Font */
 /* Breakpoints only for the voice-over :( */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
@@ -1345,7 +1346,7 @@ section.images {
 
 /* HEADER GRID */
 .header_grid {
-  border: solid 1px yellow;
+  /*  border: solid 1px yellow; */
   height: 100vh;
   width: auto;
   margin: 10rem 5rem 5rem 5rem;
@@ -1439,7 +1440,7 @@ h6.line_two {
 }
 
 .middle {
-  border: solid 1px yellow;
+  /* border: solid 1px yellow; */
   width: 90%;
   margin: 5rem;
   bottom: -60rem;
@@ -1459,7 +1460,7 @@ h6.line_two {
 }
 
 .middle-image-grid {
-  border: solid 1px pink;
+  /*  border: solid 1px pink; */
   width: 100%;
   bottom: -100rem;
   display: -ms-grid;
@@ -1505,5 +1506,85 @@ h6.line_two {
 
 .end_text-p {
   font-size: 1.5rem;
+}
+
+#thirdSemester {
+  background-color: #d1c7c5;
+}
+
+/* Asides */
+.left {
+  border: solid 1px yellow;
+  top: 10rem;
+  width: 10rem;
+  height: 150rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+}
+
+.left_img {
+  width: 100%;
+}
+
+.right {
+  border: solid 1px yellow;
+  right: 0;
+  top: 10rem;
+  width: 10rem;
+  height: 120rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+}
+
+.right_img {
+  width: 100%;
+}
+
+/* Header */
+.thirdSem {
+  border: solid 1px yellow;
+  width: 70%;
+  height: 100%;
+  top: 10rem;
+  left: 15rem;
+}
+
+.thirdSem_img {
+  width: 30rem;
+  height: 60rem;
+  background-image: url("../05_images/03_Semester/4.JPG");
+}
+
+.thirdSem_h1 {
+  top: 0;
+  right: 0;
+}
+
+.thirdSem_h1_text {
+  font-size: 7rem;
+  color: #8c6003;
+  text-shadow: 5px 5px 2px #c8bbb2;
+}
+
+.karlsruhe {
+  border: solid 1px hotpink;
+  width: 60%;
+  height: 30rem;
+  bottom: -80rem;
+  left: 20rem;
+}
+
+.karlsruhe_img {
+  background-image: url("../05_images/03_Semester/00.jpg");
+  width: 20rem;
+  height: 100%;
+}
+
+.karlsruhe_info {
+  width: 50%;
 }
 /*# sourceMappingURL=style.css.map */
