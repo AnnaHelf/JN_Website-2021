@@ -1723,4 +1723,38 @@ header.fourth {
 .header_fourth-video {
   height: 80%;
 }
+
+section.fourth {
+  border: solid 1px violet;
+  width: 100%;
+  height: auto;
+  top: 100vh;
+}
+
+.section_fourth-img-wrapper {
+  border: solid 1px yellow;
+  width: 80vw;
+  margin: auto;
+  height: 100rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.section_fourth-img-wrapper-info p {
+  font-size: 3rem;
+  letter-spacing: 5px;
+  color: #454c38;
+}
+
+img.fourth {
+  width: 20rem;
+  margin: 10rem;
+  -webkit-perspective: 10px;
+          perspective: 10px;
+  -webkit-perspective-origin: 50%;
+          perspective-origin: 50%;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
