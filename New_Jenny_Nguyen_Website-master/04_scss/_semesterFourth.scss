@@ -1,0 +1,27 @@
+#fourthSemester {
+  background-color: $fourthS_olive;
+}
+
+header.fourth {
+  width: 90%;
+  margin: auto;
+}
+
+.header_fourth {
+  border: solid 1px yellow;
+  width: 90%;
+  height: 80vh;
+  top: 10rem;
+  overflow: hidden;
+  &-info {
+    top: 5rem;
+    font-size: 10rem;
+    color: $fourthS_creme;
+    & span {
+      font-size: 7rem;
+    }
+  }
+  &-video {
+    height: 80%;
+  }
+}

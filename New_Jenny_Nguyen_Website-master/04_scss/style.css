@@ -6,6 +6,7 @@
 /* FIRST SEMESTER */
 /* SECOND SEMESTER */
 /* Third SEMESTER */
+/* Fourth SEMESTER */
 /* Font */
 /* Breakpoints only for the voice-over :( */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
@@ -1514,7 +1515,7 @@ h6.line_two {
 
 /* Asides */
 .left {
-  border: solid 1px yellow;
+  /* border: solid 1px yellow; */
   top: 10rem;
   width: 10rem;
   height: 150rem;
@@ -1529,7 +1530,7 @@ h6.line_two {
 }
 
 .right {
-  border: solid 1px yellow;
+  /*  border: solid 1px yellow; */
   right: 0;
   top: 10rem;
   width: 10rem;
@@ -1546,7 +1547,7 @@ h6.line_two {
 
 /* Header */
 .thirdSem {
-  border: solid 1px yellow;
+  /*  border: solid 1px yellow; */
   width: 70%;
   height: 100%;
   top: 10rem;
@@ -1571,7 +1572,7 @@ h6.line_two {
 }
 
 .karlsruhe {
-  border: solid 1px hotpink;
+  /* border: solid 1px hotpink; */
   width: 60%;
   height: 30rem;
   bottom: -80rem;
@@ -1589,7 +1590,7 @@ h6.line_two {
 }
 
 #slideshow {
-  border: solid 1px greenyellow;
+  /* border: solid 1px greenyellow; */
   bottom: -90rem;
   left: -15rem;
   width: 100%;
@@ -1669,7 +1670,7 @@ a.button_next {
 
 /* More infos */
 .baptiste {
-  border: solid 1px orange;
+  /* border: solid 1px orange; */
   width: 80%;
   height: 30rem;
   margin: auto;
@@ -1683,5 +1684,43 @@ a.button_next {
 
 .baptiste p {
   font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.baptiste_img {
+  background-image: url("../05_images/03_Semester/5.jpg");
+  width: 20rem;
+  height: 30rem;
+}
+
+#fourthSemester {
+  background-color: #b6ae8f;
+}
+
+header.fourth {
+  width: 90%;
+  margin: auto;
+}
+
+.header_fourth {
+  border: solid 1px yellow;
+  width: 90%;
+  height: 80vh;
+  top: 10rem;
+  overflow: hidden;
+}
+
+.header_fourth-info {
+  top: 5rem;
+  font-size: 10rem;
+  color: #f6f3ef;
+}
+
+.header_fourth-info span {
+  font-size: 7rem;
+}
+
+.header_fourth-video {
+  height: 80%;
 }
 /*# sourceMappingURL=style.css.map */
