@@ -1,4 +1,4 @@
-let images = document.querySelectorAll(".fourth");
+/* let images = document.querySelectorAll(".fourth");
 
 images.forEach((img) => {
   img.addEventListener("mouseover", (e) => {
@@ -6,3 +6,4 @@ images.forEach((img) => {
     e.target.style.transform = "translateZ(3px)";
   });
 });
+ */
