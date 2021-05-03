@@ -1,7 +1,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
 /* @import url("../css/font_stylesheet.css"); */
 @import url("./_variables.scss");
-
+/*  SMALL RESET */
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +11,7 @@
 *::before {
   box-sizing: border-box;
 }
+/* DISPLAY: FLEX */
 
 .flex {
   display: flex;
@@ -42,6 +43,9 @@
     justify-content: space-evenly;
   }
 }
+
+/* FLOAT */
+
 .float {
   float: left;
 
@@ -49,6 +53,8 @@
     float: right;
   }
 }
+
+/* POSITIONING */
 .position {
   position: absolute;
 
@@ -60,24 +66,38 @@
   }
 }
 
+/* TEXT-ALIGN */
 .text-c {
   text-align: center;
 }
 
+/* HEIGHT */
 .h-100 {
   height: 100%;
 }
+/* BOTTOM */
 .bottom {
   bottom: 0;
 }
+/* TOP */
 .top {
   top: 0;
 }
 
+/* BACKGROUND */
 .bg {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* TRANSITIONS */
+.transition {
+  transition: all 0.7s ease-in-out;
+}
+
+.transition_slow {
+  transition: all 2s ease-in-out;
 }
 
 body {
@@ -89,7 +109,8 @@ body {
   overflow-x: hidden;
   cursor: default;
 }
-/* MIXIN */
+
+/* BODY BREAKPOINTS SO I SEE WHERE I AM */
 body {
   @include breakpoint-down("xllarge") {
     background-color: rgb(226, 226, 149);
@@ -109,10 +130,37 @@ body {
   }
 }
 
+/* A TAGS */
+
 a {
   text-decoration: none;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-stretch: ultra-expanded;
   color: $darker_font;
+
+  &.more_about {
+    border: solid 1px $color_greyish_blue;
+    padding: 5px 20px;
+    font-size: 1.3rem;
+    transition: all 0.3s;
+    &:hover,
+    &:active {
+      letter-spacing: 2px;
+      color: #f3e3e1;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-in-out;
+
+      border: solid 1px #c0b0b0;
+      background-color: #c0b0b0;
+      border-radius: 3px;
+    }
+  }
 }
+.btn_more_about {
+  margin: 2rem 0;
+}
+
 a.semester_collections {
   color: $darker_font;
   font-weight: 600;
@@ -135,7 +183,7 @@ a.jenny_nguyen_logo {
   }
 }
 
-/* Navigation */
+/* NAVIGATION */
 
 .nav_top {
   /* border: solid 1px yellow; */
@@ -183,44 +231,7 @@ a.jenny_nguyen_logo {
   right: 0;
 }
 
-a {
-  text-decoration: none;
-  padding: 10px;
-  font-size: 1.2rem;
-  font-stretch: ultra-expanded;
-  color: $darker_font;
-
-  &.more_about {
-    border: solid 1px $color_greyish_blue;
-    padding: 5px 20px;
-    font-size: 1.3rem;
-    transition: all 0.3s;
-    &:hover,
-    &:active {
-      letter-spacing: 2px;
-      color: #f3e3e1;
-      transition-duration: 0.3s;
-      transition-timing-function: ease-in-out;
-
-      border: solid 1px #c0b0b0;
-      background-color: #c0b0b0;
-      border-radius: 3px;
-    }
-  }
-}
-.btn_more_about {
-  margin: 2rem 0;
-}
-
-.transition {
-  transition: all 0.7s ease-in-out;
-}
-
-.transition_slow {
-  transition: all 2s ease-in-out;
-}
-
-/* contact form */
+/* CONTACT FORM */
 
 .contact_me {
   /* border: solid 1px white; */
@@ -293,7 +304,7 @@ input[type="reset"] {
   letter-spacing: 5px;
 }
 
-/* Footer */
+/* FOOTER */
 
 #footer-wrapper {
   /* border: solid 1px yellow; */
