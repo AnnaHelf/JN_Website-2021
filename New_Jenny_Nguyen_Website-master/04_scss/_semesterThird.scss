@@ -42,8 +42,8 @@
   left: 15rem;
   &_img {
     width: 30rem;
-    height: 60rem;
     background-image: url("../05_images/03_Semester/4.JPG");
+    animation: imgHeight ease-in-out forwards 2s;
   }
   &_h1 {
     top: 0;

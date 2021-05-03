@@ -1,3 +1,4 @@
+/* ASIDE */
 .aside_right {
   width: 50%;
   height: 80rem;
@@ -11,6 +12,7 @@
   @include breakpoint-down("small") {
     height: 40rem;
   }
+
   &-slideshow {
     &_container {
       /*  border: soldi 1px blueviolet; */
@@ -18,6 +20,8 @@
       margin-top: 10rem;
     }
   }
+  /* CIRCLE AND ARROW */
+
   &-circle {
     width: 20rem;
     height: 20rem;
@@ -42,7 +46,8 @@ em.fa-arrow-down {
   transform: translateX(-50%);
 }
 
-/* Header left side */
+/* HEADER LEFT SIDE */
+
 .left_side {
   /* border: solid 1px white; */
   width: 50%;
@@ -51,6 +56,7 @@ em.fa-arrow-down {
   @include breakpoint-down("medium") {
     height: 30rem;
   }
+
   &-h1 {
     font-size: 8rem;
     font-weight: 500;
@@ -67,6 +73,7 @@ em.fa-arrow-down {
       text-align: center;
     }
   }
+
   &-info {
     font-size: 1.3rem;
     color: $darker_font;
@@ -80,7 +87,7 @@ em.fa-arrow-down {
   }
 }
 
-/* section bachelor */
+/* BACHELOR */
 
 .bachelor {
   /*  border: solid 1px yellow; */
@@ -117,6 +124,7 @@ em.fa-arrow-down {
       font-size: 4rem;
     }
   }
+
   &_info {
     width: 40%;
     height: 50%;
@@ -129,6 +137,7 @@ em.fa-arrow-down {
     @include breakpoint-down("xsSmall") {
       height: 70%;
     }
+
     &-title {
       font-size: 2rem;
       @include breakpoint-down("small") {
@@ -139,6 +148,7 @@ em.fa-arrow-down {
         text-align: center;
       }
     }
+
     &-year {
       font-size: 2rem;
       font-weight: 400;
@@ -147,6 +157,7 @@ em.fa-arrow-down {
         font-size: 4rem;
       }
     }
+
     &-info {
       font-size: 1.3rem;
       margin-top: 3rem;
@@ -159,14 +170,14 @@ em.fa-arrow-down {
     }
   }
 }
+
 a.bachelor_btn {
   font-size: 1.5rem;
   z-index: 100;
   bottom: 2rem;
 }
-/* SEMESTER */
 
-/* SELECTION */
+/* SELECTION - CONTAINER */
 
 .selection_container {
   /*   border: solid 1px white; */
@@ -181,7 +192,7 @@ img.semester {
   z-index: -1;
 }
 
-/* SEMESTER */
+/* SEMESTER - CONTAINER */
 
 .semester_container {
   /*  border: solid 1px black; */
@@ -258,7 +269,7 @@ h4.year {
   margin-left: 2rem;
 }
 
-/* circle nr 2 */
+/* SECOND CIRCLE  */
 .afterSemester_circle {
   width: 30rem;
   height: 30rem;
@@ -276,7 +287,7 @@ h4.year {
   }
 }
 
-/* Jenny Nguyen */
+/* JENNY NGUYEN */
 .jennyNguyen {
   /*  border: solid 1px yellow; */
   z-index: -1;
@@ -291,16 +302,19 @@ h4.year {
   @include breakpoint-down("xsSmall") {
     bottom: -80rem;
   }
+
   &_portrait {
     /* border: solid 1px black; */
     width: 80%;
     margin-top: 5rem;
   }
+
   &-name {
     font-size: 4rem;
     font-weight: 400;
     margin: 2rem 0;
   }
+
   &-infos {
     border: solid 3px $aside_right;
     width: 30%;
@@ -325,7 +339,7 @@ h4.year {
   }
 }
 
-/* cursor hidden message */
+/* CURSOR CUSTOM */
 .hiddenCursor {
   width: 15rem;
   height: 15rem;
@@ -340,7 +354,7 @@ h4.year {
   transition-timing-function: ease-out;
 }
 
-/* lets talk */
+/* LETS TALK */
 
 h1.lets_talk {
   bottom: -40rem;

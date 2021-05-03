@@ -66,3 +66,12 @@
     right: 0;
   }
 }
+
+@keyframes imgHeight {
+  from {
+    height: 0;
+  }
+  to {
+    height: 60rem;
+  }
+}
