@@ -222,10 +222,10 @@ a.semester_collections {
   margin-right: 1.5rem;
 }
 
-@media screen and (max-width: 87.43755em) {
+@media screen and (max-width: 100em) {
   a.semester_collections {
-    padding: 1rem 0.5rem;
     background-color: #d5c1ba;
+    margin-top: 1rem;
   }
 }
 
@@ -253,6 +253,13 @@ a.jenny_nguyen_logo:hover {
   z-index: 10;
 }
 
+@media screen and (max-width: 100em) {
+  .nav_top {
+    width: 80%;
+    margin-left: 2rem;
+  }
+}
+
 @media screen and (max-width: 65.9375em) {
   .nav_top {
     top: 0;
@@ -260,9 +267,15 @@ a.jenny_nguyen_logo:hover {
 }
 
 .nav_top-left_side {
-  /*  border: solid 1px red; */
+  border: solid 1px red;
   width: 80%;
   height: 80%;
+}
+
+@media screen and (max-width: 100em) {
+  .nav_top-left_side {
+    width: 50%;
+  }
 }
 
 .nav_top-left_side-dropdown_container-dropdownbtn {
@@ -275,7 +288,7 @@ a.jenny_nguyen_logo:hover {
 }
 
 .nav_top-dropdown_items {
-  /* border: solid 1px violet; */
+  border: solid 1px violet;
   background-color: #ebd8d1;
   width: 100%;
   height: 2rem;
@@ -283,12 +296,18 @@ a.jenny_nguyen_logo:hover {
   opacity: 0;
 }
 
-@media screen and (max-width: 87.43755em) {
+@media screen and (max-width: 100em) {
   .nav_top-dropdown_items {
+    width: 10rem;
+    height: 30rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: rgba(255, 255, 255, 0);
   }
 }
@@ -301,7 +320,7 @@ a.jenny_nguyen_logo:hover {
 
 /* CONTACT FORM */
 .contact_me {
-  /* border: solid 1px white; */
+  border: solid 1px white;
   bottom: -50rem;
   margin: auto;
   width: 90%;
@@ -309,10 +328,22 @@ a.jenny_nguyen_logo:hover {
   z-index: 100;
 }
 
-@media screen and (max-width: 60rem) {
+@media screen and (max-width: 87.43755em) {
   .contact_me {
-    bottom: -20rem;
-    height: 45rem;
+    bottom: -10rem;
+  }
+}
+
+@media screen and (max-width: 74.9375em) {
+  .contact_me {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -323,25 +354,12 @@ a.jenny_nguyen_logo:hover {
   height: 20rem;
 }
 
-@media screen and (max-width: 60rem) {
-  .contact_me-nameEtc {
-    width: 100%;
-  }
-}
-
 .contact_me-message {
   /*  border: solid 1px yellow; */
   background-color: #7a7987;
   width: 50%;
   height: 20rem;
   right: 0;
-}
-
-@media screen and (max-width: 60rem) {
-  .contact_me-message {
-    bottom: 0;
-    width: 100%;
-  }
 }
 
 form label {
@@ -437,10 +455,22 @@ footer {
   height: 100%;
 }
 
+@media screen and (max-width: 74.9375em) {
+  .footer_socialMedia {
+    width: 50%;
+  }
+}
+
 .footer_jennysName {
   width: 30%;
   background-image: url("../05_images/png_logo/logo_transparent_background.png");
   background-size: contain;
+}
+
+@media screen and (max-width: 74.9375em) {
+  .footer_jennysName {
+    display: none;
+  }
 }
 
 .footer_top {
@@ -460,6 +490,24 @@ footer {
 
 .footer_arrow {
   width: 5rem;
+}
+
+@media screen and (max-width: 100em) {
+  #footer_icon a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 87.43755em) {
+  #footer_icon a {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 74.9375em) {
+  #footer_icon a {
+    font-size: 1.5rem;
+  }
 }
 
 @-webkit-keyframes fade-in {
@@ -633,6 +681,12 @@ footer {
   /* CIRCLE AND ARROW */
 }
 
+@media screen and (max-width: 100em) {
+  .aside_right {
+    height: 60rem;
+  }
+}
+
 @media screen and (max-width: 74.9375em) {
   .aside_right {
     height: 50rem;
@@ -701,13 +755,13 @@ em.fa-arrow-down {
 
 @media screen and (max-width: 74.9375em) {
   .left_side-h1 {
-    font-size: 5rem;
+    font-size: 7rem;
   }
 }
 
 @media screen and (max-width: 65.9375em) {
   .left_side-h1 {
-    font-size: 3rem;
+    font-size: 6rem;
   }
 }
 
@@ -721,6 +775,13 @@ em.fa-arrow-down {
 .left_side-info {
   font-size: 1.3rem;
   color: #383e46;
+}
+
+@media screen and (max-width: 74.9375em) {
+  .left_side-info {
+    font-size: 1.7rem;
+    width: 30rem;
+  }
 }
 
 @media screen and (max-width: 65.9375em) {
@@ -746,14 +807,13 @@ em.fa-arrow-down {
 
 @media screen and (max-width: 74.9375em) {
   .bachelor {
-    bottom: -20rem;
-    height: 30rem;
+    bottom: -50rem;
   }
 }
 
 @media screen and (max-width: 65.9375em) {
   .bachelor {
-    margin-top: 20rem;
+    bottom: -40rem;
   }
 }
 
@@ -771,19 +831,14 @@ em.fa-arrow-down {
   text-shadow: 1px 1px 0px #525a66;
 }
 
-@media screen and (max-width: 74.9375em) {
+@media screen and (max-width: 87.43755em) {
   .bachelor-h2 > h2 {
-    font-size: 5rem;
-  }
-}
-
-@media screen and (max-width: 60rem) {
-  .bachelor-h2 > h2 {
-    font-size: 4rem;
+    opacity: 0.5;
   }
 }
 
 .bachelor_info {
+  border: solid 1px black;
   width: 40%;
   height: 50%;
   right: 0;
@@ -792,9 +847,22 @@ em.fa-arrow-down {
   transition: all 0.3s ease-in-out;
 }
 
+@media screen and (max-width: 87.43755em) {
+  .bachelor_info {
+    height: 30%;
+    top: 17rem;
+  }
+}
+
 @media screen and (max-width: 74.9375em) {
   .bachelor_info {
     height: 60%;
+  }
+}
+
+@media screen and (max-width: 65.9375em) {
+  .bachelor_info {
+    height: 40%;
   }
 }
 
@@ -806,6 +874,19 @@ em.fa-arrow-down {
 
 .bachelor_info-title {
   font-size: 2rem;
+}
+
+@media screen and (max-width: 87.43755em) {
+  .bachelor_info-title {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 74.9375em) {
+  .bachelor_info-title {
+    font-size: 8rem;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 65.9375em) {
@@ -827,6 +908,12 @@ em.fa-arrow-down {
   margin-top: 1rem;
 }
 
+@media screen and (max-width: 87.43755em) {
+  .bachelor_info-year {
+    font-size: 4rem;
+  }
+}
+
 @media screen and (max-width: 65.9375em) {
   .bachelor_info-year {
     font-size: 4rem;
@@ -838,15 +925,9 @@ em.fa-arrow-down {
   margin-top: 3rem;
 }
 
-@media screen and (max-width: 65.9375em) {
+@media screen and (max-width: 87.43755em) {
   .bachelor_info-info {
     display: none;
-  }
-}
-
-@media screen and (max-width: 74.9375em) {
-  .bachelor_info-info {
-    margin-top: 1rem;
   }
 }
 
@@ -856,11 +937,29 @@ a.bachelor_btn {
   bottom: 2rem;
 }
 
+@media screen and (max-width: 87.43755em) {
+  a.bachelor_btn {
+    bottom: 0;
+  }
+}
+
 /* SELECTION - CONTAINER */
 .selection_container {
   /*   border: solid 1px white; */
   margin: 20rem 3rem 10rem 3rem;
   top: 50rem;
+}
+
+@media screen and (max-width: 74.9375em) {
+  .selection_container {
+    top: 40rem;
+  }
+}
+
+@media screen and (max-width: 65.9375em) {
+  .selection_container {
+    top: 30rem;
+  }
 }
 
 img.semester {
@@ -873,7 +972,7 @@ img.semester {
 
 /* SEMESTER - CONTAINER */
 .semester_container {
-  /*  border: solid 1px black; */
+  border: solid 1px black;
   margin: 5rem 0 10rem 0;
   width: 90%;
   height: 30em;
@@ -888,6 +987,18 @@ img.semester {
   top: 0;
 }
 
+@media screen and (max-width: 100em) {
+  .semester_container-color_div-first {
+    height: 70rem;
+  }
+}
+
+@media screen and (max-width: 87.43755em) {
+  .semester_container-color_div-first {
+    height: 60rem;
+  }
+}
+
 .semester_container-color_div-third {
   background-color: #beada5;
   z-index: -5;
@@ -895,6 +1006,18 @@ img.semester {
   height: 60rem;
   left: -6rem;
   top: 5rem;
+}
+
+@media screen and (max-width: 100em) {
+  .semester_container-color_div-third {
+    left: -2rem;
+  }
+}
+
+@media screen and (max-width: 87.43755em) {
+  .semester_container-color_div-third {
+    display: none;
+  }
 }
 
 .semester_container-color_div-sixth {
@@ -906,17 +1029,32 @@ img.semester {
   bottom: -10rem;
 }
 
-.semester_container-slide_info {
-  width: 40%;
-  height: 50%;
-  /*  border: solid 1px yellow; */
+@media screen and (max-width: 100em) {
+  .semester_container-color_div-sixth {
+    height: 50rem;
+  }
 }
 
 .semester_container-preinfo {
+  border: solid 1px red;
   font-family: "Bebas Neue Pro";
   font-weight: 400;
   font-size: 1.2rem;
   margin-bottom: 4rem;
+  width: 40rem;
+}
+
+@media screen and (max-width: 100em) {
+  .semester_container-preinfo {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 87.43755em) {
+  .semester_container-preinfo {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 }
 
 .semester_container-titel {
@@ -924,6 +1062,19 @@ img.semester {
   font-weight: 400;
   font-size: 2rem;
   margin: 2rem;
+}
+
+@media screen and (max-width: 87.43755em) {
+  .semester_container-titel {
+    font-size: 5rem;
+    z-index: 10;
+  }
+}
+
+@media screen and (max-width: 74.9375em) {
+  .semester_container-titel {
+    text-align: center;
+  }
 }
 
 .semester_container-image_wraper {
@@ -942,6 +1093,12 @@ h4.year {
   margin-left: 2rem;
 }
 
+@media screen and (max-width: 74.9375em) {
+  h4.year {
+    display: none;
+  }
+}
+
 /* SECOND CIRCLE  */
 .afterSemester_circle {
   width: 30rem;
@@ -950,6 +1107,14 @@ h4.year {
   border-radius: 50%;
   bottom: -30rem;
   margin: 0 0 0 30rem;
+}
+
+@media screen and (max-width: 100em) {
+  .afterSemester_circle {
+    width: 25rem;
+    height: 25rem;
+    left: -5rem;
+  }
 }
 
 @media screen and (max-width: 74.9375em) {
@@ -977,15 +1142,9 @@ h4.year {
   bottom: -20rem;
 }
 
-@media screen and (max-width: 65.9375em) {
+@media screen and (max-width: 87.43755em) {
   .jennyNguyen {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 60rem) {
-  .jennyNguyen {
-    bottom: -80rem;
+    height: 50rem;
   }
 }
 
@@ -995,10 +1154,23 @@ h4.year {
   margin-top: 5rem;
 }
 
+@media screen and (max-width: 87.43755em) {
+  .jennyNguyen_portrait {
+    width: 90%;
+  }
+}
+
 .jennyNguyen-name {
   font-size: 4rem;
   font-weight: 400;
   margin: 2rem 0;
+}
+
+@media screen and (max-width: 74.9375em) {
+  .jennyNguyen-name {
+    text-align: center;
+    font-size: 5rem;
+  }
 }
 
 .jennyNguyen-infos {
@@ -1010,22 +1182,26 @@ h4.year {
   cursor: none;
 }
 
-@media screen and (max-width: 65.9375em) {
+@media screen and (max-width: 87.43755em) {
   .jennyNguyen-infos {
+    width: 50%;
     margin-right: 5rem;
-  }
-}
-
-@media screen and (max-width: 60rem) {
-  .jennyNguyen-infos {
-    height: auto;
-    margin-top: 40rem;
+    cursor: default;
+    position: relative;
+    top: -15rem;
   }
 }
 
 .jennyNguyen-infos-p {
   font-size: 3rem;
   color: #d5c1ba;
+}
+
+@media screen and (max-width: 87.43755em) {
+  .jennyNguyen-infos-p {
+    color: #525a66;
+    font-size: 2.5rem;
+  }
 }
 
 @media screen and (max-width: 60rem) {
@@ -1052,6 +1228,12 @@ h4.year {
           transition-timing-function: ease-out;
 }
 
+@media screen and (max-width: 87.43755em) {
+  .hiddenCursor {
+    display: none;
+  }
+}
+
 /* LETS TALK */
 h1.lets_talk {
   bottom: -40rem;
@@ -1061,9 +1243,9 @@ h1.lets_talk {
   color: #575664;
 }
 
-@media screen and (max-width: 60rem) {
+@media screen and (max-width: 87.43755em) {
   h1.lets_talk {
-    bottom: -20rem;
+    bottom: -10rem;
   }
 }
 
