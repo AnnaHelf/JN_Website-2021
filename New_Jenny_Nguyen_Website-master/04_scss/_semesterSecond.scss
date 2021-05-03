@@ -1,6 +1,9 @@
 #secondSemester {
   background-color: #b7c3d1;
 }
+#second_nav {
+  background-color: $secondS_mint;
+}
 
 /* HEADER GRID */
 
@@ -130,4 +133,9 @@ h6.line_two {
   &-p {
     font-size: 1.5rem;
   }
+}
+
+#footer-wrapper_second {
+  position: relative;
+  top: 230rem;
 }

@@ -1,3 +1,11 @@
+#first_nav {
+  background-color: $firstS_dark_red;
+  & a {
+    color: white;
+    font-weight: 400;
+  }
+}
+
 /* HEADER */
 .header_martyr {
   width: 90%;
@@ -137,4 +145,8 @@ section.images {
       transition: all 0.3s ease-in-out;
     }
   }
+}
+#footer-wrapper_first {
+  position: relative;
+  top: 90em;
 }

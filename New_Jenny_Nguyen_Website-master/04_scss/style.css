@@ -192,7 +192,7 @@ a.jenny_nguyen_logo {
 }
 
 a.jenny_nguyen_logo:hover {
-  background-color: #d5c1ba;
+  font-weight: 600;
 }
 
 /* Navigation */
@@ -251,24 +251,6 @@ a.jenny_nguyen_logo:hover {
   right: 0;
 }
 
-/* .icons_left { */
-/*  border: solid 1px white; */
-/*   width: 5rem;
-  height: 70vh;
-  @include breakpoint-down("small") {
-    display: none;
-  }
-}
-em {
-  font-size: 1.7rem;
-  color: $icons;
-}
-a.facebook {
-  &:hover {
-    font-size: 1.9rem;
-  }
-} */
-/* button more */
 a {
   text-decoration: none;
   padding: 10px;
@@ -406,7 +388,6 @@ input[type="reset"] {
   /* border: solid 1px yellow; */
   min-height: 100vh;
   position: relative;
-  /*  z-index: -5; */
 }
 
 #footer_icon {
@@ -1183,6 +1164,20 @@ img.bigImg_img {
   font-weight: 400;
 }
 
+#footer-wrapper_seventh {
+  position: relative;
+  top: 120rem;
+}
+
+#first_nav {
+  background-color: #620101;
+}
+
+#first_nav a {
+  color: white;
+  font-weight: 400;
+}
+
 /* HEADER */
 .header_martyr {
   width: 90%;
@@ -1341,8 +1336,17 @@ section.images {
   transition: all 0.3s ease-in-out;
 }
 
+#footer-wrapper_first {
+  position: relative;
+  top: 90em;
+}
+
 #secondSemester {
   background-color: #b7c3d1;
+}
+
+#second_nav {
+  background-color: #79e2cbc0;
 }
 
 /* HEADER GRID */
@@ -1509,8 +1513,17 @@ h6.line_two {
   font-size: 1.5rem;
 }
 
+#footer-wrapper_second {
+  position: relative;
+  top: 230rem;
+}
+
 #thirdSemester {
   background-color: #d1c7c5;
+}
+
+#third_nav {
+  background-color: #d9b500;
 }
 
 /* Asides */
@@ -1693,8 +1706,22 @@ a.button_next {
   height: 30rem;
 }
 
+#footer-wrapper_third {
+  position: relative;
+  top: 105rem;
+}
+
 #fourthSemester {
   background-color: #b6ae8f;
+}
+
+#fourth_nav {
+  background-color: #7c7d82;
+}
+
+#fourth_nav a {
+  color: white;
+  font-weight: 400;
 }
 
 header.fourth {
@@ -1703,7 +1730,7 @@ header.fourth {
 }
 
 .header_fourth {
-  border: solid 1px yellow;
+  /* border: solid 1px yellow; */
   width: 90%;
   height: 80vh;
   top: 10rem;
@@ -1725,14 +1752,14 @@ header.fourth {
 }
 
 section.fourth {
-  border: solid 1px violet;
+  /* border: solid 1px violet; */
   width: 100%;
   height: auto;
   top: 100vh;
 }
 
 .section_fourth-img-wrapper {
-  border: solid 1px yellow;
+  /* border: solid 1px yellow; */
   width: 80vw;
   margin: auto;
   height: 100rem;
@@ -1758,9 +1785,8 @@ img.fourth {
   cursor: pointer;
 }
 
-.section_fourth-gallery {
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.465);
+#footer-wrapper_fourth {
+  position: relative;
+  top: 345rem;
 }
 /*# sourceMappingURL=style.css.map */

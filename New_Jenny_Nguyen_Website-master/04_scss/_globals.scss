@@ -131,7 +131,7 @@ a.jenny_nguyen_logo {
   letter-spacing: 10px;
   color: $darker_font;
   &:hover {
-    background-color: $homepage_bk;
+    font-weight: 600;
   }
 }
 
@@ -182,25 +182,6 @@ a.jenny_nguyen_logo {
   height: 100%;
   right: 0;
 }
-
-/* .icons_left { */
-/*  border: solid 1px white; */
-/*   width: 5rem;
-  height: 70vh;
-  @include breakpoint-down("small") {
-    display: none;
-  }
-}
-em {
-  font-size: 1.7rem;
-  color: $icons;
-}
-a.facebook {
-  &:hover {
-    font-size: 1.9rem;
-  }
-} */
-/* button more */
 
 a {
   text-decoration: none;
@@ -318,8 +299,6 @@ input[type="reset"] {
   /* border: solid 1px yellow; */
   min-height: 100vh;
   position: relative;
-
-  /*  z-index: -5; */
 }
 #footer_icon {
   font-size: 1.3rem;

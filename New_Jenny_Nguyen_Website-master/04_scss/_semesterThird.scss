@@ -1,6 +1,9 @@
 #thirdSemester {
   background-color: $thirdS_light_greyish_red;
 }
+#third_nav {
+  background-color: $thirdS_senf;
+}
 
 /* Asides */
 
@@ -167,4 +170,9 @@ a.button_next {
     width: 20rem;
     height: 30rem;
   }
+}
+
+#footer-wrapper_third {
+  position: relative;
+  top: 105rem;
 }

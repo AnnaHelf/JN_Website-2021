@@ -1,6 +1,13 @@
 #fourthSemester {
   background-color: $fourthS_olive;
 }
+#fourth_nav {
+  background-color: $fourthS_grey;
+  & a {
+    color: white;
+    font-weight: 400;
+  }
+}
 
 header.fourth {
   width: 90%;
@@ -8,7 +15,7 @@ header.fourth {
 }
 
 .header_fourth {
-  border: solid 1px yellow;
+  /* border: solid 1px yellow; */
   width: 90%;
   height: 80vh;
   top: 10rem;
@@ -27,14 +34,14 @@ header.fourth {
 }
 
 section.fourth {
-  border: solid 1px violet;
+  /* border: solid 1px violet; */
   width: 100%;
   height: auto;
   top: 100vh;
 }
 
 .section_fourth-img-wrapper {
-  border: solid 1px yellow;
+  /* border: solid 1px yellow; */
   width: 80vw;
   margin: auto;
   height: 100rem;
@@ -55,9 +62,7 @@ img.fourth {
   perspective-origin: 50%;
   cursor: pointer;
 }
-
-.section_fourth-gallery {
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.465);
+#footer-wrapper_fourth {
+  position: relative;
+  top: 345rem;
 }
