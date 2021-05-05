@@ -272,6 +272,9 @@ h4.year {
     margin-right: 10rem;
     margin-top: 35rem;
     cursor: none;
+    @include breakpoint-down("xllarge") {
+      margin-right: 5rem;
+    }
     &-p {
       font-size: 3rem;
       color: $homepage_bk;
@@ -300,6 +303,7 @@ h4.year {
   border: solid 1px yellow;
   width: 100%;
   top: 30rem;
+
   & h2 {
     font-size: 10rem;
     letter-spacing: 20px;
@@ -307,4 +311,77 @@ h4.year {
     font-weight: 400;
     color: $dark_font;
   }
+}
+
+/* CONTACT FORM */
+
+.contact_me {
+  border: solid 1px white;
+  bottom: -50rem;
+  margin: auto;
+  width: 90%;
+  height: 30rem;
+  z-index: 100;
+  @include breakpoint-down("xllarge") {
+    bottom: -40rem;
+  }
+
+  &-nameEtc {
+    /*  border: solid 1px yellow; */
+    background-color: $color_grey;
+    width: 50%;
+    height: 20rem;
+    @include breakpoint-down("large") {
+      width: 100%;
+    }
+  }
+  &-message {
+    /* border: solid 1px yellow; */
+    background-color: $color_greyish_blue;
+    width: 50%;
+    height: 20rem;
+    right: 0;
+    @include breakpoint-down("large") {
+      width: 100%;
+      bottom: -20rem;
+    }
+  }
+}
+
+form label {
+  font-size: 1.3rem;
+  letter-spacing: 5px;
+  font-weight: 400;
+  margin: 1rem 0;
+  color: #fff;
+}
+
+form input {
+  width: 15rem;
+  height: 2rem;
+  border: #fff solid 1px;
+  background-color: $homepage_bk;
+  text-align: center;
+  letter-spacing: 2px;
+  &:active {
+    border: none;
+  }
+  @include breakpoint-down("medium") {
+    width: 10rem;
+  }
+}
+
+textarea {
+  width: 80%;
+  background-color: $homepage_bk;
+  text-align: center;
+  @include breakpoint-down("medium") {
+    width: 50%;
+  }
+}
+
+input[type="submit"],
+input[type="reset"] {
+  margin: 1rem;
+  letter-spacing: 5px;
 }

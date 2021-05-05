@@ -298,95 +298,6 @@ nav.nav_top {
   height: 5rem;
 }
 
-/* CONTACT FORM */
-.contact_me {
-  /*  border: solid 1px white; */
-  bottom: -50rem;
-  margin: auto;
-  width: 90%;
-  height: 30rem;
-  z-index: 100;
-}
-
-@media screen and (max-width: 87.43755em) {
-  .contact_me {
-    bottom: -20rem;
-  }
-}
-
-.contact_me-nameEtc {
-  /*  border: solid 1px yellow; */
-  background-color: #93929e;
-  width: 50%;
-  height: 20rem;
-}
-
-@media screen and (max-width: 87.43755em) {
-  .contact_me-nameEtc {
-    width: 100%;
-  }
-}
-
-.contact_me-message {
-  /* border: solid 1px yellow; */
-  background-color: #7a7987;
-  width: 50%;
-  height: 20rem;
-  right: 0;
-}
-
-@media screen and (max-width: 87.43755em) {
-  .contact_me-message {
-    width: 100%;
-    bottom: -20rem;
-  }
-}
-
-form label {
-  font-size: 1.3rem;
-  letter-spacing: 5px;
-  font-weight: 400;
-  margin: 1rem 0;
-  color: #fff;
-}
-
-form input {
-  width: 15rem;
-  height: 2rem;
-  border: #fff solid 1px;
-  background-color: #d5c1ba;
-  text-align: center;
-  letter-spacing: 2px;
-}
-
-form input:active {
-  border: none;
-}
-
-@media screen and (max-width: 74.9375em) {
-  form input {
-    width: 10rem;
-  }
-}
-
-textarea {
-  width: 80%;
-  background-color: #d5c1ba;
-  text-align: center;
-}
-
-@media screen and (max-width: 74.9375em) {
-  textarea {
-    width: 50%;
-  }
-}
-
-input[type="submit"],
-input[type="reset"] {
-  margin: 1rem;
-  letter-spacing: 5px;
-}
-
 /* FOOTER */
 #footer-wrapper {
   /* border: solid 1px yellow; */
@@ -422,7 +333,7 @@ input[type="reset"] {
 }
 
 footer {
-  /*   border: solid 2px wheat; */
+  /* border: solid 2px wheat; */
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -436,22 +347,10 @@ footer {
   height: 100%;
 }
 
-@media screen and (max-width: 74.9375em) {
-  .footer_socialMedia {
-    width: 50%;
-  }
-}
-
 .footer_jennysName {
   width: 30%;
   background-image: url("../05_images/png_logo/logo_transparent_background.png");
   background-size: contain;
-}
-
-@media screen and (max-width: 74.9375em) {
-  .footer_jennysName {
-    display: none;
-  }
 }
 
 .footer_top {
@@ -930,6 +829,12 @@ h4.year {
   cursor: none;
 }
 
+@media screen and (max-width: 100em) {
+  .jennyNguyen-infos {
+    margin-right: 5rem;
+  }
+}
+
 .jennyNguyen-infos-p {
   font-size: 3rem;
   color: #d5c1ba;
@@ -966,6 +871,95 @@ h4.year {
   text-transform: uppercase;
   font-weight: 400;
   color: #525a66;
+}
+
+/* CONTACT FORM */
+.contact_me {
+  border: solid 1px white;
+  bottom: -50rem;
+  margin: auto;
+  width: 90%;
+  height: 30rem;
+  z-index: 100;
+}
+
+@media screen and (max-width: 100em) {
+  .contact_me {
+    bottom: -40rem;
+  }
+}
+
+.contact_me-nameEtc {
+  /*  border: solid 1px yellow; */
+  background-color: #93929e;
+  width: 50%;
+  height: 20rem;
+}
+
+@media screen and (max-width: 87.43755em) {
+  .contact_me-nameEtc {
+    width: 100%;
+  }
+}
+
+.contact_me-message {
+  /* border: solid 1px yellow; */
+  background-color: #7a7987;
+  width: 50%;
+  height: 20rem;
+  right: 0;
+}
+
+@media screen and (max-width: 87.43755em) {
+  .contact_me-message {
+    width: 100%;
+    bottom: -20rem;
+  }
+}
+
+form label {
+  font-size: 1.3rem;
+  letter-spacing: 5px;
+  font-weight: 400;
+  margin: 1rem 0;
+  color: #fff;
+}
+
+form input {
+  width: 15rem;
+  height: 2rem;
+  border: #fff solid 1px;
+  background-color: #d5c1ba;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+form input:active {
+  border: none;
+}
+
+@media screen and (max-width: 74.9375em) {
+  form input {
+    width: 10rem;
+  }
+}
+
+textarea {
+  width: 80%;
+  background-color: #d5c1ba;
+  text-align: center;
+}
+
+@media screen and (max-width: 74.9375em) {
+  textarea {
+    width: 50%;
+  }
+}
+
+input[type="submit"],
+input[type="reset"] {
+  margin: 1rem;
+  letter-spacing: 5px;
 }
 
 /* 2020 */

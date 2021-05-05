@@ -232,78 +232,6 @@ nav.nav_top {
   }
 }
 
-/* CONTACT FORM */
-
-.contact_me {
-  /*  border: solid 1px white; */
-  bottom: -50rem;
-  margin: auto;
-  width: 90%;
-  height: 30rem;
-  z-index: 100;
-  @include breakpoint-down("large") {
-    bottom: -20rem;
-  }
-  &-nameEtc {
-    /*  border: solid 1px yellow; */
-    background-color: $color_grey;
-    width: 50%;
-    height: 20rem;
-    @include breakpoint-down("large") {
-      width: 100%;
-    }
-  }
-  &-message {
-    /* border: solid 1px yellow; */
-    background-color: $color_greyish_blue;
-    width: 50%;
-    height: 20rem;
-    right: 0;
-    @include breakpoint-down("large") {
-      width: 100%;
-      bottom: -20rem;
-    }
-  }
-}
-
-form label {
-  font-size: 1.3rem;
-  letter-spacing: 5px;
-  font-weight: 400;
-  margin: 1rem 0;
-  color: #fff;
-}
-
-form input {
-  width: 15rem;
-  height: 2rem;
-  border: #fff solid 1px;
-  background-color: $homepage_bk;
-  text-align: center;
-  letter-spacing: 2px;
-  &:active {
-    border: none;
-  }
-  @include breakpoint-down("medium") {
-    width: 10rem;
-  }
-}
-
-textarea {
-  width: 80%;
-  background-color: $homepage_bk;
-  text-align: center;
-  @include breakpoint-down("medium") {
-    width: 50%;
-  }
-}
-
-input[type="submit"],
-input[type="reset"] {
-  margin: 1rem;
-  letter-spacing: 5px;
-}
-
 /* FOOTER */
 
 #footer-wrapper {
@@ -331,7 +259,7 @@ input[type="reset"] {
 }
 
 footer {
-  /*   border: solid 2px wheat; */
+  /* border: solid 2px wheat; */
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -344,17 +272,11 @@ footer {
   &_socialMedia {
     width: 30%;
     height: 100%;
-    @include breakpoint-down("medium") {
-      width: 50%;
-    }
   }
   &_jennysName {
     width: 30%;
     background-image: url("../05_images/png_logo/logo_transparent_background.png");
     background-size: contain;
-    @include breakpoint-down("medium") {
-      display: none;
-    }
   }
   &_top {
     font-size: 2rem;
