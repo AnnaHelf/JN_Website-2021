@@ -694,7 +694,7 @@ em.fa-arrow-down {
   border: solid 1px white;
   width: 50%;
   height: 50rem;
-  top: 0;
+  top: 10rem;
 }
 
 .left_side-h1 {
@@ -714,24 +714,20 @@ em.fa-arrow-down {
   border: solid 1px yellow;
   width: 80%;
   height: 50rem;
-  bottom: -60rem;
+  top: 60rem;
   margin: auto;
-  /*   &-h2 {
-    @include breakpoint-down("xllarge") {
-      z-index: -10;
-    }
-  }
-  & video {
-    @include breakpoint-down("xxsSmall") {
-      top: 0;
-      width: 100%;
-    }
-  } */
+}
+
+.bachelor_items {
+  border: solid 1px #0d9769;
+  width: 100%;
+  height: 100%;
 }
 
 .bachelor-h2 > h2 {
-  width: auto;
+  color: #525a66;
   font-size: 10rem;
+  font-weight: 800;
   text-transform: uppercase;
   color: #d5c1ba;
   text-shadow: 1px 1px 0px #525a66;
@@ -739,28 +735,27 @@ em.fa-arrow-down {
 
 .bachelor_info {
   border: solid 1px black;
-  width: 40%;
-  height: 50%;
-  right: 0;
-  top: 12rem;
+  height: 30rem;
 }
 
 .bachelor_info-title {
   border: solid 1px white;
-  font-size: 4rem;
+  font-size: 7rem;
+  font-weight: 400;
+  color: #525a66;
 }
 
 .bachelor_info-year {
   border: solid 1px white;
   font-size: 3rem;
   font-weight: 400;
+  color: #525a66;
   margin-top: 1rem;
 }
 
-.bachelor_info-info {
-  border: solid 1px yellow;
-  font-size: 1.3rem;
-  margin-top: 3rem;
+.bachelor_info-txt {
+  border: solid 1px orange;
+  font-size: 1.5rem;
 }
 
 a.bachelor_btn {
@@ -957,13 +952,18 @@ h4.year {
 }
 
 /* LETS TALK */
-h1.lets_talk {
+.lets_talk {
   border: solid 1px yellow;
-  bottom: -40rem;
-  margin-left: 2rem;
+  width: 100%;
+  top: 40rem;
+}
+
+.lets_talk h2 {
   font-size: 10rem;
-  letter-spacing: 50px;
-  color: #575664;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #525a66;
 }
 
 /* 2020 */
