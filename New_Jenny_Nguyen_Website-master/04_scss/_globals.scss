@@ -111,7 +111,7 @@ body {
 }
 
 /* BODY BREAKPOINTS SO I SEE WHERE I AM */
-body {
+/* body {
   @include breakpoint-down("xllarge") {
     background-color: rgb(226, 226, 149);
   }
@@ -126,9 +126,15 @@ body {
     background-color: rgb(127, 176, 209);
   }
   @include breakpoint-down("xsSmall") {
-    background-color: rgb(170, 135, 135);
+    background-color: rgb(219, 159, 159);
   }
-}
+  @include breakpoint-down("xxsSmall") {
+    background-color: rgb(183, 219, 159);
+  }
+  @include breakpoint-down("maxMin") {
+    background-color: rgb(165, 159, 219);
+  }
+} */
 
 /* A TAGS */
 
@@ -200,7 +206,7 @@ a.jenny_nguyen_logo {
     top: 0;
   }
   &-left_side {
-    border: solid 1px red;
+    /* border: solid 1px red; */
     width: 80%;
     height: 80%;
     @include breakpoint-down("xllarge") {
@@ -219,9 +225,9 @@ a.jenny_nguyen_logo {
     }
   }
   &-dropdown_items {
-    border: solid 1px violet;
+    /* border: solid 1px violet; */
     background-color: $color_bright;
-    width: auto;
+    width: 110%;
     height: 2rem;
     margin-top: 0.5rem;
     opacity: 0;
@@ -245,32 +251,34 @@ a.jenny_nguyen_logo {
 /* CONTACT FORM */
 
 .contact_me {
-  border: solid 1px white;
+  /*  border: solid 1px white; */
   bottom: -50rem;
   margin: auto;
   width: 90%;
   height: 30rem;
   z-index: 100;
   @include breakpoint-down("large") {
-    bottom: -10rem;
-  }
-  @include breakpoint-down("medium") {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+    bottom: -20rem;
   }
   &-nameEtc {
-    /* border: solid 1px yellow; */
+    /*  border: solid 1px yellow; */
     background-color: $color_grey;
     width: 50%;
     height: 20rem;
+    @include breakpoint-down("large") {
+      width: 100%;
+    }
   }
   &-message {
-    /*  border: solid 1px yellow; */
+    /* border: solid 1px yellow; */
     background-color: $color_greyish_blue;
     width: 50%;
     height: 20rem;
     right: 0;
+    @include breakpoint-down("large") {
+      width: 100%;
+      bottom: -20rem;
+    }
   }
 }
 
@@ -318,6 +326,8 @@ input[type="reset"] {
   /* border: solid 1px yellow; */
   min-height: 100vh;
   position: relative;
+  @include breakpoint-down("large") {
+  }
 }
 #footer_icon {
   font-size: 1.3rem;
@@ -337,6 +347,7 @@ input[type="reset"] {
 }
 
 footer {
+  /*   border: solid 2px wheat; */
   position: absolute;
   bottom: 0;
   width: 100%;
