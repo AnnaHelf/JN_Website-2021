@@ -191,61 +191,45 @@ a.jenny_nguyen_logo {
 
 /* NAVIGATION */
 
-.nav_top {
-  /* border: solid 1px yellow; */
-  width: 51%;
+nav.nav_top {
+  border: solid 1px yellow;
+  width: 70rem;
   height: 5rem;
-  margin-left: 7rem;
-  margin-top: 1rem;
-  z-index: 10;
-  @include breakpoint-down("xllarge") {
-    width: 80%;
-    margin-left: 2rem;
-  }
-  @include breakpoint-down("small") {
-    top: 0;
-  }
-  &-left_side {
-    /* border: solid 1px red; */
-    width: 80%;
-    height: 80%;
-    @include breakpoint-down("xllarge") {
-      width: 50%;
-    }
+  margin: 2rem 0 0 5rem;
+}
 
-    &-dropdown_container {
-      &-dropdownbtn {
-        font-size: 1.3rem;
-        background-color: rgba(255, 255, 255, 0);
-        border: none;
+.nav {
+  &_left {
+    border: solid 1px red;
+    height: 5rem;
+    &-dropdown {
+      &_countainer {
+        border: solid 1px yellow;
+      }
+      &_items {
+        border: solid 1px orange;
+        opacity: 0;
+        margin-top: 1rem;
+      }
+      &-btn {
+        cursor: pointer;
+        font-size: 1.5rem;
         color: $darker_font;
         font-weight: 600;
-        letter-spacing: 3px;
+        letter-spacing: 5px;
+        border: none;
+        background-color: $homepage_bk;
+        &:hover {
+          font-weight: 400;
+        }
       }
     }
   }
-  &-dropdown_items {
-    /* border: solid 1px violet; */
-    background-color: $color_bright;
-    width: 110%;
-    height: 2rem;
-    margin-top: 0.5rem;
-    opacity: 0;
-    @include breakpoint-down("xllarge") {
-      width: 10rem;
-      height: 30rem;
-      flex-direction: column;
-      text-align: center;
-      align-items: center;
-      background-color: rgba(255, 255, 255, 0);
-    }
+  &_right {
+    border: solid 1px violet;
+    width: 20rem;
+    height: 5rem;
   }
-}
-
-.nav_logo_link {
-  /* border: solid 1px white; */
-  height: 100%;
-  right: 0;
 }
 
 /* CONTACT FORM */

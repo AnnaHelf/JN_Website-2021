@@ -1,6 +1,6 @@
-$(".nav_top-left_side-dropdown_container-dropdownbtn").hover(
+$(".nav_left-dropdown-btn").hover(
   function () {
-    $(".nav_top-dropdown_items").animate(
+    $(".nav_left-dropdown_items").animate(
       {
         opacity: "1",
       },
@@ -9,7 +9,7 @@ $(".nav_top-left_side-dropdown_container-dropdownbtn").hover(
   },
   function () {
     setTimeout(function () {
-      $(".nav_top-dropdown_items").animate(
+      $(".nav_left-dropdown_items").animate(
         {
           opacity: "0",
         },

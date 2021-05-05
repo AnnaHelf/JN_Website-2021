@@ -1,16 +1,17 @@
-#first_nav {
+/* #first_nav {
   background-color: $firstS_dark_red;
   & a {
     color: white;
     font-weight: 400;
   }
-}
+} */
 
 /* HEADER */
 .header_martyr {
-  /*  border: solid 1px white; */
+  border: solid 1px white;
   width: 90%;
-  height: 100%;
+  height: 80%;
+  top: 10rem;
   margin-left: 5rem;
 
   &-video {
@@ -34,7 +35,7 @@
     top: 40%;
 
     &-wrapper_first {
-      /* border: solid 1px yellow; */
+      border: solid 1px yellow;
       width: 100%;
       height: 4rem;
       background-color: $firstS_dark_red;
