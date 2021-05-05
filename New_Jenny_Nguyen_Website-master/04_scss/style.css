@@ -667,10 +667,34 @@ em.fa-arrow-down {
   }
 }
 
+@media screen and (max-width: 74.9375em) {
+  .bachelor {
+    height: 70rem;
+  }
+}
+
 .bachelor_items {
   border: solid 1px #0d9769;
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 74.9375em) {
+  .bachelor_items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .bachelor-h2 > h2 {
@@ -691,6 +715,12 @@ em.fa-arrow-down {
 @media screen and (max-width: 87.43755em) {
   .bachelor-h2 > h2 {
     font-size: 7rem;
+  }
+}
+
+@media screen and (max-width: 74.9375em) {
+  .bachelor-h2 > h2 {
+    font-size: 6rem;
   }
 }
 
@@ -759,6 +789,12 @@ img.semester {
   margin: 5rem 0 10rem 0;
   width: 90%;
   height: 30em;
+}
+
+@media screen and (max-width: 74.9375em) {
+  .semester_container {
+    width: 100%;
+  }
 }
 
 .semester_container-color_div-first {
@@ -833,11 +869,18 @@ img.semester {
 }
 
 h4.year {
+  border: solid 1px yellow;
   font-size: 10rem;
   font-family: "Bebas Neue Pro Expanded";
   font-weight: 600;
   color: rgba(255, 255, 255, 0.459);
   margin-left: 2rem;
+}
+
+@media screen and (max-width: 74.9375em) {
+  h4.year {
+    position: relative;
+  }
 }
 
 /* SECOND CIRCLE  */
@@ -875,6 +918,12 @@ h4.year {
   }
 }
 
+@media screen and (max-width: 74.9375em) {
+  .jennyNguyen {
+    width: 40%;
+  }
+}
+
 .jennyNguyen_portrait {
   border: solid 1px black;
   width: 80%;
@@ -904,9 +953,21 @@ h4.year {
   }
 }
 
+@media screen and (max-width: 74.9375em) {
+  .jennyNguyen-infos {
+    margin-right: 0;
+  }
+}
+
 .jennyNguyen-infos-p {
   font-size: 3rem;
   color: #d5c1ba;
+}
+
+@media screen and (max-width: 74.9375em) {
+  .jennyNguyen-infos-p {
+    font-size: 2rem;
+  }
 }
 
 /* CURSOR CUSTOM */

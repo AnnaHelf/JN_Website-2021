@@ -7,14 +7,6 @@
   right: 0;
   top: 0;
   z-index: -5;
-  @include breakpoint-down("xllarge") {
-  }
-  @include breakpoint-down("medium") {
-  }
-  @include breakpoint-down("small") {
-  }
-  @include breakpoint-down("xxsSmall") {
-  }
 
   &-slideshow {
     &_container {
@@ -91,10 +83,19 @@ em.fa-arrow-down {
     width: 90%;
     top: 50rem;
   }
+  @include breakpoint-down("medium") {
+    height: 70rem;
+  }
   &_items {
     border: solid 1px rgb(13, 151, 105);
     width: 100%;
     height: 100%;
+    @include breakpoint-down("medium") {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &-h2 > h2 {
@@ -110,13 +111,15 @@ em.fa-arrow-down {
     @include breakpoint-down("large") {
       font-size: 7rem;
     }
+    @include breakpoint-down("medium") {
+      font-size: 6rem;
+    }
   }
 
   &_info {
     border: solid 1px black;
     height: 30rem;
     margin: 1rem;
-
     &-title {
       border: solid 1px white;
       font-size: 7rem;
@@ -174,6 +177,9 @@ img.semester {
 
   width: 90%;
   height: 30em;
+  @include breakpoint-down("medium") {
+    width: 100%;
+  }
 
   &-color_div {
     &-first {
@@ -241,11 +247,15 @@ img.semester {
 }
 
 h4.year {
+  border: solid 1px yellow;
   font-size: 10rem;
   font-family: $main_font_exp;
   font-weight: $bold;
   color: rgba(255, 255, 255, 0.459);
   margin-left: 2rem;
+  @include breakpoint-down("medium") {
+    position: relative;
+  }
 }
 
 /* SECOND CIRCLE  */
@@ -275,6 +285,9 @@ h4.year {
   @include breakpoint-down("large") {
     height: 50rem;
   }
+  @include breakpoint-down("medium") {
+    width: 40%;
+  }
 
   &_portrait {
     border: solid 1px black;
@@ -300,9 +313,15 @@ h4.year {
     @include breakpoint-down("xllarge") {
       margin-right: 5rem;
     }
+    @include breakpoint-down("medium") {
+      margin-right: 0;
+    }
     &-p {
       font-size: 3rem;
       color: $homepage_bk;
+      @include breakpoint-down("medium") {
+        font-size: 2rem;
+      }
     }
   }
 }
