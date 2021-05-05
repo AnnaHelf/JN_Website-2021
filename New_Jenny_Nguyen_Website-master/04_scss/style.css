@@ -263,6 +263,12 @@ nav.nav_top {
   margin: 2rem 0 0 5rem;
 }
 
+@media screen and (max-width: 87.43755em) {
+  nav.nav_top {
+    width: 80%;
+  }
+}
+
 .nav_left {
   border: solid 1px red;
   height: 5rem;
@@ -276,6 +282,18 @@ nav.nav_top {
   border: solid 1px orange;
   opacity: 0;
   margin-top: 1rem;
+}
+
+@media screen and (max-width: 87.43755em) {
+  .nav_left-dropdown_items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .nav_left-dropdown-btn {
@@ -568,6 +586,12 @@ footer {
   margin-top: 10rem;
 }
 
+@media screen and (max-width: 87.43755em) {
+  .aside_right-slideshow_container {
+    width: 80%;
+  }
+}
+
 .aside_right-circle {
   width: 20rem;
   height: 20rem;
@@ -615,6 +639,13 @@ em.fa-arrow-down {
   }
 }
 
+@media screen and (max-width: 87.43755em) {
+  .left_side-h1 {
+    font-size: 8rem;
+    z-index: -10;
+  }
+}
+
 .left_side-info {
   font-size: 1.5rem;
   color: #383e46;
@@ -657,6 +688,12 @@ em.fa-arrow-down {
   }
 }
 
+@media screen and (max-width: 87.43755em) {
+  .bachelor-h2 > h2 {
+    font-size: 7rem;
+  }
+}
+
 .bachelor_info {
   border: solid 1px black;
   height: 30rem;
@@ -668,6 +705,12 @@ em.fa-arrow-down {
   font-size: 7rem;
   font-weight: 400;
   color: #525a66;
+}
+
+@media screen and (max-width: 87.43755em) {
+  .bachelor_info-title {
+    font-size: 6rem;
+  }
 }
 
 .bachelor_info-year {
@@ -742,6 +785,12 @@ img.semester {
   top: 5rem;
 }
 
+@media screen and (max-width: 87.43755em) {
+  .semester_container-color_div-third {
+    display: none;
+  }
+}
+
 .semester_container-color_div-sixth {
   background-color: #b3b0bc;
   z-index: -5;
@@ -767,6 +816,12 @@ img.semester {
   letter-spacing: 3px;
   font-size: 3rem;
   margin: 2rem;
+}
+
+@media screen and (max-width: 87.43755em) {
+  .semester_container-titel {
+    z-index: 10;
+  }
 }
 
 .semester_container-image_wraper {
@@ -795,6 +850,14 @@ h4.year {
   margin: 0 0 0 30rem;
 }
 
+@media screen and (max-width: 87.43755em) {
+  .afterSemester_circle {
+    width: 20rem;
+    height: 20rem;
+    left: -5rem;
+  }
+}
+
 /* JENNY NGUYEN */
 .jennyNguyen {
   border: solid 1px yellow;
@@ -804,6 +867,12 @@ h4.year {
   left: 5rem;
   background-color: #cdcad8;
   bottom: -20rem;
+}
+
+@media screen and (max-width: 87.43755em) {
+  .jennyNguyen {
+    height: 50rem;
+  }
 }
 
 .jennyNguyen_portrait {
@@ -886,6 +955,12 @@ h4.year {
 @media screen and (max-width: 100em) {
   .contact_me {
     bottom: -40rem;
+  }
+}
+
+@media screen and (max-width: 87.43755em) {
+  .contact_me {
+    bottom: -30rem;
   }
 }
 

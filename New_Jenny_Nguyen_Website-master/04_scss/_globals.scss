@@ -196,12 +196,16 @@ nav.nav_top {
   width: 70rem;
   height: 5rem;
   margin: 2rem 0 0 5rem;
+  @include breakpoint-down("large") {
+    width: 80%;
+  }
 }
 
 .nav {
   &_left {
     border: solid 1px red;
     height: 5rem;
+
     &-dropdown {
       &_countainer {
         border: solid 1px yellow;
@@ -210,6 +214,10 @@ nav.nav_top {
         border: solid 1px orange;
         opacity: 0;
         margin-top: 1rem;
+        @include breakpoint-down("large") {
+          display: flex;
+          flex-direction: column;
+        }
       }
       &-btn {
         cursor: pointer;
