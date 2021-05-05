@@ -52,14 +52,20 @@ em.fa-arrow-down {
 .left_side {
   border: solid 1px white;
   width: 50%;
-  height: 50rem;
+  height: 40rem;
   top: 10rem;
+  @include breakpoint-down("xllarge") {
+    height: 30rem;
+  }
 
   &-h1 {
     font-size: 10rem;
     font-weight: 500;
     color: $dark_font;
     text-transform: uppercase;
+    @include breakpoint-down("xllarge") {
+      text-align: center;
+    }
   }
 
   &-info {
@@ -76,6 +82,10 @@ em.fa-arrow-down {
   height: 50rem;
   top: 60rem;
   margin: auto;
+  @include breakpoint-down("xllarge") {
+    width: 90%;
+    top: 50rem;
+  }
   &_items {
     border: solid 1px rgb(13, 151, 105);
     width: 100%;
@@ -89,11 +99,15 @@ em.fa-arrow-down {
     text-transform: uppercase;
     color: #d5c1ba;
     text-shadow: 1px 1px 0px $dark_font;
+    @include breakpoint-down("xllarge") {
+      font-size: 8rem;
+    }
   }
 
   &_info {
     border: solid 1px black;
     height: 30rem;
+    margin: 1rem;
 
     &-title {
       border: solid 1px white;
@@ -128,6 +142,9 @@ a.bachelor_btn {
   border: solid 1px white;
   margin: 20rem 3rem 10rem 3rem;
   top: 50rem;
+  @include breakpoint-down("xllarge") {
+    top: 40rem;
+  }
 }
 img.semester {
   width: 20rem;
@@ -155,14 +172,17 @@ img.semester {
       height: 60rem;
       right: 1rem;
       top: 0;
+      @include breakpoint-down("xllarge") {
+        height: 55rem;
+      }
     }
 
     &-third {
       background-color: #beada5;
       z-index: -5;
-      width: 20rem;
+      width: 15rem;
       height: 60rem;
-      left: -6rem;
+      left: 0;
       top: 5rem;
     }
 
@@ -187,8 +207,9 @@ img.semester {
   }
 
   &-titel {
-    font-family: $main_font;
-    font-weight: $middle;
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 3px;
     font-size: 3rem;
     margin: 2rem;
   }
@@ -244,39 +265,16 @@ h4.year {
 
   &-infos {
     border: solid 3px $aside_right;
-    width: 30%;
+    width: 50%;
+    height: 30rem;
     display: block;
     float: right;
     margin-right: 10rem;
+    margin-top: 35rem;
     cursor: none;
-    @include breakpoint-down("large") {
-      width: 50%;
-      margin-right: 5rem;
-      cursor: default;
-      position: relative;
-      top: -15rem;
-    }
-    @include breakpoint-down("xsSmall") {
-      top: 15rem;
-      width: 70%;
-      margin: auto;
-    }
-    @include breakpoint-down("xxsSmall") {
-      top: 20rem;
-      width: 100%;
-      text-align: center;
-    }
     &-p {
       font-size: 3rem;
       color: $homepage_bk;
-      @include breakpoint-down("large") {
-        color: $dark_font;
-        font-size: 2.5rem;
-      }
-
-      @include breakpoint-down("xsSmall") {
-        font-size: 2rem;
-      }
     }
   }
 }
@@ -301,7 +299,7 @@ h4.year {
 .lets_talk {
   border: solid 1px yellow;
   width: 100%;
-  top: 40rem;
+  top: 30rem;
   & h2 {
     font-size: 10rem;
     letter-spacing: 20px;

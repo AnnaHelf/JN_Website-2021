@@ -176,19 +176,19 @@ body {
   }
 }
 
-@media screen and (max-width: 60rem) {
+@media screen and (max-width: null) {
   body {
     background-color: #db9f9f;
   }
 }
 
-@media screen and (max-width: 50rem) {
+@media screen and (max-width: null) {
   body {
     background-color: #b7db9f;
   }
 }
 
-@media screen and (max-width: 33rem) {
+@media screen and (max-width: null) {
   body {
     background-color: #a59fdb;
   }
@@ -693,8 +693,14 @@ em.fa-arrow-down {
 .left_side {
   border: solid 1px white;
   width: 50%;
-  height: 50rem;
+  height: 40rem;
   top: 10rem;
+}
+
+@media screen and (max-width: 100em) {
+  .left_side {
+    height: 30rem;
+  }
 }
 
 .left_side-h1 {
@@ -702,6 +708,12 @@ em.fa-arrow-down {
   font-weight: 500;
   color: #525a66;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 100em) {
+  .left_side-h1 {
+    text-align: center;
+  }
 }
 
 .left_side-info {
@@ -716,6 +728,13 @@ em.fa-arrow-down {
   height: 50rem;
   top: 60rem;
   margin: auto;
+}
+
+@media screen and (max-width: 100em) {
+  .bachelor {
+    width: 90%;
+    top: 50rem;
+  }
 }
 
 .bachelor_items {
@@ -733,9 +752,16 @@ em.fa-arrow-down {
   text-shadow: 1px 1px 0px #525a66;
 }
 
+@media screen and (max-width: 100em) {
+  .bachelor-h2 > h2 {
+    font-size: 8rem;
+  }
+}
+
 .bachelor_info {
   border: solid 1px black;
   height: 30rem;
+  margin: 1rem;
 }
 
 .bachelor_info-title {
@@ -771,6 +797,12 @@ a.bachelor_btn {
   top: 50rem;
 }
 
+@media screen and (max-width: 100em) {
+  .selection_container {
+    top: 40rem;
+  }
+}
+
 img.semester {
   width: 20rem;
   height: 30rem;
@@ -796,12 +828,18 @@ img.semester {
   top: 0;
 }
 
+@media screen and (max-width: 100em) {
+  .semester_container-color_div-first {
+    height: 55rem;
+  }
+}
+
 .semester_container-color_div-third {
   background-color: #beada5;
   z-index: -5;
-  width: 20rem;
+  width: 15rem;
   height: 60rem;
-  left: -6rem;
+  left: 0;
   top: 5rem;
 }
 
@@ -825,8 +863,9 @@ img.semester {
 }
 
 .semester_container-titel {
-  font-family: "Bebas Neue Pro";
-  font-weight: 400;
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 3px;
   font-size: 3rem;
   margin: 2rem;
 }
@@ -882,55 +921,18 @@ h4.year {
 
 .jennyNguyen-infos {
   border: solid 3px #c0b0b0;
-  width: 30%;
+  width: 50%;
+  height: 30rem;
   display: block;
   float: right;
   margin-right: 10rem;
+  margin-top: 35rem;
   cursor: none;
-}
-
-@media screen and (max-width: 87.43755em) {
-  .jennyNguyen-infos {
-    width: 50%;
-    margin-right: 5rem;
-    cursor: default;
-    position: relative;
-    top: -15rem;
-  }
-}
-
-@media screen and (max-width: 60rem) {
-  .jennyNguyen-infos {
-    top: 15rem;
-    width: 70%;
-    margin: auto;
-  }
-}
-
-@media screen and (max-width: 50rem) {
-  .jennyNguyen-infos {
-    top: 20rem;
-    width: 100%;
-    text-align: center;
-  }
 }
 
 .jennyNguyen-infos-p {
   font-size: 3rem;
   color: #d5c1ba;
-}
-
-@media screen and (max-width: 87.43755em) {
-  .jennyNguyen-infos-p {
-    color: #525a66;
-    font-size: 2.5rem;
-  }
-}
-
-@media screen and (max-width: 60rem) {
-  .jennyNguyen-infos-p {
-    font-size: 2rem;
-  }
 }
 
 /* CURSOR CUSTOM */
@@ -955,7 +957,7 @@ h4.year {
 .lets_talk {
   border: solid 1px yellow;
   width: 100%;
-  top: 40rem;
+  top: 30rem;
 }
 
 .lets_talk h2 {
