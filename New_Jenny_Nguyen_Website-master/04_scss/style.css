@@ -152,30 +152,48 @@ body {
 }
 
 /* BODY BREAKPOINTS SO I SEE WHERE I AM */
-/* body {
-  @include breakpoint-down("xllarge") {
-    background-color: rgb(226, 226, 149);
+@media screen and (max-width: 100em) {
+  body {
+    background-color: #e2e295;
   }
-  @include breakpoint-down("large") {
+}
+
+@media screen and (max-width: 87.43755em) {
+  body {
     background-color: violet;
   }
+}
 
-  @include breakpoint-down("medium") {
-    background-color: rgb(145, 158, 145);
+@media screen and (max-width: 74.9375em) {
+  body {
+    background-color: #919e91;
   }
-  @include breakpoint-down("small") {
-    background-color: rgb(127, 176, 209);
+}
+
+@media screen and (max-width: 65.9375em) {
+  body {
+    background-color: #7fb0d1;
   }
-  @include breakpoint-down("xsSmall") {
-    background-color: rgb(219, 159, 159);
+}
+
+@media screen and (max-width: 60rem) {
+  body {
+    background-color: #db9f9f;
   }
-  @include breakpoint-down("xxsSmall") {
-    background-color: rgb(183, 219, 159);
+}
+
+@media screen and (max-width: 50rem) {
+  body {
+    background-color: #b7db9f;
   }
-  @include breakpoint-down("maxMin") {
-    background-color: rgb(165, 159, 219);
+}
+
+@media screen and (max-width: 33rem) {
+  body {
+    background-color: #a59fdb;
   }
-} */
+}
+
 /* A TAGS */
 a {
   text-decoration: none;
@@ -1546,6 +1564,7 @@ img.bigImg_img {
 
 /* HEADER */
 .header_martyr {
+  /*  border: solid 1px white; */
   width: 90%;
   height: 100%;
   margin-left: 5rem;
@@ -1672,7 +1691,7 @@ section.images {
   /* border: soldi 1px black; */
   width: 100%;
   height: 100%;
-  background-color: #620101;
+  background-color: #620101c7;
   left: -100%;
 }
 

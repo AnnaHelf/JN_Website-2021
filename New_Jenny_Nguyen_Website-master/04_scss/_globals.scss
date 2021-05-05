@@ -111,7 +111,7 @@ body {
 }
 
 /* BODY BREAKPOINTS SO I SEE WHERE I AM */
-/* body {
+body {
   @include breakpoint-down("xllarge") {
     background-color: rgb(226, 226, 149);
   }
@@ -134,7 +134,7 @@ body {
   @include breakpoint-down("maxMin") {
     background-color: rgb(165, 159, 219);
   }
-} */
+}
 
 /* A TAGS */
 
