@@ -152,6 +152,15 @@ body {
 }
 
 /* BODY BREAKPOINTS SO I SEE WHERE I AM */
+body {
+  /*   @include breakpoint-down("xxsSmall") {
+    background-color: rgb(183, 219, 159);
+  }
+  @include breakpoint-down("maxMin") {
+    background-color: rgb(165, 159, 219);
+  } */
+}
+
 @media screen and (max-width: 100em) {
   body {
     background-color: #e2e295;
@@ -176,21 +185,9 @@ body {
   }
 }
 
-@media screen and (max-width: null) {
+@media screen and (max-width: 55rem) {
   body {
     background-color: #db9f9f;
-  }
-}
-
-@media screen and (max-width: null) {
-  body {
-    background-color: #b7db9f;
-  }
-}
-
-@media screen and (max-width: null) {
-  body {
-    background-color: #a59fdb;
   }
 }
 
@@ -266,6 +263,13 @@ nav.nav_top {
 @media screen and (max-width: 87.43755em) {
   nav.nav_top {
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  nav.nav_top {
+    width: 100%;
+    margin: 1rem 0 0 0;
   }
 }
 
@@ -580,6 +584,18 @@ footer {
   /* CIRCLE AND ARROW */
 }
 
+@media screen and (max-width: 65.9375em) {
+  .aside_right {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  .aside_right {
+    width: 70%;
+  }
+}
+
 .aside_right-slideshow_container {
   border: soldi 1px blueviolet;
   width: 60%;
@@ -592,6 +608,13 @@ footer {
   }
 }
 
+@media screen and (max-width: 65.9375em) {
+  .aside_right-slideshow_container {
+    width: 100%;
+    margin-left: 3rem;
+  }
+}
+
 .aside_right-circle {
   width: 20rem;
   height: 20rem;
@@ -599,6 +622,12 @@ footer {
   border-radius: 50%;
   left: -10%;
   top: 40%;
+}
+
+@media screen and (max-width: 55rem) {
+  .aside_right-circle {
+    display: none;
+  }
 }
 
 em.fa-arrow-down {
@@ -626,7 +655,23 @@ em.fa-arrow-down {
   }
 }
 
+@media screen and (max-width: 65.9375em) {
+  .left_side {
+    height: 52rem;
+    width: 20rem;
+    top: 0;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  .left_side {
+    width: 10rem;
+  }
+}
+
 .left_side-h1 {
+  border: solid 2px green;
   font-size: 10rem;
   font-weight: 500;
   color: #525a66;
@@ -646,12 +691,49 @@ em.fa-arrow-down {
   }
 }
 
+@media screen and (max-width: 65.9375em) {
+  .left_side-h1 {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    font-size: 8rem;
+    font-weight: 800;
+    position: absolute;
+    top: 10rem;
+    width: 40rem;
+  }
+}
+
 .left_side-info {
+  border: solid 1px yellow;
   font-size: 1.5rem;
   color: #383e46;
 }
 
+@media screen and (max-width: 65.9375em) {
+  .left_side-info {
+    position: absolute;
+    width: 40rem;
+    bottom: -3rem;
+    left: 5rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  .left_side-info {
+    width: 20rem;
+    bottom: 10rem;
+    left: 9rem;
+  }
+}
+
 /* BACHELOR */
+@media screen and (max-width: 55rem) {
+  video > source {
+    width: 100%;
+  }
+}
+
 .bachelor {
   border: solid 1px yellow;
   width: 80%;
@@ -670,6 +752,20 @@ em.fa-arrow-down {
 @media screen and (max-width: 74.9375em) {
   .bachelor {
     height: 70rem;
+  }
+}
+
+@media screen and (max-width: 65.9375em) {
+  .bachelor {
+    top: 10rem;
+    height: 60rem;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  .bachelor {
+    top: 0rem;
+    height: 50rem;
   }
 }
 
@@ -699,7 +795,7 @@ em.fa-arrow-down {
 
 .bachelor-h2 > h2 {
   color: #525a66;
-  font-size: 10rem;
+  font-size: 9rem;
   font-weight: 800;
   text-transform: uppercase;
   color: #d5c1ba;
@@ -724,10 +820,28 @@ em.fa-arrow-down {
   }
 }
 
+@media screen and (max-width: 65.9375em) {
+  .bachelor-h2 > h2 {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  .bachelor-h2 > h2 {
+    font-size: 3rem;
+  }
+}
+
 .bachelor_info {
   border: solid 1px black;
   height: 30rem;
   margin: 1rem;
+}
+
+@media screen and (max-width: 65.9375em) {
+  .bachelor_info {
+    height: 25rem;
+  }
 }
 
 .bachelor_info-title {
@@ -740,6 +854,12 @@ em.fa-arrow-down {
 @media screen and (max-width: 87.43755em) {
   .bachelor_info-title {
     font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  .bachelor_info-title {
+    font-size: 4rem;
   }
 }
 
@@ -775,12 +895,31 @@ a.bachelor_btn {
   }
 }
 
+@media screen and (max-width: 65.9375em) {
+  .selection_container {
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  .selection_container {
+    width: 100vw;
+  }
+}
+
 img.semester {
   width: 20rem;
   height: 30rem;
   margin: 0;
   padding: 0;
   z-index: -1;
+}
+
+@media screen and (max-width: 55rem) {
+  img.semester {
+    position: relative;
+    bottom: -10rem;
+  }
 }
 
 /* SEMESTER - CONTAINER */
@@ -797,6 +936,25 @@ img.semester {
   }
 }
 
+@media screen and (max-width: 65.9375em) {
+  .semester_container {
+    height: 40rem;
+    margin: 2rem;
+  }
+}
+
+@media screen and (max-width: 65.9375em) {
+  .semester_container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  .semester_container {
+    display: block;
+  }
+}
+
 .semester_container-color_div-first {
   background-color: #8d8d8c;
   z-index: -5;
@@ -809,6 +967,12 @@ img.semester {
 @media screen and (max-width: 100em) {
   .semester_container-color_div-first {
     height: 55rem;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  .semester_container-color_div-first {
+    display: none;
   }
 }
 
@@ -836,6 +1000,12 @@ img.semester {
   bottom: -10rem;
 }
 
+@media screen and (max-width: 55rem) {
+  .semester_container-color_div-sixth {
+    display: none;
+  }
+}
+
 .semester_container-preinfo {
   border: solid 1px red;
   font-family: "Bebas Neue Pro";
@@ -844,6 +1014,12 @@ img.semester {
   text-align: center;
   margin-bottom: 4rem;
   width: 40rem;
+}
+
+@media screen and (max-width: 65.9375em) {
+  .semester_container-preinfo {
+    display: none;
+  }
 }
 
 .semester_container-titel {
@@ -857,6 +1033,19 @@ img.semester {
 @media screen and (max-width: 87.43755em) {
   .semester_container-titel {
     z-index: 10;
+  }
+}
+
+@media screen and (max-width: 65.9375em) {
+  .semester_container-titel {
+    font-size: 5rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  .semester_container-titel {
+    height: 30rem;
   }
 }
 
@@ -880,6 +1069,12 @@ h4.year {
 @media screen and (max-width: 74.9375em) {
   h4.year {
     position: relative;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  h4.year {
+    display: none;
   }
 }
 
@@ -924,6 +1119,14 @@ h4.year {
   }
 }
 
+@media screen and (max-width: 65.9375em) {
+  .jennyNguyen {
+    top: -80rem;
+    width: 35rem;
+    height: 60rem;
+  }
+}
+
 .jennyNguyen_portrait {
   border: solid 1px black;
   width: 80%;
@@ -959,6 +1162,13 @@ h4.year {
   }
 }
 
+@media screen and (max-width: 65.9375em) {
+  .jennyNguyen-infos {
+    border: none;
+    cursor: default;
+  }
+}
+
 .jennyNguyen-infos-p {
   font-size: 3rem;
   color: #d5c1ba;
@@ -967,6 +1177,13 @@ h4.year {
 @media screen and (max-width: 74.9375em) {
   .jennyNguyen-infos-p {
     font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 65.9375em) {
+  .jennyNguyen-infos-p {
+    color: #000;
+    margin-top: 5rem;
   }
 }
 
@@ -988,11 +1205,23 @@ h4.year {
           transition-timing-function: ease-out;
 }
 
+@media screen and (max-width: 65.9375em) {
+  .hiddenCursor {
+    display: none;
+  }
+}
+
 /* LETS TALK */
 .lets_talk {
   border: solid 1px yellow;
   width: 100%;
   top: 30rem;
+}
+
+@media screen and (max-width: 65.9375em) {
+  .lets_talk {
+    top: -50rem;
+  }
 }
 
 .lets_talk h2 {
@@ -1022,6 +1251,12 @@ h4.year {
 @media screen and (max-width: 87.43755em) {
   .contact_me {
     bottom: -30rem;
+  }
+}
+
+@media screen and (max-width: 65.9375em) {
+  .contact_me {
+    bottom: 40rem;
   }
 }
 
@@ -1096,6 +1331,39 @@ input[type="submit"],
 input[type="reset"] {
   margin: 1rem;
   letter-spacing: 5px;
+}
+
+/* NAVIGATION XSMALL */
+.nav_xsmall {
+  display: none;
+  top: 0;
+  width: 100vw;
+  z-index: 999;
+  background-color: #beada5be;
+}
+
+.nav_xsmall h6 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.nav_xsmall i {
+  font-size: 2rem;
+  color: #fff;
+  width: 100%;
+  margin: 1rem 0 1rem 0;
+  cursor: pointer;
+}
+
+.sem {
+  border: solid 1px yellow;
+  width: 80%;
+  height: 15rem;
+  margin: auto;
+}
+
+.sem:hover {
+  background-color: #b3b0bc80;
 }
 
 /* 2020 */

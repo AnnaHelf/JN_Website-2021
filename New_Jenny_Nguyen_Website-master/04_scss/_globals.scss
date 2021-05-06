@@ -125,15 +125,15 @@ body {
   @include breakpoint-down("small") {
     background-color: rgb(127, 176, 209);
   }
-  @include breakpoint-down("xsSmall") {
+  @include breakpoint-down("xsmall") {
     background-color: rgb(219, 159, 159);
   }
-  @include breakpoint-down("xxsSmall") {
+  /*   @include breakpoint-down("xxsSmall") {
     background-color: rgb(183, 219, 159);
   }
   @include breakpoint-down("maxMin") {
     background-color: rgb(165, 159, 219);
-  }
+  } */
 }
 
 /* A TAGS */
@@ -198,6 +198,10 @@ nav.nav_top {
   margin: 2rem 0 0 5rem;
   @include breakpoint-down("large") {
     width: 80%;
+  }
+  @include breakpoint-down("xsmall") {
+    width: 100%;
+    margin: 1rem 0 0 0;
   }
 }
 
