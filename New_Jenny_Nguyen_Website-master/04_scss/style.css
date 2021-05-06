@@ -1806,12 +1806,14 @@ section.images {
   top: 30em;
 }
 
-/* #secondSemester {
+#secondSemester {
   background-color: #b7c3d1;
 }
+
 #second_nav {
-  background-color: $secondS_mint;
-} */
+  background-color: #79e2cbc0;
+}
+
 /* HEADER GRID */
 .header_grid {
   border: solid 1px yellow;
@@ -2211,7 +2213,7 @@ h6.line_two {
 
 /* Asides */
 .left {
-  /* border: solid 1px yellow; */
+  border: solid 1px yellow;
   top: 10rem;
   width: 10rem;
   height: 150rem;
@@ -2219,14 +2221,21 @@ h6.line_two {
   display: grid;
   -ms-grid-rows: (1fr)[5];
       grid-template-rows: repeat(5, 1fr);
+  z-index: -10;
 }
 
 .left_img {
   width: 100%;
 }
 
+@media screen and (max-width: 55rem) {
+  .left {
+    display: none;
+  }
+}
+
 .right {
-  /*  border: solid 1px yellow; */
+  border: solid 1px yellow;
   right: 0;
   top: 10rem;
   width: 10rem;
@@ -2241,13 +2250,35 @@ h6.line_two {
   width: 100%;
 }
 
+@media screen and (max-width: 65.9375em) {
+  .right {
+    display: none;
+  }
+}
+
 /* Header */
 .thirdSem {
-  /*  border: solid 1px yellow; */
+  border: solid 1px #b6197a;
   width: 70%;
   height: 100%;
   top: 10rem;
   left: 15rem;
+  z-index: -10;
+}
+
+@media screen and (max-width: 65.9375em) {
+  .thirdSem {
+    height: 40rem;
+    width: 80%;
+    left: 10rem;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  .thirdSem {
+    left: 0;
+    width: 100%;
+  }
 }
 
 .thirdSem_img {
@@ -2257,23 +2288,114 @@ h6.line_two {
           animation: imgHeight ease-in-out forwards 2s;
 }
 
+@media screen and (max-width: 74.9375em) {
+  .thirdSem_img {
+    width: 100%;
+    margin-top: 6rem;
+  }
+}
+
+@media screen and (max-width: 65.9375em) {
+  .thirdSem_img {
+    -webkit-animation: none;
+            animation: none;
+    height: 100%;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  .thirdSem_img {
+    width: 100%;
+    margin-top: 20rem;
+  }
+}
+
 .thirdSem_h1 {
   top: 0;
   right: 0;
 }
 
+@media screen and (max-width: 100em) {
+  .thirdSem_h1 {
+    width: 50%;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 74.9375em) {
+  .thirdSem_h1 {
+    width: 100%;
+    top: -3rem;
+  }
+}
+
+@media screen and (max-width: 65.9375em) {
+  .thirdSem_h1 {
+    width: 50%;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  .thirdSem_h1 {
+    width: 100%;
+  }
+}
+
 .thirdSem_h1_text {
+  border: solid 1px green;
   font-size: 7rem;
   color: #8c6003;
   text-shadow: 5px 5px 2px #c8bbb2;
 }
 
+@media screen and (max-width: 100em) {
+  .thirdSem_h1_text {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 74.9375em) {
+  .thirdSem_h1_text {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 65.9375em) {
+  .thirdSem_h1_text {
+    font-size: 4rem;
+  }
+}
+
 .karlsruhe {
-  /* border: solid 1px hotpink; */
+  border: solid 1px hotpink;
   width: 60%;
   height: 30rem;
   bottom: -80rem;
   left: 20rem;
+}
+
+@media screen and (max-width: 74.9375em) {
+  .karlsruhe {
+    left: 15rem;
+  }
+}
+
+@media screen and (max-width: 65.9375em) {
+  .karlsruhe {
+    bottom: -60rem;
+    width: 80%;
+    left: 10rem;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  .karlsruhe {
+    left: 0;
+    width: 100%;
+    bottom: -70rem;
+  }
 }
 
 .karlsruhe_img {
@@ -2282,17 +2404,49 @@ h6.line_two {
   height: 100%;
 }
 
+@media screen and (max-width: 55rem) {
+  .karlsruhe_img {
+    width: 10rem;
+  }
+}
+
 .karlsruhe_info {
   width: 50%;
 }
 
+.karlsruhe_info h1 {
+  font-size: 3rem;
+}
+
+.karlsruhe_info p {
+  font-size: 1.5rem;
+}
+
 #slideshow {
-  /* border: solid 1px greenyellow; */
+  border: solid 1px greenyellow;
   bottom: -90rem;
   left: -15rem;
   width: 100%;
   overflow: hidden;
   margin: 20px auto 0 auto;
+}
+
+@media screen and (max-width: 100em) {
+  #slideshow {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 65.9375em) {
+  #slideshow {
+    bottom: -70rem;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  #slideshow {
+    bottom: -80rem;
+  }
 }
 
 #slideshow ul {
@@ -2310,6 +2464,13 @@ h6.line_two {
   height: 45rem;
   text-align: center;
   line-height: 300px;
+}
+
+@media screen and (max-width: 65.9375em) {
+  #slideshow ul li {
+    width: 30rem;
+    height: 30rem;
+  }
 }
 
 .img_one {
@@ -2367,27 +2528,73 @@ a.button_next {
 
 /* More infos */
 .baptiste {
-  /* border: solid 1px orange; */
+  border: solid 1px orange;
   width: 80%;
   height: 30rem;
   margin: auto;
   bottom: -100rem;
 }
 
+@media screen and (max-width: 74.9375em) {
+  .baptiste {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 30rem;
+  }
+}
+
+@media screen and (max-width: 65.9375em) {
+  .baptiste {
+    height: 20rem;
+    left: 5rem;
+    bottom: -80rem;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  .baptiste {
+    left: 0;
+  }
+}
+
 .baptiste div {
+  border: solid 1px yellow;
   width: 50rem;
   margin: 5rem;
 }
 
+@media screen and (max-width: 74.9375em) {
+  .baptiste div {
+    width: 100%;
+  }
+}
+
 .baptiste p {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 400;
+}
+
+@media screen and (max-width: 74.9375em) {
+  .baptiste p {
+    text-align: center;
+  }
 }
 
 .baptiste_img {
   background-image: url("../05_images/03_Semester/5.jpg");
   width: 20rem;
   height: 30rem;
+}
+
+@media screen and (max-width: 74.9375em) {
+  .baptiste_img {
+    display: none;
+  }
 }
 
 #footer-wrapper_third {

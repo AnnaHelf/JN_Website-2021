@@ -8,19 +8,23 @@
 /* Asides */
 
 .left {
-  /* border: solid 1px yellow; */
+  border: solid 1px yellow;
   top: 10rem;
   width: 10rem;
   height: 150rem;
   display: grid;
   grid-template-rows: repeat(5, 1fr);
+  z-index: -10;
   &_img {
     width: 100%;
+  }
+  @include breakpoint-down("xsmall") {
+    display: none;
   }
 }
 
 .right {
-  /*  border: solid 1px yellow; */
+  border: solid 1px yellow;
   right: 0;
   top: 10rem;
   width: 10rem;
@@ -30,55 +34,137 @@
   &_img {
     width: 100%;
   }
+  @include breakpoint-down("small") {
+    display: none;
+  }
 }
 
 /* Header */
 
 .thirdSem {
-  /*  border: solid 1px yellow; */
+  border: solid 1px rgb(182, 25, 122);
   width: 70%;
   height: 100%;
   top: 10rem;
   left: 15rem;
+  z-index: -10;
+  @include breakpoint-down("small") {
+    height: 40rem;
+    width: 80%;
+    left: 10rem;
+  }
+  @include breakpoint-down("xsmall") {
+    left: 0;
+    width: 100%;
+  }
   &_img {
     width: 30rem;
     background-image: url("../05_images/03_Semester/4.JPG");
     animation: imgHeight ease-in-out forwards 2s;
+    @include breakpoint-down("medium") {
+      width: 100%;
+      margin-top: 6rem;
+    }
+    @include breakpoint-down("small") {
+      animation: none;
+      height: 100%;
+      width: 50%;
+    }
+    @include breakpoint-down("xsmall") {
+      width: 100%;
+      margin-top: 20rem;
+    }
   }
   &_h1 {
     top: 0;
     right: 0;
+    @include breakpoint-down("xllarge") {
+      width: 50%;
+      right: 0;
+    }
+    @include breakpoint-down("medium") {
+      width: 100%;
+      top: -3rem;
+    }
+    @include breakpoint-down("small") {
+      width: 50%;
+      right: 0;
+    }
+    @include breakpoint-down("xsmall") {
+      width: 100%;
+    }
     &_text {
+      border: solid 1px green;
       font-size: 7rem;
       color: $thirdS_brown;
       text-shadow: 5px 5px 2px $thirdS_light_greyish_orange;
+      @include breakpoint-down("xllarge") {
+        font-size: 6rem;
+      }
+      @include breakpoint-down("medium") {
+        font-size: 5rem;
+      }
+      @include breakpoint-down("small") {
+        font-size: 4rem;
+      }
     }
   }
 }
 
 .karlsruhe {
-  /* border: solid 1px hotpink; */
+  border: solid 1px hotpink;
   width: 60%;
   height: 30rem;
   bottom: -80rem;
   left: 20rem;
+  @include breakpoint-down("medium") {
+    left: 15rem;
+  }
+  @include breakpoint-down("small") {
+    bottom: -60rem;
+    width: 80%;
+    left: 10rem;
+  }
+  @include breakpoint-down("xsmall") {
+    left: 0;
+    width: 100%;
+    bottom: -70rem;
+  }
   &_img {
     background-image: url("../05_images/03_Semester/00.jpg");
     width: 20rem;
     height: 100%;
+    @include breakpoint-down("xsmall") {
+      width: 10rem;
+    }
   }
   &_info {
     width: 50%;
+    & h1 {
+      font-size: 3rem;
+    }
+    & p {
+      font-size: 1.5rem;
+    }
   }
 }
 
 #slideshow {
-  /* border: solid 1px greenyellow; */
+  border: solid 1px greenyellow;
   bottom: -90rem;
   left: -15rem;
   width: 100%;
   overflow: hidden;
   margin: 20px auto 0 auto;
+  @include breakpoint-down("xllarge") {
+    left: 0;
+  }
+  @include breakpoint-down("small") {
+    bottom: -70rem;
+  }
+  @include breakpoint-down("xsmall") {
+    bottom: -80rem;
+  }
 }
 #slideshow ul {
   position: relative;
@@ -94,6 +180,10 @@
   height: 45rem;
   text-align: center;
   line-height: 300px;
+  @include breakpoint-down("small") {
+    width: 30rem;
+    height: 30rem;
+  }
 }
 
 .img {
@@ -151,24 +241,47 @@ a.button_next {
 /* More infos */
 
 .baptiste {
-  /* border: solid 1px orange; */
+  border: solid 1px orange;
   width: 80%;
   height: 30rem;
   margin: auto;
   bottom: -100rem;
+  @include breakpoint-down("medium") {
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+  }
+  @include breakpoint-down("small") {
+    height: 20rem;
+    left: 5rem;
+    bottom: -80rem;
+  }
+  @include breakpoint-down("xsmall") {
+    left: 0;
+  }
   & div {
+    border: solid 1px yellow;
     width: 50rem;
     margin: 5rem;
+    @include breakpoint-down("medium") {
+      width: 100%;
+    }
   }
 
   & p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 400;
+    @include breakpoint-down("medium") {
+      text-align: center;
+    }
   }
   &_img {
     background-image: url("../05_images/03_Semester/5.jpg");
     width: 20rem;
     height: 30rem;
+    @include breakpoint-down("medium") {
+      display: none;
+    }
   }
 }
 
