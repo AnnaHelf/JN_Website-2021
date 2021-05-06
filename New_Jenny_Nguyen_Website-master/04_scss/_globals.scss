@@ -128,12 +128,6 @@ body {
   @include breakpoint-down("xsmall") {
     background-color: rgb(219, 159, 159);
   }
-  /*   @include breakpoint-down("xxsSmall") {
-    background-color: rgb(183, 219, 159);
-  }
-  @include breakpoint-down("maxMin") {
-    background-color: rgb(165, 159, 219);
-  } */
 }
 
 /* A TAGS */
