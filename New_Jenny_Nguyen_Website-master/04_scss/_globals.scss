@@ -111,12 +111,12 @@ body {
 }
 
 /* BODY BREAKPOINTS SO I SEE WHERE I AM */
-body {
+/* body {
   @include breakpoint-down("xllarge") {
     background-color: rgb(226, 226, 149);
   }
   @include breakpoint-down("large") {
-    background-color: violet;
+    background-color: rgb(251, 189, 251);
   }
 
   @include breakpoint-down("medium") {
@@ -128,7 +128,7 @@ body {
   @include breakpoint-down("xsmall") {
     background-color: rgb(219, 159, 159);
   }
-}
+} */
 
 /* A TAGS */
 

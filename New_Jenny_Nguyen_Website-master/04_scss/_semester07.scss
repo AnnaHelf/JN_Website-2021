@@ -4,7 +4,7 @@
   font-size: 20rem;
   color: $dark_font;
   &-wrap {
-    /*   border: solid 1px rgb(168, 168, 19); */
+    border: solid 1px rgb(168, 168, 19);
     width: auto;
     height: auto;
     right: 1rem;
@@ -15,30 +15,47 @@
 
 /* HEADER */
 header.voice_over {
-  /* border: solid 1px yellow; */
+  border: solid 1px yellow;
   width: 90%;
-  height: 30rem;
+  height: 100%;
   top: 10rem;
   right: 5rem;
+  z-index: -10;
+  @include breakpoint-down("large") {
+    height: 40rem;
+  }
 }
 
 .voice_over {
   &-header {
+    border: solid 1px violet;
     width: 80%;
     height: 30rem;
-    cursor: s-resize;
-    overflow-y: scroll;
-    &::-webkit-scrollbar {
-      display: none;
+    @include breakpoint-down("xllarge") {
+      width: 90%;
+      left: 0;
     }
     &_text {
       font-size: 10rem;
       font-weight: 300;
       letter-spacing: 5px;
       color: $darker_font;
+      @include breakpoint-down("xllarge") {
+        font-size: 8rem;
+      }
+      @include breakpoint-down("large") {
+        font-size: 5rem;
+        font-weight: 400;
+        color: $darker_font;
+      }
 
       & span {
         font-weight: 400;
+        @include breakpoint-down("large") {
+          font-weight: 600;
+          color: $dark_font;
+          text-shadow: 2px 1px 0 #fff;
+        }
       }
     }
     &-right {
@@ -52,11 +69,14 @@ header.voice_over {
 
 /* Gallery */
 .gallery_wrapper {
-  /*  border: solid 1px yellow; */
+  border: solid 1px yellow;
   width: 80%;
   height: 50rem;
-  bottom: -60rem;
-  left: 5rem;
+  margin: auto;
+  top: 105rem;
+  @include breakpoint-down("xllarge") {
+    top: 90rem;
+  }
 }
 .bigImg {
   width: 50%;
@@ -80,35 +100,41 @@ img.bigImg_img {
 }
 
 .nextToGallery {
-  /*  border: solid 1px sandybrown; */
-  right: 20rem;
-  width: 30rem;
-  bottom: 0;
+  border: solid 1px sandybrown;
+  width: 80%;
+  margin: auto;
+  top: 160rem;
   & h5 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 500;
   }
 }
 
 /* video */
-.video_wrapper {
-  /*  border: solid 1px yellow; */
-  width: 90%;
-  margin: auto;
-  bottom: -80rem;
-  & video {
-    right: 0;
+.video {
+  &_wrapper {
+    border: solid 1px yellow;
+    width: 90%;
+    height: 30rem;
+    margin: auto;
+    top: 120rem;
+    & video {
+      right: 0;
+    }
   }
-  &-text {
-    width: 33%;
-  }
-  &-text h5 {
-    font-size: 1.5rem;
-    font-weight: 400;
+  &_text {
+    border: solid 1px violet;
+    width: 70%;
+    margin: auto;
+    top: 130rem;
+    & h5 {
+      font-size: 2.5rem;
+      font-weight: 500;
+    }
   }
 }
 
 #footer-wrapper_seventh {
   position: relative;
-  top: 120rem;
+  top: 150rem;
 }

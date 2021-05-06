@@ -1,5 +1,5 @@
 /* header */
-const headerInfo = document.querySelector(".voice_over");
+/* const headerInfo = document.querySelector(".voice_over");
 const infoBox = document.querySelector(".voice_over-header");
 
 headerInfo.addEventListener("mouseover", (e) => {
@@ -13,7 +13,7 @@ headerInfo.addEventListener("mouseleave", (e) => {
   console.log("aeobfcwepofcn");
   headerInfo.style.height = "";
   infoBox.style.height = "";
-});
+}); */
 
 const images = document.querySelectorAll(".small");
 const current = document.querySelector(".bigImg_img");
