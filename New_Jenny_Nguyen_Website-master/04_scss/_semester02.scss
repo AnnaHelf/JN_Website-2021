@@ -16,8 +16,14 @@
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(5, 1fr);
   gap: 10px;
-  @include breakpoint-down("large") {
-    top: 0;
+  top: 0;
+  z-index: -10;
+  @include breakpoint-down("xsmall") {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    width: 100%;
+    height: 130rem;
+    left: -5rem;
   }
 
   &-info {
@@ -26,12 +32,27 @@
     @include breakpoint-down("large") {
       grid-column: 1/4;
     }
+    @include breakpoint-down("medium") {
+      grid-column: 1/6;
+    }
+    @include breakpoint-down("xsmall") {
+      width: 90%;
+    }
+
     &_p {
       font-size: 1.5rem;
+      @include breakpoint-down("xsmall") {
+        font-size: 2rem;
+        margin-top: 25rem;
+        font-weight: 400;
+      }
     }
     &_heading {
       text-transform: uppercase;
       font-size: 2.5rem;
+      @include breakpoint-down("xsmall") {
+        font-size: 2.7rem;
+      }
     }
   }
 
@@ -48,6 +69,18 @@
         animation: none;
         background-size: contain;
       }
+      @include breakpoint-down("medium") {
+        grid-column: 1/5;
+        grid-row: 2/6;
+        background-size: cover;
+      }
+      @include breakpoint-down("xsmall") {
+        grid-column: 1;
+        grid-row: 1/7;
+        opacity: 0.6;
+        z-index: -10;
+        background-position: right;
+      }
     }
     &_two {
       background-image: url("../05_images/02_Semester/04.jpg");
@@ -56,12 +89,20 @@
       background-size: cover;
       grid-column: 4/7;
       grid-row: 1/4;
-
       animation: topToBottom ease 4s;
       @include breakpoint-down("large") {
         animation: none;
         background-size: contain;
         grid-column: 4/8;
+      }
+      @include breakpoint-down("medium") {
+        grid-column: 6/10;
+        grid-row: 1/5;
+        background-size: cover;
+      }
+      @include breakpoint-down("xsmall") {
+        grid-column: 1;
+        grid-row: 7/10;
       }
     }
 
@@ -76,6 +117,14 @@
       @include breakpoint-down("large") {
         animation: none;
         background-size: contain;
+      }
+      @include breakpoint-down("medium") {
+        grid-column: 8/10;
+        grid-row: 4/9;
+        background-size: cover;
+      }
+      @include breakpoint-down("xsmall") {
+        display: none;
       }
     }
   }
@@ -109,9 +158,12 @@ h6.line_two {
   &-words_div {
     width: 100%;
     height: 20rem;
+    @include breakpoint-down("xsmall") {
+      display: none;
+    }
 
     &-line {
-      /*  border: solid 1px fuchsia; */
+      /* border: solid 1px fuchsia; */
       width: 100%;
       height: 5rem;
       margin: 5rem 0;
@@ -120,12 +172,20 @@ h6.line_two {
   }
 
   &-image-grid {
-    /*  border: solid 1px pink; */
+    border: solid 1px pink;
     width: 100%;
     bottom: -100rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    @include breakpoint-down("medium") {
+      height: 50rem;
+      bottom: -30rem;
+    }
+    @include breakpoint-down("xsmall") {
+      display: block;
+      top: 10rem;
+    }
   }
 
   &-image_wrap-one,
@@ -138,23 +198,42 @@ h6.line_two {
   &-image_wrap-one {
     grid-column: 2;
     grid-row: 2 /3;
+    @include breakpoint-down("medium") {
+      grid-column: 1;
+      grid-row: 2;
+    }
   }
   &-image_wrap-two {
     grid-column: 4;
     grid-row: 1;
+    @include breakpoint-down("medium") {
+      grid-column: 5;
+    }
   }
   &-image_wrap-three {
     grid-column: 5;
     grid-row: 4;
+    @include breakpoint-down("medium") {
+      grid-column: 4/6;
+    }
   }
 }
 
 .end_text {
+  border: solid 1px yellow;
   width: 80vw;
   left: 0;
   margin: 4rem;
+  @include breakpoint-down("medium") {
+    text-align: center;
+    width: 90vw;
+    left: -6rem;
+  }
+  @include breakpoint-down("xsmall") {
+    left: -8rem;
+  }
   &-p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -163,5 +242,8 @@ h6.line_two {
   top: 230rem;
   @include breakpoint-down("large") {
     top: 210rem;
+  }
+  @include breakpoint-down("xsmall") {
+    top: 260rem;
   }
 }
