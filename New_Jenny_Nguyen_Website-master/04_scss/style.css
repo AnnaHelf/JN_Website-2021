@@ -1806,17 +1806,15 @@ section.images {
   top: 30em;
 }
 
-#secondSemester {
+/* #secondSemester {
   background-color: #b7c3d1;
 }
-
 #second_nav {
-  background-color: #79e2cbc0;
-}
-
+  background-color: $secondS_mint;
+} */
 /* HEADER GRID */
 .header_grid {
-  /*  border: solid 1px yellow; */
+  border: solid 1px yellow;
   height: 100vh;
   width: auto;
   margin: 10rem 5rem 5rem 5rem;
@@ -1829,6 +1827,12 @@ section.images {
   gap: 10px;
 }
 
+@media screen and (max-width: 87.43755em) {
+  .header_grid {
+    top: 0;
+  }
+}
+
 .header_grid-info {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -1838,12 +1842,21 @@ section.images {
   grid-row: 1/ 2;
 }
 
+@media screen and (max-width: 87.43755em) {
+  .header_grid-info {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+  }
+}
+
 .header_grid-info_p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .header_grid-info_heading {
   text-transform: uppercase;
+  font-size: 2.5rem;
 }
 
 .header_grid-img_one {
@@ -1861,6 +1874,14 @@ section.images {
           animation: topToBottom ease 4s;
 }
 
+@media screen and (max-width: 87.43755em) {
+  .header_grid-img_one {
+    -webkit-animation: none;
+            animation: none;
+    background-size: contain;
+  }
+}
+
 .header_grid-img_two {
   background-image: url("../05_images/02_Semester/04.jpg");
   background-position: center;
@@ -1876,6 +1897,17 @@ section.images {
           animation: topToBottom ease 4s;
 }
 
+@media screen and (max-width: 87.43755em) {
+  .header_grid-img_two {
+    -webkit-animation: none;
+            animation: none;
+    background-size: contain;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 4;
+    grid-column: 4/8;
+  }
+}
+
 .header_grid-img_three {
   background-image: url("../05_images/02_Semester/03.jpg");
   background-position: center;
@@ -1889,6 +1921,14 @@ section.images {
   grid-row: 2/5;
   -webkit-animation: topToBottom ease 4s;
           animation: topToBottom ease 4s;
+}
+
+@media screen and (max-width: 87.43755em) {
+  .header_grid-img_three {
+    -webkit-animation: none;
+            animation: none;
+    background-size: contain;
+  }
 }
 
 /* SECTION MIDDLE */
@@ -1910,10 +1950,16 @@ h6.line_two {
 }
 
 .middle {
-  /* border: solid 1px yellow; */
+  border: solid 1px yellow;
   width: 90%;
   margin: 5rem;
   bottom: -60rem;
+}
+
+@media screen and (max-width: 87.43755em) {
+  .middle {
+    bottom: -50rem;
+  }
 }
 
 .middle-words_div {
@@ -1981,6 +2027,12 @@ h6.line_two {
 #footer-wrapper_second {
   position: relative;
   top: 230rem;
+}
+
+@media screen and (max-width: 87.43755em) {
+  #footer-wrapper_second {
+    top: 210rem;
+  }
 }
 
 #thirdSemester {
