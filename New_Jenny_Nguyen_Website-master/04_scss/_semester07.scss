@@ -77,6 +77,10 @@ header.voice_over {
   @include breakpoint-down("xllarge") {
     top: 90rem;
   }
+  @include breakpoint-down("large") {
+    top: 50rem;
+    margin: 0 0 0 2rem;
+  }
 }
 .bigImg {
   width: 50%;

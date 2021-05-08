@@ -152,24 +152,42 @@ body {
 }
 
 /* BODY BREAKPOINTS SO I SEE WHERE I AM */
-/* body {
-  @include breakpoint-down("xllarge") {
-    background-color: rgb(226, 226, 149);
+@media screen and (max-width: 100em) {
+  body {
+    background-color: #e2e295;
   }
-  @include breakpoint-down("large") {
-    background-color: rgb(251, 189, 251);
-  }
+}
 
-  @include breakpoint-down("medium") {
-    background-color: rgb(145, 158, 145);
+@media screen and (max-width: 87.43755em) {
+  body {
+    background-color: #fbbdfb;
   }
-  @include breakpoint-down("small") {
-    background-color: rgb(127, 176, 209);
+}
+
+@media screen and (max-width: 74.9375em) {
+  body {
+    background-color: #919e91;
   }
-  @include breakpoint-down("xsmall") {
-    background-color: rgb(219, 159, 159);
+}
+
+@media screen and (max-width: 65.9375em) {
+  body {
+    background-color: #7fb0d1;
   }
-} */
+}
+
+@media screen and (max-width: 55rem) {
+  body {
+    background-color: #db9f9f;
+  }
+}
+
+@media screen and (max-width: 40rem) {
+  body {
+    background-color: #c0ebc3;
+  }
+}
+
 /* A TAGS */
 a {
   text-decoration: none;
@@ -200,7 +218,26 @@ a.more_about:hover, a.more_about:active {
 }
 
 .btn_more_about {
+  border: solid 1px yellow;
   margin: 2rem 0;
+}
+
+@media screen and (max-width: 55rem) {
+  .btn_more_about {
+    position: relative;
+    top: 18rem;
+    left: 5rem;
+  }
+}
+
+@media screen and (max-width: 40rem) {
+  .btn_more_about {
+    left: 3rem;
+  }
+}
+
+#second_btn {
+  left: -5rem;
 }
 
 a.semester_collections {
@@ -242,13 +279,6 @@ nav.nav_top {
 @media screen and (max-width: 87.43755em) {
   nav.nav_top {
     width: 80%;
-  }
-}
-
-@media screen and (max-width: 55rem) {
-  nav.nav_top {
-    width: 100%;
-    margin: 1rem 0 0 0;
   }
 }
 
@@ -334,7 +364,7 @@ nav.nav_top {
 }
 
 footer {
-  /* border: solid 2px wheat; */
+  border: solid 2px wheat;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -344,17 +374,20 @@ footer {
 }
 
 .footer_socialMedia {
+  border: solid 1px white;
   width: 30%;
   height: 100%;
 }
 
 .footer_jennysName {
+  border: solid 1px white;
   width: 30%;
   background-image: url("../05_images/png_logo/logo_transparent_background.png");
   background-size: contain;
 }
 
 .footer_top {
+  border: solid 1px white;
   font-size: 2rem;
   z-index: 100;
 }
@@ -373,22 +406,12 @@ footer {
   width: 5rem;
 }
 
-@media screen and (max-width: 100em) {
-  #footer_icon a {
-    font-size: 1rem;
-  }
+#footer_icon {
+  font-size: 2.5rem;
 }
 
-@media screen and (max-width: 87.43755em) {
-  #footer_icon a {
-    font-size: 0.8rem;
-  }
-}
-
-@media screen and (max-width: 74.9375em) {
-  #footer_icon a {
-    font-size: 1.5rem;
-  }
+#footer_icon a {
+  font-size: 1.2rem;
 }
 
 @-webkit-keyframes fade-in {
@@ -700,9 +723,16 @@ em.fa-arrow-down {
 
 @media screen and (max-width: 55rem) {
   .left_side-info {
-    width: 20rem;
-    bottom: 10rem;
+    width: 30rem;
+    bottom: 5rem;
     left: 9rem;
+  }
+}
+
+@media screen and (max-width: 40rem) {
+  .left_side-info {
+    width: 20rem;
+    left: 11rem;
   }
 }
 
@@ -812,7 +842,7 @@ em.fa-arrow-down {
 }
 
 .bachelor_info {
-  border: solid 1px black;
+  border: solid 1px #b90d86;
   height: 30rem;
   margin: 1rem;
 }
@@ -824,7 +854,7 @@ em.fa-arrow-down {
 }
 
 .bachelor_info-title {
-  border: solid 1px white;
+  /*  border: solid 1px white; */
   font-size: 7rem;
   font-weight: 400;
   color: #525a66;
@@ -843,7 +873,7 @@ em.fa-arrow-down {
 }
 
 .bachelor_info-year {
-  border: solid 1px white;
+  /* border: solid 1px white; */
   font-size: 3rem;
   font-weight: 400;
   color: #525a66;
@@ -851,7 +881,7 @@ em.fa-arrow-down {
 }
 
 .bachelor_info-txt {
-  border: solid 1px orange;
+  /* border: solid 1px orange; */
   font-size: 1.5rem;
 }
 
@@ -882,7 +912,7 @@ a.bachelor_btn {
 
 @media screen and (max-width: 55rem) {
   .selection_container {
-    width: 100vw;
+    top: -5rem;
   }
 }
 
@@ -896,14 +926,21 @@ img.semester {
 
 @media screen and (max-width: 55rem) {
   img.semester {
-    position: relative;
-    bottom: -10rem;
+    position: absolute;
+    top: 5rem;
+    left: 8rem;
+  }
+}
+
+@media screen and (max-width: 40rem) {
+  img.semester {
+    left: 3rem;
   }
 }
 
 /* SEMESTER - CONTAINER */
 .semester_container {
-  border: solid 1px black;
+  border: solid 1px #274abd;
   margin: 5rem 0 10rem 0;
   width: 90%;
   height: 30em;
@@ -930,7 +967,9 @@ img.semester {
 
 @media screen and (max-width: 55rem) {
   .semester_container {
-    display: block;
+    /* display: block; */
+    position: relative;
+    width: 100%;
   }
 }
 
@@ -1024,12 +1063,22 @@ img.semester {
 
 @media screen and (max-width: 55rem) {
   .semester_container-titel {
-    height: 30rem;
+    height: 10rem;
+    width: 100%;
+    font-size: 4rem;
+    position: absolute;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 40rem) {
+  .semester_container-titel {
+    left: 0rem;
   }
 }
 
 .semester_container-image_wraper {
-  border: 1px;
+  border: 1px yellow;
 }
 
 .semester_container-image_wraper-year {
@@ -1075,9 +1124,15 @@ h4.year {
   }
 }
 
+@media screen and (max-width: 55rem) {
+  .afterSemester_circle {
+    display: none;
+  }
+}
+
 /* JENNY NGUYEN */
 .jennyNguyen {
-  border: solid 1px yellow;
+  /*  border: solid 1px yellow; */
   z-index: -1;
   width: 30%;
   height: 60rem;
@@ -1106,8 +1161,21 @@ h4.year {
   }
 }
 
+@media screen and (max-width: 55rem) {
+  .jennyNguyen {
+    top: -10rem;
+    left: 3rem;
+  }
+}
+
+@media screen and (max-width: 40rem) {
+  .jennyNguyen {
+    left: 0;
+  }
+}
+
 .jennyNguyen_portrait {
-  border: solid 1px black;
+  /*  border: solid 1px black; */
   width: 80%;
   margin-top: 5rem;
 }
@@ -1118,7 +1186,14 @@ h4.year {
   margin: 2rem 0;
 }
 
+@media screen and (max-width: 55rem) {
+  .jennyNguyen-name {
+    font-size: 5rem;
+  }
+}
+
 .jennyNguyen-infos {
+  border: solid 1px khaki;
   border: solid 3px #c0b0b0;
   width: 50%;
   height: 30rem;
@@ -1145,6 +1220,15 @@ h4.year {
   .jennyNguyen-infos {
     border: none;
     cursor: default;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  .jennyNguyen-infos {
+    position: absolute;
+    left: 3rem;
+    width: 80%;
+    margin-top: 50rem;
   }
 }
 
@@ -1192,7 +1276,7 @@ h4.year {
 
 /* LETS TALK */
 .lets_talk {
-  border: solid 1px yellow;
+  /*   border: solid 1px yellow; */
   width: 100%;
   top: 30rem;
 }
@@ -1200,6 +1284,12 @@ h4.year {
 @media screen and (max-width: 65.9375em) {
   .lets_talk {
     top: -50rem;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  .lets_talk {
+    top: 15rem;
   }
 }
 
@@ -1213,7 +1303,7 @@ h4.year {
 
 /* CONTACT FORM */
 .contact_me {
-  border: solid 1px white;
+  /* border: solid 1px white; */
   bottom: -50rem;
   margin: auto;
   width: 90%;
@@ -1236,6 +1326,12 @@ h4.year {
 @media screen and (max-width: 65.9375em) {
   .contact_me {
     bottom: 40rem;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  .contact_me {
+    bottom: -20rem;
   }
 }
 
@@ -1332,6 +1428,43 @@ input[type="reset"] {
   width: 100%;
   margin: 1rem 0 1rem 0;
   cursor: pointer;
+}
+
+/* FOOTER */
+@media screen and (max-width: 100em) {
+  #hp_footer div {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  #hp_footer div {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  #hp_footer div.footer_jennysName {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 74.9375em) {
+  #hp_footer a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 40rem) {
+  #hp_footer a {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 74.9375em) {
+  #hp_footer a i {
+    font-size: 3rem;
+  }
 }
 
 .sem {
@@ -1441,6 +1574,13 @@ header.voice_over {
 @media screen and (max-width: 100em) {
   .gallery_wrapper {
     top: 90rem;
+  }
+}
+
+@media screen and (max-width: 87.43755em) {
+  .gallery_wrapper {
+    top: 50rem;
+    margin: 0 0 0 2rem;
   }
 }
 
