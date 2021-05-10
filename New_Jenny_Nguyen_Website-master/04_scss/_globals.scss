@@ -193,6 +193,9 @@ a.jenny_nguyen_logo {
   font-weight: 800;
   letter-spacing: 10px;
   color: $darker_font;
+  @include breakpoint-down("xxsmall") {
+    font-size: 1rem;
+  }
   &:hover {
     font-weight: 600;
   }
@@ -217,7 +220,7 @@ nav.nav_top {
 
     &-dropdown {
       &_countainer {
-        /*  border: solid 1px yellow; */
+        border: solid 1px yellow;
       }
       &_items {
         /*  border: solid 1px orange; */
@@ -236,6 +239,9 @@ nav.nav_top {
         letter-spacing: 5px;
         border: none;
         background-color: $homepage_bk;
+        @include breakpoint-down("xxsmall") {
+          font-size: 1.3rem;
+        }
         &:hover {
           font-weight: 400;
         }
@@ -274,7 +280,7 @@ nav.nav_top {
 }
 
 footer {
-  border: solid 2px wheat;
+  /*  border: solid 2px wheat; */
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -290,7 +296,7 @@ footer {
     height: 100%;
   }
   &_jennysName {
-    border: solid 1px white;
+    /*  border: solid 1px white; */
     width: 30%;
     background-image: url("../05_images/png_logo/logo_transparent_background.png");
     background-size: contain;

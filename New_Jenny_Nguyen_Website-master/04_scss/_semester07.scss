@@ -4,7 +4,7 @@
   font-size: 20rem;
   color: $dark_font;
   &-wrap {
-    /*     border: solid 1px rgb(168, 168, 19); */
+    border: solid 1px rgb(168, 168, 19);
     width: auto;
     height: auto;
     right: 1rem;
@@ -15,7 +15,7 @@
 
 /* HEADER */
 header.voice_over {
-  /*   border: solid 1px yellow; */
+  border: solid 1px yellow;
   width: 90%;
   height: 100%;
   top: 10rem;
@@ -28,7 +28,7 @@ header.voice_over {
 
 .voice_over {
   &-header {
-    /*     border: solid 1px violet */
+    border: solid 1px violet;
     width: 80%;
     height: 30rem;
     @include breakpoint-down("xllarge") {
@@ -69,7 +69,7 @@ header.voice_over {
 
 /* Gallery */
 .gallery_wrapper {
-  /*   border: solid 1px yellow; */
+  border: solid 1px yellow;
   width: 80%;
   height: 50rem;
   margin: auto;
@@ -85,12 +85,19 @@ header.voice_over {
 .bigImg {
   width: 50%;
   height: 100%;
+  @include breakpoint-down("large") {
+    display: none;
+  }
 }
 .smallImg {
   width: 50%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 5px;
+  @include breakpoint-down("large") {
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 img.small {
   cursor: pointer;
@@ -104,24 +111,41 @@ img.bigImg_img {
 }
 
 .nextToGallery {
-  /*   border: solid 1px sandybrown; */
+  border: solid 1px sandybrown;
   width: 80%;
   margin: auto;
   top: 160rem;
+  @include breakpoint-down("large") {
+    top: 190rem;
+  }
+  @include breakpoint-down("medium") {
+    top: 170rem;
+  }
+
   & h5 {
     font-size: 2.5rem;
     font-weight: 500;
+    @include breakpoint-down("medium") {
+      font-size: 2rem;
+    }
   }
 }
 
 /* video */
 .video {
   &_wrapper {
-    /*    border: solid 1px yellow; */
+    border: solid 1px yellow;
     width: 90%;
     height: 30rem;
     margin: auto;
     top: 120rem;
+    @include breakpoint-down("large") {
+      top: 150rem;
+    }
+    @include breakpoint-down("medium") {
+      top: 130rem;
+    }
+
     & video {
       right: 0;
     }
@@ -131,9 +155,19 @@ img.bigImg_img {
     width: 70%;
     margin: auto;
     top: 130rem;
+    @include breakpoint-down("large") {
+      top: 150rem;
+    }
+    @include breakpoint-down("medium") {
+      top: 130rem;
+    }
+
     & h5 {
       font-size: 2.5rem;
       font-weight: 500;
+      @include breakpoint-down("medium") {
+        font-size: 2rem;
+      }
     }
   }
 }
@@ -141,6 +175,13 @@ img.bigImg_img {
 #footer-wrapper_seventh {
   position: relative;
   top: 150rem;
+  @include breakpoint-down("large") {
+    top: 160rem;
+  }
+  @include breakpoint-down("medium") {
+    top: 140rem;
+  }
+
   & footer {
     height: 5rem;
     & #footer_icon {
