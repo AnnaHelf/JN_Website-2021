@@ -4,7 +4,7 @@
   font-size: 20rem;
   color: $dark_font;
   &-wrap {
-    border: solid 1px rgb(168, 168, 19);
+    /*     border: solid 1px rgb(168, 168, 19); */
     width: auto;
     height: auto;
     right: 1rem;
@@ -15,7 +15,7 @@
 
 /* HEADER */
 header.voice_over {
-  border: solid 1px yellow;
+  /*   border: solid 1px yellow; */
   width: 90%;
   height: 100%;
   top: 10rem;
@@ -28,7 +28,7 @@ header.voice_over {
 
 .voice_over {
   &-header {
-    border: solid 1px violet;
+    /*     border: solid 1px violet */
     width: 80%;
     height: 30rem;
     @include breakpoint-down("xllarge") {
@@ -69,7 +69,7 @@ header.voice_over {
 
 /* Gallery */
 .gallery_wrapper {
-  border: solid 1px yellow;
+  /*   border: solid 1px yellow; */
   width: 80%;
   height: 50rem;
   margin: auto;
@@ -104,7 +104,7 @@ img.bigImg_img {
 }
 
 .nextToGallery {
-  border: solid 1px sandybrown;
+  /*   border: solid 1px sandybrown; */
   width: 80%;
   margin: auto;
   top: 160rem;
@@ -117,7 +117,7 @@ img.bigImg_img {
 /* video */
 .video {
   &_wrapper {
-    border: solid 1px yellow;
+    /*    border: solid 1px yellow; */
     width: 90%;
     height: 30rem;
     margin: auto;
@@ -141,4 +141,43 @@ img.bigImg_img {
 #footer-wrapper_seventh {
   position: relative;
   top: 150rem;
+  & footer {
+    height: 5rem;
+    & #footer_icon {
+      @include breakpoint-down("xsmall") {
+        font-size: 1.5rem;
+      }
+    }
+    & a {
+      color: $darker_font;
+      @include breakpoint-down("xsmall") {
+        font-size: 1rem;
+      }
+      @include breakpoint-down("xsmall") {
+        font-size: 1rem;
+      }
+      @include breakpoint-down("xxsmall") {
+        font-size: 0.7rem;
+      }
+      & i {
+        @include breakpoint-down("xsmall") {
+          font-size: 2rem;
+        }
+      }
+    }
+    & > div {
+      @include breakpoint-down("xllarge") {
+        width: 40%;
+        @include breakpoint-down("medium") {
+          width: 50%;
+        }
+        @include breakpoint-down("small") {
+          width: 60%;
+        }
+        @include breakpoint-down("xsmall") {
+          width: 80%;
+        }
+      }
+    }
+  }
 }

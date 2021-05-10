@@ -16,7 +16,7 @@ header.fourth {
 }
 
 .header_fourth {
-  border: solid 1px yellow;
+  /*  border: solid 1px yellow; */
   width: 90%;
   height: 80vh;
   top: 10rem;
@@ -26,7 +26,7 @@ header.fourth {
     height: 50vh;
   }
   &-info {
-    border: solid 1px black;
+    /*   border: solid 1px black */
     top: 5rem;
     font-size: 10rem;
     color: $fourthS_creme;
@@ -113,5 +113,44 @@ img.fourth {
   }
   @include breakpoint-down("xsmall") {
     top: 570rem;
+  }
+  & footer {
+    height: 5rem;
+    & #footer_icon {
+      @include breakpoint-down("xsmall") {
+        font-size: 1.5rem;
+      }
+    }
+    & a {
+      color: $darker_font;
+      @include breakpoint-down("xsmall") {
+        font-size: 1rem;
+      }
+      @include breakpoint-down("xsmall") {
+        font-size: 1rem;
+      }
+      @include breakpoint-down("xxsmall") {
+        font-size: 0.7rem;
+      }
+      & i {
+        @include breakpoint-down("xsmall") {
+          font-size: 2rem;
+        }
+      }
+    }
+    & > div {
+      @include breakpoint-down("xllarge") {
+        width: 40%;
+        @include breakpoint-down("medium") {
+          width: 50%;
+        }
+        @include breakpoint-down("small") {
+          width: 60%;
+        }
+        @include breakpoint-down("xsmall") {
+          width: 80%;
+        }
+      }
+    }
   }
 }

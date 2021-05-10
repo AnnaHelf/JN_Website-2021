@@ -218,7 +218,7 @@ a.more_about:hover, a.more_about:active {
 }
 
 .btn_more_about {
-  border: solid 1px yellow;
+  /*   border: solid 1px yellow; */
   margin: 2rem 0;
 }
 
@@ -270,7 +270,7 @@ a.jenny_nguyen_logo:hover {
 
 /* NAVIGATION */
 nav.nav_top {
-  border: solid 1px yellow;
+  /*  border: solid 1px yellow; */
   width: 70rem;
   height: 5rem;
   margin: 2rem 0 0 5rem;
@@ -283,16 +283,16 @@ nav.nav_top {
 }
 
 .nav_left {
-  border: solid 1px red;
+  /* border: solid 1px red; */
   height: 5rem;
 }
 
 .nav_left-dropdown_countainer {
-  border: solid 1px yellow;
+  /*  border: solid 1px yellow; */
 }
 
 .nav_left-dropdown_items {
-  border: solid 1px orange;
+  /*  border: solid 1px orange; */
   opacity: 0;
   margin-top: 1rem;
 }
@@ -324,7 +324,7 @@ nav.nav_top {
 }
 
 .nav_right {
-  border: solid 1px violet;
+  /* border: solid 1px violet; */
   width: 20rem;
   height: 5rem;
 }
@@ -337,7 +337,7 @@ nav.nav_top {
 }
 
 #footer_icon {
-  font-size: 1.3rem;
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 74.9375em) {
@@ -349,17 +349,14 @@ nav.nav_top {
 #footer_icon > a {
   color: white;
   margin: 1rem;
+  /*  @include breakpoint-down("medium") {
+      font-size: 0rem;
+    } */
 }
 
 @media screen and (max-width: 87.43755em) {
   #footer_icon > a {
     font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 74.9375em) {
-  #footer_icon > a {
-    font-size: 0rem;
   }
 }
 
@@ -374,7 +371,7 @@ footer {
 }
 
 .footer_socialMedia {
-  border: solid 1px white;
+  /*  border: solid 1px white; */
   width: 30%;
   height: 100%;
 }
@@ -387,7 +384,7 @@ footer {
 }
 
 .footer_top {
-  border: solid 1px white;
+  /*  border: solid 1px white; */
   font-size: 2rem;
   z-index: 100;
 }
@@ -404,14 +401,6 @@ footer {
 
 .footer_arrow {
   width: 5rem;
-}
-
-#footer_icon {
-  font-size: 2.5rem;
-}
-
-#footer_icon a {
-  font-size: 1.2rem;
 }
 
 @-webkit-keyframes fade-in {
@@ -576,7 +565,7 @@ footer {
 
 /* ASIDE */
 .aside_right {
-  border: solid 1px wheat;
+  /*   border: solid 1px wheat; */
   width: 50%;
   height: 80rem;
   background-color: #c0b0b0;
@@ -599,7 +588,7 @@ footer {
 }
 
 .aside_right-slideshow_container {
-  border: soldi 1px blueviolet;
+  /*  border: soldi 1px blueviolet; */
   width: 60%;
   margin-top: 10rem;
 }
@@ -645,7 +634,7 @@ em.fa-arrow-down {
 
 /* HEADER LEFT SIDE */
 .left_side {
-  border: solid 1px white;
+  /*  border: solid 1px white; */
   width: 50%;
   height: 40rem;
   top: 10rem;
@@ -673,7 +662,7 @@ em.fa-arrow-down {
 }
 
 .left_side-h1 {
-  border: solid 2px green;
+  /*  border: solid 2px green; */
   font-size: 10rem;
   font-weight: 500;
   color: #525a66;
@@ -706,7 +695,7 @@ em.fa-arrow-down {
 }
 
 .left_side-info {
-  border: solid 1px yellow;
+  /*     border: solid 1px yellow; */
   font-size: 1.5rem;
   color: #383e46;
 }
@@ -744,7 +733,7 @@ em.fa-arrow-down {
 }
 
 .bachelor {
-  border: solid 1px yellow;
+  /*  border: solid 1px yellow; */
   width: 80%;
   height: 50rem;
   top: 60rem;
@@ -779,7 +768,7 @@ em.fa-arrow-down {
 }
 
 .bachelor_items {
-  border: solid 1px #0d9769;
+  /*   border: solid 1px rgb(13, 151, 105); */
   width: 100%;
   height: 100%;
 }
@@ -842,7 +831,7 @@ em.fa-arrow-down {
 }
 
 .bachelor_info {
-  border: solid 1px #b90d86;
+  /*   border: solid 1px rgb(185, 13, 134); */
   height: 30rem;
   margin: 1rem;
 }
@@ -893,7 +882,7 @@ a.bachelor_btn {
 
 /* SELECTION - CONTAINER */
 .selection_container {
-  border: solid 1px white;
+  /*   border: solid 1px white; */
   margin: 20rem 3rem 10rem 3rem;
   top: 50rem;
 }
@@ -940,7 +929,7 @@ img.semester {
 
 /* SEMESTER - CONTAINER */
 .semester_container {
-  border: solid 1px #274abd;
+  /*   border: solid 1px rgb(39, 74, 189); */
   margin: 5rem 0 10rem 0;
   width: 90%;
   height: 30em;
@@ -1025,7 +1014,7 @@ img.semester {
 }
 
 .semester_container-preinfo {
-  border: solid 1px red;
+  /*    border: solid 1px red; */
   font-family: "Bebas Neue Pro";
   font-weight: 400;
   font-size: 1.5rem;
@@ -1078,7 +1067,7 @@ img.semester {
 }
 
 .semester_container-image_wraper {
-  border: 1px yellow;
+  /*  border: 1px yellow; */
 }
 
 .semester_container-image_wraper-year {
@@ -1086,7 +1075,7 @@ img.semester {
 }
 
 h4.year {
-  border: solid 1px yellow;
+  /*  border: solid 1px yellow; */
   font-size: 10rem;
   font-family: "Bebas Neue Pro Expanded";
   font-weight: 600;
@@ -1193,7 +1182,7 @@ h4.year {
 }
 
 .jennyNguyen-infos {
-  border: solid 1px khaki;
+  /*  border: solid 1px khaki; */
   border: solid 3px #c0b0b0;
   width: 50%;
   height: 30rem;
@@ -1468,7 +1457,7 @@ input[type="reset"] {
 }
 
 .sem {
-  border: solid 1px yellow;
+  /*  border: solid 1px yellow; */
   width: 80%;
   height: 15rem;
   margin: auto;
@@ -1485,7 +1474,7 @@ input[type="reset"] {
 }
 
 .twentytwenty-wrap {
-  border: solid 1px #a8a813;
+  /*     border: solid 1px rgb(168, 168, 19); */
   width: auto;
   height: auto;
   right: 1rem;
@@ -1495,7 +1484,7 @@ input[type="reset"] {
 
 /* HEADER */
 header.voice_over {
-  border: solid 1px yellow;
+  /*   border: solid 1px yellow; */
   width: 90%;
   height: 100%;
   top: 10rem;
@@ -1510,7 +1499,7 @@ header.voice_over {
 }
 
 .voice_over-header {
-  border: solid 1px violet;
+  /*     border: solid 1px violet */
   width: 80%;
   height: 30rem;
 }
@@ -1564,7 +1553,7 @@ header.voice_over {
 
 /* Gallery */
 .gallery_wrapper {
-  border: solid 1px yellow;
+  /*   border: solid 1px yellow; */
   width: 80%;
   height: 50rem;
   margin: auto;
@@ -1612,7 +1601,7 @@ img.bigImg_img {
 }
 
 .nextToGallery {
-  border: solid 1px sandybrown;
+  /*   border: solid 1px sandybrown; */
   width: 80%;
   margin: auto;
   top: 160rem;
@@ -1625,7 +1614,7 @@ img.bigImg_img {
 
 /* video */
 .video_wrapper {
-  border: solid 1px yellow;
+  /*    border: solid 1px yellow; */
   width: 90%;
   height: 30rem;
   margin: auto;
@@ -1653,6 +1642,68 @@ img.bigImg_img {
   top: 150rem;
 }
 
+#footer-wrapper_seventh footer {
+  height: 5rem;
+}
+
+@media screen and (max-width: 55rem) {
+  #footer-wrapper_seventh footer #footer_icon {
+    font-size: 1.5rem;
+  }
+}
+
+#footer-wrapper_seventh footer a {
+  color: #383e46;
+}
+
+@media screen and (max-width: 55rem) {
+  #footer-wrapper_seventh footer a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  #footer-wrapper_seventh footer a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 40rem) {
+  #footer-wrapper_seventh footer a {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  #footer-wrapper_seventh footer a i {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 100em) {
+  #footer-wrapper_seventh footer > div {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 100em) and (max-width: 74.9375em) {
+  #footer-wrapper_seventh footer > div {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 100em) and (max-width: 65.9375em) {
+  #footer-wrapper_seventh footer > div {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 100em) and (max-width: 55rem) {
+  #footer-wrapper_seventh footer > div {
+    width: 80%;
+  }
+}
+
 #first_nav {
   background-color: #620101;
 }
@@ -1664,7 +1715,7 @@ img.bigImg_img {
 
 /* HEADER */
 .header_martyr {
-  border: solid 1px white;
+  /*   border: solid 1px white; */
   z-index: -99;
   width: 90%;
   height: 80vh;
@@ -1695,7 +1746,7 @@ img.bigImg_img {
 }
 
 .header_martyr-heading {
-  border: solid 2px green;
+  /*   border: solid 2px green; */
   width: 100%;
   height: auto;
   top: 40%;
@@ -1728,7 +1779,7 @@ img.bigImg_img {
 }
 
 .header_martyr-heading-wrapper_first {
-  border: solid 1px yellow;
+  /*   border: solid 1px yellow; */
   width: 100%;
   height: 4rem;
   background-color: #620101;
@@ -1751,7 +1802,7 @@ img.bigImg_img {
 }
 
 .header_martyr-heading-wrapper_second {
-  border: solid 1px violet;
+  /*  border: solid 1px violet; */
   height: 4rem;
   width: 100%;
   z-index: -5;
@@ -1862,7 +1913,7 @@ img.bigImg_img {
 }
 
 .after_header {
-  border: solid 1px yellow;
+  /*   border: solid 1px yellow; */
   width: 100%;
   height: 10rem;
   top: 100%;
@@ -1889,7 +1940,7 @@ img.bigImg_img {
 
 /* SIMPLE GALLERY */
 section.images {
-  border: solid 1px yellow;
+  /*   border: solid 1px yellow; */
   width: 100%;
   margin: auto;
   top: 20rem;
@@ -1962,8 +2013,72 @@ section.images {
 }
 
 #footer-wrapper_first {
+  border: solid 1px yellow;
   position: relative;
   top: 30em;
+  height: 5rem;
+}
+
+#footer-wrapper_first footer {
+  height: 5rem;
+}
+
+@media screen and (max-width: 55rem) {
+  #footer-wrapper_first footer #footer_icon {
+    font-size: 1.5rem;
+  }
+}
+
+#footer-wrapper_first footer a {
+  color: #383e46;
+}
+
+@media screen and (max-width: 55rem) {
+  #footer-wrapper_first footer a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  #footer-wrapper_first footer a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 40rem) {
+  #footer-wrapper_first footer a {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  #footer-wrapper_first footer a i {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 100em) {
+  #footer-wrapper_first footer > div {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 100em) and (max-width: 74.9375em) {
+  #footer-wrapper_first footer > div {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 100em) and (max-width: 65.9375em) {
+  #footer-wrapper_first footer > div {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 100em) and (max-width: 55rem) {
+  #footer-wrapper_first footer > div {
+    width: 80%;
+  }
 }
 
 #secondSemester {
@@ -1976,7 +2091,7 @@ section.images {
 
 /* HEADER GRID */
 .header_grid {
-  border: solid 1px yellow;
+  /*  border: solid 1px yellow; */
   height: 100vh;
   width: auto;
   margin: 10rem 5rem 5rem 5rem;
@@ -2213,7 +2328,7 @@ h6.line_two {
 }
 
 .middle {
-  border: solid 1px yellow;
+  /*   border: solid 1px yellow */
   width: 90%;
   margin: 5rem;
   bottom: -60rem;
@@ -2245,7 +2360,7 @@ h6.line_two {
 }
 
 .middle-image-grid {
-  border: solid 1px pink;
+  /*   border: solid 1px pink; */
   width: 100%;
   bottom: -100rem;
   display: -ms-grid;
@@ -2322,7 +2437,7 @@ h6.line_two {
 }
 
 .end_text {
-  border: solid 1px yellow;
+  /*   border: solid 1px yellow */
   width: 80vw;
   left: 0;
   margin: 4rem;
@@ -2363,6 +2478,68 @@ h6.line_two {
   }
 }
 
+#footer-wrapper_second footer {
+  height: 5rem;
+}
+
+@media screen and (max-width: 55rem) {
+  #footer-wrapper_second footer #footer_icon {
+    font-size: 1.5rem;
+  }
+}
+
+#footer-wrapper_second footer a {
+  color: #383e46;
+}
+
+@media screen and (max-width: 55rem) {
+  #footer-wrapper_second footer a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  #footer-wrapper_second footer a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 40rem) {
+  #footer-wrapper_second footer a {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  #footer-wrapper_second footer a i {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 100em) {
+  #footer-wrapper_second footer > div {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 100em) and (max-width: 74.9375em) {
+  #footer-wrapper_second footer > div {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 100em) and (max-width: 65.9375em) {
+  #footer-wrapper_second footer > div {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 100em) and (max-width: 55rem) {
+  #footer-wrapper_second footer > div {
+    width: 80%;
+  }
+}
+
 #thirdSemester {
   background-color: #d1c7c5;
 }
@@ -2373,7 +2550,7 @@ h6.line_two {
 
 /* Asides */
 .left {
-  border: solid 1px yellow;
+  /*   border: solid 1px yellow */
   top: 10rem;
   width: 10rem;
   height: 150rem;
@@ -2395,7 +2572,7 @@ h6.line_two {
 }
 
 .right {
-  border: solid 1px yellow;
+  /*  border: solid 1px yellow */
   right: 0;
   top: 10rem;
   width: 10rem;
@@ -2418,7 +2595,7 @@ h6.line_two {
 
 /* Header */
 .thirdSem {
-  border: solid 1px #b6197a;
+  /*   border: solid 1px rgb(182, 25, 122); */
   width: 70%;
   height: 100%;
   top: 10rem;
@@ -2504,7 +2681,7 @@ h6.line_two {
 }
 
 .thirdSem_h1_text {
-  border: solid 1px green;
+  /*   border: solid 1px green; */
   font-size: 7rem;
   color: #8c6003;
   text-shadow: 5px 5px 2px #c8bbb2;
@@ -2529,7 +2706,7 @@ h6.line_two {
 }
 
 .karlsruhe {
-  border: solid 1px hotpink;
+  /*   border: solid 1px hotpink */
   width: 60%;
   height: 30rem;
   bottom: -80rem;
@@ -2724,8 +2901,8 @@ a.button_next {
 
 .baptiste div {
   border: solid 1px yellow;
-  width: 50rem;
-  margin: 5rem;
+  width: 60rem;
+  margin: 1rem;
 }
 
 @media screen and (max-width: 74.9375em) {
@@ -2749,6 +2926,7 @@ a.button_next {
   background-image: url("../05_images/03_Semester/5.jpg");
   width: 20rem;
   height: 30rem;
+  background-size: contain;
 }
 
 @media screen and (max-width: 74.9375em) {
@@ -2760,6 +2938,68 @@ a.button_next {
 #footer-wrapper_third {
   position: relative;
   top: 105rem;
+}
+
+#footer-wrapper_third footer {
+  height: 5rem;
+}
+
+@media screen and (max-width: 55rem) {
+  #footer-wrapper_third footer #footer_icon {
+    font-size: 1.5rem;
+  }
+}
+
+#footer-wrapper_third footer a {
+  color: #383e46;
+}
+
+@media screen and (max-width: 55rem) {
+  #footer-wrapper_third footer a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  #footer-wrapper_third footer a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 40rem) {
+  #footer-wrapper_third footer a {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  #footer-wrapper_third footer a i {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 100em) {
+  #footer-wrapper_third footer > div {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 100em) and (max-width: 74.9375em) {
+  #footer-wrapper_third footer > div {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 100em) and (max-width: 65.9375em) {
+  #footer-wrapper_third footer > div {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 100em) and (max-width: 55rem) {
+  #footer-wrapper_third footer > div {
+    width: 80%;
+  }
 }
 
 #fourthSemester {
@@ -2782,7 +3022,7 @@ header.fourth {
 }
 
 .header_fourth {
-  border: solid 1px yellow;
+  /*  border: solid 1px yellow; */
   width: 90%;
   height: 80vh;
   top: 10rem;
@@ -2797,7 +3037,7 @@ header.fourth {
 }
 
 .header_fourth-info {
-  border: solid 1px black;
+  /*   border: solid 1px black */
   top: 5rem;
   font-size: 10rem;
   color: #f6f3ef;
@@ -2933,6 +3173,68 @@ img.fourth {
 @media screen and (max-width: 55rem) {
   #footer-wrapper_fourth {
     top: 570rem;
+  }
+}
+
+#footer-wrapper_fourth footer {
+  height: 5rem;
+}
+
+@media screen and (max-width: 55rem) {
+  #footer-wrapper_fourth footer #footer_icon {
+    font-size: 1.5rem;
+  }
+}
+
+#footer-wrapper_fourth footer a {
+  color: #383e46;
+}
+
+@media screen and (max-width: 55rem) {
+  #footer-wrapper_fourth footer a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  #footer-wrapper_fourth footer a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 40rem) {
+  #footer-wrapper_fourth footer a {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  #footer-wrapper_fourth footer a i {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 100em) {
+  #footer-wrapper_fourth footer > div {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 100em) and (max-width: 74.9375em) {
+  #footer-wrapper_fourth footer > div {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 100em) and (max-width: 65.9375em) {
+  #footer-wrapper_fourth footer > div {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 100em) and (max-width: 55rem) {
+  #footer-wrapper_fourth footer > div {
+    width: 80%;
   }
 }
 /*# sourceMappingURL=style.css.map */

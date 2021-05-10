@@ -8,7 +8,7 @@
 /* Asides */
 
 .left {
-  border: solid 1px yellow;
+  /*   border: solid 1px yellow */
   top: 10rem;
   width: 10rem;
   height: 150rem;
@@ -24,7 +24,7 @@
 }
 
 .right {
-  border: solid 1px yellow;
+  /*  border: solid 1px yellow */
   right: 0;
   top: 10rem;
   width: 10rem;
@@ -42,7 +42,7 @@
 /* Header */
 
 .thirdSem {
-  border: solid 1px rgb(182, 25, 122);
+  /*   border: solid 1px rgb(182, 25, 122); */
   width: 70%;
   height: 100%;
   top: 10rem;
@@ -94,7 +94,7 @@
       width: 100%;
     }
     &_text {
-      border: solid 1px green;
+      /*   border: solid 1px green; */
       font-size: 7rem;
       color: $thirdS_brown;
       text-shadow: 5px 5px 2px $thirdS_light_greyish_orange;
@@ -112,7 +112,7 @@
 }
 
 .karlsruhe {
-  border: solid 1px hotpink;
+  /*   border: solid 1px hotpink */
   width: 60%;
   height: 30rem;
   bottom: -80rem;
@@ -261,8 +261,8 @@ a.button_next {
   }
   & div {
     border: solid 1px yellow;
-    width: 50rem;
-    margin: 5rem;
+    width: 60rem;
+    margin: 1rem;
     @include breakpoint-down("medium") {
       width: 100%;
     }
@@ -279,6 +279,7 @@ a.button_next {
     background-image: url("../05_images/03_Semester/5.jpg");
     width: 20rem;
     height: 30rem;
+    background-size: contain;
     @include breakpoint-down("medium") {
       display: none;
     }
@@ -288,4 +289,43 @@ a.button_next {
 #footer-wrapper_third {
   position: relative;
   top: 105rem;
+  & footer {
+    height: 5rem;
+    & #footer_icon {
+      @include breakpoint-down("xsmall") {
+        font-size: 1.5rem;
+      }
+    }
+    & a {
+      color: $darker_font;
+      @include breakpoint-down("xsmall") {
+        font-size: 1rem;
+      }
+      @include breakpoint-down("xsmall") {
+        font-size: 1rem;
+      }
+      @include breakpoint-down("xxsmall") {
+        font-size: 0.7rem;
+      }
+      & i {
+        @include breakpoint-down("xsmall") {
+          font-size: 2rem;
+        }
+      }
+    }
+    & > div {
+      @include breakpoint-down("xllarge") {
+        width: 40%;
+        @include breakpoint-down("medium") {
+          width: 50%;
+        }
+        @include breakpoint-down("small") {
+          width: 60%;
+        }
+        @include breakpoint-down("xsmall") {
+          width: 80%;
+        }
+      }
+    }
+  }
 }

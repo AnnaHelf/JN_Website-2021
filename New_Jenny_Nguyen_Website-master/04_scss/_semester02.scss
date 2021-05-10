@@ -8,7 +8,7 @@
 /* HEADER GRID */
 
 .header_grid {
-  border: solid 1px yellow;
+  /*  border: solid 1px yellow; */
   height: 100vh;
   width: auto;
   margin: 10rem 5rem 5rem 5rem;
@@ -147,7 +147,7 @@ h6.line_two {
 }
 
 .middle {
-  border: solid 1px yellow;
+  /*   border: solid 1px yellow */
   width: 90%;
   margin: 5rem;
   bottom: -60rem;
@@ -172,7 +172,7 @@ h6.line_two {
   }
 
   &-image-grid {
-    border: solid 1px pink;
+    /*   border: solid 1px pink; */
     width: 100%;
     bottom: -100rem;
     display: grid;
@@ -220,7 +220,7 @@ h6.line_two {
 }
 
 .end_text {
-  border: solid 1px yellow;
+  /*   border: solid 1px yellow */
   width: 80vw;
   left: 0;
   margin: 4rem;
@@ -245,5 +245,44 @@ h6.line_two {
   }
   @include breakpoint-down("xsmall") {
     top: 260rem;
+  }
+  & footer {
+    height: 5rem;
+    & #footer_icon {
+      @include breakpoint-down("xsmall") {
+        font-size: 1.5rem;
+      }
+    }
+    & a {
+      color: $darker_font;
+      @include breakpoint-down("xsmall") {
+        font-size: 1rem;
+      }
+      @include breakpoint-down("xsmall") {
+        font-size: 1rem;
+      }
+      @include breakpoint-down("xxsmall") {
+        font-size: 0.7rem;
+      }
+      & i {
+        @include breakpoint-down("xsmall") {
+          font-size: 2rem;
+        }
+      }
+    }
+    & > div {
+      @include breakpoint-down("xllarge") {
+        width: 40%;
+        @include breakpoint-down("medium") {
+          width: 50%;
+        }
+        @include breakpoint-down("small") {
+          width: 60%;
+        }
+        @include breakpoint-down("xsmall") {
+          width: 80%;
+        }
+      }
+    }
   }
 }

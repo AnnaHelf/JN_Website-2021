@@ -161,7 +161,7 @@ a {
   }
 }
 .btn_more_about {
-  border: solid 1px yellow;
+  /*   border: solid 1px yellow; */
   margin: 2rem 0;
   @include breakpoint-down("xsmall") {
     position: relative;
@@ -201,7 +201,7 @@ a.jenny_nguyen_logo {
 /* NAVIGATION */
 
 nav.nav_top {
-  border: solid 1px yellow;
+  /*  border: solid 1px yellow; */
   width: 70rem;
   height: 5rem;
   margin: 2rem 0 0 5rem;
@@ -212,15 +212,15 @@ nav.nav_top {
 
 .nav {
   &_left {
-    border: solid 1px red;
+    /* border: solid 1px red; */
     height: 5rem;
 
     &-dropdown {
       &_countainer {
-        border: solid 1px yellow;
+        /*  border: solid 1px yellow; */
       }
       &_items {
-        border: solid 1px orange;
+        /*  border: solid 1px orange; */
         opacity: 0;
         margin-top: 1rem;
         @include breakpoint-down("large") {
@@ -243,7 +243,7 @@ nav.nav_top {
     }
   }
   &_right {
-    border: solid 1px violet;
+    /* border: solid 1px violet; */
     width: 20rem;
     height: 5rem;
   }
@@ -257,7 +257,7 @@ nav.nav_top {
   position: relative;
 }
 #footer_icon {
-  font-size: 1.3rem;
+  font-size: 2rem;
   @include breakpoint-down("medium") {
     font-size: 2rem;
   }
@@ -267,9 +267,9 @@ nav.nav_top {
     @include breakpoint-down("large") {
       font-size: 1rem;
     }
-    @include breakpoint-down("medium") {
+    /*  @include breakpoint-down("medium") {
       font-size: 0rem;
-    }
+    } */
   }
 }
 
@@ -285,7 +285,7 @@ footer {
 
 .footer {
   &_socialMedia {
-    border: solid 1px white;
+    /*  border: solid 1px white; */
     width: 30%;
     height: 100%;
   }
@@ -294,9 +294,11 @@ footer {
     width: 30%;
     background-image: url("../05_images/png_logo/logo_transparent_background.png");
     background-size: contain;
+    @include breakpoint-down("small") {
+    }
   }
   &_top {
-    border: solid 1px white;
+    /*  border: solid 1px white; */
     font-size: 2rem;
     z-index: 100;
     & p {
@@ -310,12 +312,5 @@ footer {
   }
   &_arrow {
     width: 5rem;
-  }
-}
-
-#footer_icon {
-  font-size: 2.5rem;
-  & a {
-    font-size: 1.2rem;
   }
 }
