@@ -60,7 +60,7 @@
   &_img {
     width: 30rem;
     background-image: url("../05_images/03_Semester/4.JPG");
-    animation: imgHeight ease-in-out forwards 2s;
+    animation: imgHeight ease-in-out forwards 3s;
     @include breakpoint-down("medium") {
       width: 100%;
       margin-top: 6rem;
@@ -135,7 +135,10 @@
     width: 20rem;
     height: 100%;
     @include breakpoint-down("xsmall") {
-      width: 10rem;
+      width: 50%;
+    }
+    @include breakpoint-down("xsmall") {
+      width: 40%;
     }
   }
   &_info {

@@ -427,6 +427,7 @@ h4.year {
   }
   @include breakpoint-down("xxsmall") {
     left: 0;
+    width: 30rem;
   }
 
   &_portrait {
@@ -653,6 +654,11 @@ input[type="reset"] {
       @include breakpoint-down("medium") {
         font-size: 3rem;
       }
+    }
+  }
+  & #footer_icon {
+    @include breakpoint-down("xxsmall") {
+      font-size: 1.5rem;
     }
   }
 }
