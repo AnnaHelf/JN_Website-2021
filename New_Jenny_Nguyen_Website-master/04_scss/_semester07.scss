@@ -3,6 +3,12 @@
 .twentytwenty {
   font-size: 20rem;
   color: $dark_font;
+  @include breakpoint-down("small") {
+    font-size: 10rem;
+  }
+  @include breakpoint-down("xsmall") {
+    display: none;
+  }
   &-wrap {
     border: solid 1px rgb(168, 168, 19);
     width: auto;
@@ -23,6 +29,9 @@ header.voice_over {
   z-index: -10;
   @include breakpoint-down("large") {
     height: 40rem;
+  }
+  @include breakpoint-down("xsmall") {
+    right: 0;
   }
 }
 
@@ -48,7 +57,12 @@ header.voice_over {
         font-weight: 400;
         color: $darker_font;
       }
-
+      @include breakpoint-down("small") {
+        font-size: 4rem;
+      }
+      @include breakpoint-down("xxsmall") {
+        font-size: 3rem;
+      }
       & span {
         font-weight: 400;
         @include breakpoint-down("large") {
@@ -81,6 +95,12 @@ header.voice_over {
     top: 50rem;
     margin: 0 0 0 2rem;
   }
+  @include breakpoint-down("small") {
+    margin: auto;
+  }
+  @include breakpoint-down("xxsmall") {
+    top: 45rem;
+  }
 }
 .bigImg {
   width: 50%;
@@ -97,6 +117,9 @@ header.voice_over {
   @include breakpoint-down("large") {
     width: 100%;
     grid-template-columns: repeat(4, 1fr);
+  }
+  @include breakpoint-down("xxsmall") {
+    grid-template-columns: 1fr 1fr;
   }
 }
 img.small {
@@ -116,10 +139,19 @@ img.bigImg_img {
   margin: auto;
   top: 160rem;
   @include breakpoint-down("large") {
-    top: 190rem;
+    top: 185rem;
   }
   @include breakpoint-down("medium") {
     top: 170rem;
+  }
+  @include breakpoint-down("small") {
+    top: 150rem;
+  }
+  @include breakpoint-down("xsmall") {
+    top: 130rem;
+  }
+  @include breakpoint-down("xxsmall") {
+    top: 220rem;
   }
 
   & h5 {
@@ -140,14 +172,31 @@ img.bigImg_img {
     margin: auto;
     top: 120rem;
     @include breakpoint-down("large") {
-      top: 150rem;
+      top: 140rem;
     }
     @include breakpoint-down("medium") {
-      top: 130rem;
+      top: 125rem;
+      width: 80%;
+    }
+    @include breakpoint-down("small") {
+      top: 110rem;
+    }
+    @include breakpoint-down("xsmall") {
+      top: 90rem;
+    }
+    @include breakpoint-down("xxsmall") {
+      top: 165rem;
     }
 
     & video {
+      width: 50%;
       right: 0;
+      @include breakpoint-down("large") {
+        width: 80%;
+      }
+      @include breakpoint-down("medium") {
+        width: 100%;
+      }
     }
   }
   &_text {
@@ -160,6 +209,15 @@ img.bigImg_img {
     }
     @include breakpoint-down("medium") {
       top: 130rem;
+    }
+    @include breakpoint-down("medium") {
+      top: 130rem;
+    }
+    @include breakpoint-down("xsmall") {
+      top: 100rem;
+    }
+    @include breakpoint-down("xxsmall") {
+      top: 160rem;
     }
 
     & h5 {
@@ -180,6 +238,12 @@ img.bigImg_img {
   }
   @include breakpoint-down("medium") {
     top: 140rem;
+  }
+  @include breakpoint-down("xsmall") {
+    top: 120rem;
+  }
+  @include breakpoint-down("xxsmall") {
+    top: 175rem;
   }
 
   & footer {
