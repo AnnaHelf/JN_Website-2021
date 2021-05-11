@@ -169,8 +169,7 @@ body {
   @include breakpoint-down("xxsmall") {
     background-color: rgb(192, 235, 195);
   }
-}
- */
+} */
 /* A TAGS */
 a {
   text-decoration: none;
@@ -258,7 +257,7 @@ a.jenny_nguyen_logo:hover {
 
 /* NAVIGATION */
 nav.nav_top {
-  /*  border: solid 1px yellow; */
+  border: solid 1px yellow;
   width: 70rem;
   height: 5rem;
   margin: 2rem 0 0 5rem;
@@ -277,6 +276,12 @@ nav.nav_top {
 
 .nav_left-dropdown_countainer {
   /* border: solid 1px yellow; */
+}
+
+@media screen and (max-width: 55rem) {
+  .nav_left-dropdown_countainer {
+    display: none;
+  }
 }
 
 .nav_left-dropdown_items {
@@ -318,9 +323,64 @@ nav.nav_top {
 }
 
 .nav_right {
-  /* border: solid 1px violet; */
+  border: solid 1px violet;
   width: 20rem;
   height: 5rem;
+}
+
+/* NAV SMALL */
+.nav_small {
+  top: 2rem;
+  left: 5rem;
+}
+
+@media screen and (min-width: 55rem) {
+  .nav_small {
+    display: none;
+  }
+}
+
+.nav_small .click {
+  font-size: 2rem;
+  color: #383e46;
+  cursor: pointer;
+}
+
+.nav_small .click:hover {
+  color: #f3e3e1;
+}
+
+.nav_small .clicked {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+  color: #f3e3e1;
+}
+
+.nav_small .clicked:hover {
+  color: #383e46;
+}
+
+.nav_small_items {
+  display: none;
+  z-index: 999;
+  background-color: #bac2cc;
+  width: 80vw;
+  height: 100vh;
+}
+
+.nav_small_items .sem {
+  width: 100%;
+  height: 10%;
+  margin-bottom: 2.5rem;
+}
+
+.nav_small_items .sem:hover {
+  background-color: #cdcad8;
+}
+
+.nav_small_items .sem img {
+  width: 15%;
 }
 
 /* FOOTER */
@@ -1448,17 +1508,6 @@ input[type="reset"] {
   #hp_footer #footer_icon {
     font-size: 1.5rem;
   }
-}
-
-.sem {
-  /*  border: solid 1px yellow; */
-  width: 80%;
-  height: 15rem;
-  margin: auto;
-}
-
-.sem:hover {
-  background-color: #b3b0bc9f;
 }
 
 #seventh_nav {

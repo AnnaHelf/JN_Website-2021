@@ -129,8 +129,7 @@ body {
   @include breakpoint-down("xxsmall") {
     background-color: rgb(192, 235, 195);
   }
-}
- */
+} */
 
 /* A TAGS */
 
@@ -202,7 +201,7 @@ a.jenny_nguyen_logo {
 /* NAVIGATION */
 
 nav.nav_top {
-  /*  border: solid 1px yellow; */
+  border: solid 1px yellow;
   width: 70rem;
   height: 5rem;
   margin: 2rem 0 0 5rem;
@@ -219,6 +218,9 @@ nav.nav_top {
     &-dropdown {
       &_countainer {
         /* border: solid 1px yellow; */
+        @include breakpoint-down("xsmall") {
+          display: none;
+        }
       }
       &_items {
         /*  border: solid 1px orange; */
@@ -247,9 +249,55 @@ nav.nav_top {
     }
   }
   &_right {
-    /* border: solid 1px violet; */
+    border: solid 1px violet;
     width: 20rem;
     height: 5rem;
+  }
+}
+/* NAV SMALL */
+.nav_small {
+  @include breakpoint-up("xsmall") {
+    display: none;
+  }
+  top: 2rem;
+  left: 5rem;
+  .click {
+    font-size: 2rem;
+    color: $darker_font;
+    cursor: pointer;
+    &:hover {
+      color: #f3e3e1;
+    }
+  }
+  .clicked {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    color: #f3e3e1;
+    &:hover {
+      color: $darker_font;
+    }
+  }
+
+  &_items {
+    display: none;
+    z-index: 999;
+    background-color: $color_bright_greyish_green;
+    width: 80vw;
+    height: 100vh;
+
+    .sem {
+      width: 100%;
+      height: 10%;
+      margin-bottom: 2.5rem;
+      &:hover {
+        background-color: $color_bright_greyish_blue;
+      }
+
+      img {
+        width: 15%;
+      }
+    }
   }
 }
 
