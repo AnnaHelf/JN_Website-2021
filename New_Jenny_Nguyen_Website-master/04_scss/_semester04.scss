@@ -69,7 +69,7 @@ section.fourth {
 }
 
 .section_fourth-img-wrapper {
-  border: solid 1px yellow;
+  /*  border: solid 1px yellow; */
   width: 80vw;
   margin: auto;
   height: 100rem;
@@ -122,6 +122,9 @@ img.fourth {
       }
     }
     & a {
+      &:hover {
+        color: #fff;
+      }
       color: $darker_font;
       @include breakpoint-down("xsmall") {
         font-size: 1rem;
@@ -133,6 +136,9 @@ img.fourth {
         font-size: 0.7rem;
       }
       & i {
+        &:hover {
+          color: white;
+        }
         @include breakpoint-down("xsmall") {
           font-size: 2rem;
         }

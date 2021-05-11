@@ -1,3 +1,7 @@
+#seventh_nav {
+  background-color: $homepage_bk;
+}
+
 /* 2020 */
 
 .twentytwenty {
@@ -10,7 +14,7 @@
     display: none;
   }
   &-wrap {
-    border: solid 1px rgb(168, 168, 19);
+    /*  border: solid 1px rgb(168, 168, 19); */
     width: auto;
     height: auto;
     right: 1rem;
@@ -21,7 +25,7 @@
 
 /* HEADER */
 header.voice_over {
-  border: solid 1px yellow;
+  /*   border: solid 1px yellow; */
   width: 90%;
   height: 100%;
   top: 10rem;
@@ -37,7 +41,7 @@ header.voice_over {
 
 .voice_over {
   &-header {
-    border: solid 1px violet;
+    /*    border: solid 1px violet; */
     width: 80%;
     height: 30rem;
     @include breakpoint-down("xllarge") {
@@ -83,7 +87,7 @@ header.voice_over {
 
 /* Gallery */
 .gallery_wrapper {
-  border: solid 1px yellow;
+  /*  border: solid 1px yellow; */
   width: 80%;
   height: 50rem;
   margin: auto;
@@ -134,7 +138,7 @@ img.bigImg_img {
 }
 
 .nextToGallery {
-  border: solid 1px sandybrown;
+  /* border: solid 1px sandybrown; */
   width: 80%;
   margin: auto;
   top: 160rem;
@@ -166,7 +170,7 @@ img.bigImg_img {
 /* video */
 .video {
   &_wrapper {
-    border: solid 1px yellow;
+    /*   border: solid 1px yellow; */
     width: 90%;
     height: 30rem;
     margin: auto;
@@ -200,7 +204,7 @@ img.bigImg_img {
     }
   }
   &_text {
-    border: solid 1px violet;
+    /*  border: solid 1px violet; */
     width: 70%;
     margin: auto;
     top: 130rem;
@@ -255,6 +259,9 @@ img.bigImg_img {
     }
     & a {
       color: $darker_font;
+      &:hover {
+        color: #fff;
+      }
       @include breakpoint-down("xsmall") {
         font-size: 1rem;
       }
@@ -265,6 +272,9 @@ img.bigImg_img {
         font-size: 0.7rem;
       }
       & i {
+        &:hover {
+          color: white;
+        }
         @include breakpoint-down("xsmall") {
           font-size: 2rem;
         }

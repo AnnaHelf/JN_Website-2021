@@ -181,7 +181,6 @@ a.semester_collections {
   font-size: 1.1rem;
   margin-right: 1.5rem;
   @include breakpoint-down("xllarge") {
-    background-color: $homepage_bk;
     margin-top: 1rem;
   }
   &:hover {
@@ -219,7 +218,7 @@ nav.nav_top {
 
     &-dropdown {
       &_countainer {
-        border: solid 1px yellow;
+        /* border: solid 1px yellow; */
       }
       &_items {
         /*  border: solid 1px orange; */

@@ -228,7 +228,7 @@ section.images {
 }
 
 #footer-wrapper_first {
-  border: solid 1px yellow;
+  /* border: solid 1px yellow; */
   position: relative;
   top: 30em;
   height: 5rem;
@@ -241,6 +241,9 @@ section.images {
     }
     & a {
       color: $darker_font;
+      &:hover {
+        color: #fff;
+      }
       @include breakpoint-down("xsmall") {
         font-size: 1rem;
       }
@@ -251,6 +254,9 @@ section.images {
         font-size: 0.7rem;
       }
       & i {
+        &:hover {
+          color: white;
+        }
         @include breakpoint-down("xsmall") {
           font-size: 2rem;
         }

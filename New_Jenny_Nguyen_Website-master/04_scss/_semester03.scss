@@ -153,7 +153,7 @@
 }
 
 #slideshow {
-  border: solid 1px greenyellow;
+  /*  border: solid 1px greenyellow; */
   bottom: -90rem;
   left: -15rem;
   width: 100%;
@@ -244,7 +244,7 @@ a.button_next {
 /* More infos */
 
 .baptiste {
-  border: solid 1px orange;
+  /*   border: solid 1px orange; */
   width: 80%;
   height: 30rem;
   margin: auto;
@@ -263,7 +263,7 @@ a.button_next {
     left: 0;
   }
   & div {
-    border: solid 1px yellow;
+    /*  border: solid 1px yellow; */
     width: 60rem;
     margin: 1rem;
     @include breakpoint-down("medium") {
@@ -300,6 +300,9 @@ a.button_next {
       }
     }
     & a {
+      &:hover {
+        color: #fff;
+      }
       color: $darker_font;
       @include breakpoint-down("xsmall") {
         font-size: 1rem;
@@ -311,6 +314,9 @@ a.button_next {
         font-size: 0.7rem;
       }
       & i {
+        &:hover {
+          color: white;
+        }
         @include breakpoint-down("xsmall") {
           font-size: 2rem;
         }

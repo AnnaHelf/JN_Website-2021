@@ -254,6 +254,9 @@ h6.line_two {
       }
     }
     & a {
+      &:hover {
+        color: #fff;
+      }
       color: $darker_font;
       @include breakpoint-down("xsmall") {
         font-size: 1rem;
@@ -265,6 +268,9 @@ h6.line_two {
         font-size: 0.7rem;
       }
       & i {
+        &:hover {
+          color: white;
+        }
         @include breakpoint-down("xsmall") {
           font-size: 2rem;
         }
