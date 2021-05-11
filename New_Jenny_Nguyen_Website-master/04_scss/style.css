@@ -8,10 +8,7 @@
 /* Third SEMESTER */
 /* Fourth SEMESTER */
 /* Font */
-/* Breakpoints only for the voice-over :( */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
-/* @import url("../css/font_stylesheet.css"); */
-@import url("./_variables.scss");
 /*  SMALL RESET */
 * {
   margin: 0;
@@ -152,42 +149,28 @@ body {
 }
 
 /* BODY BREAKPOINTS SO I SEE WHERE I AM */
-@media screen and (max-width: 100em) {
-  body {
-    background-color: #e2e295;
+/* body {
+  @include breakpoint-down("xllarge") {
+    background-color: rgb(226, 226, 149);
+  }
+  @include breakpoint-down("large") {
+    background-color: rgb(251, 189, 251);
+  }
+
+  @include breakpoint-down("medium") {
+    background-color: rgb(145, 158, 145);
+  }
+  @include breakpoint-down("small") {
+    background-color: rgb(127, 176, 209);
+  }
+  @include breakpoint-down("xsmall") {
+    background-color: rgb(219, 159, 159);
+  }
+  @include breakpoint-down("xxsmall") {
+    background-color: rgb(192, 235, 195);
   }
 }
-
-@media screen and (max-width: 87.43755em) {
-  body {
-    background-color: #fbbdfb;
-  }
-}
-
-@media screen and (max-width: 74.9375em) {
-  body {
-    background-color: #919e91;
-  }
-}
-
-@media screen and (max-width: 65.9375em) {
-  body {
-    background-color: #7fb0d1;
-  }
-}
-
-@media screen and (max-width: 55rem) {
-  body {
-    background-color: #db9f9f;
-  }
-}
-
-@media screen and (max-width: 40rem) {
-  body {
-    background-color: #c0ebc3;
-  }
-}
-
+ */
 /* A TAGS */
 a {
   text-decoration: none;
@@ -361,9 +344,6 @@ nav.nav_top {
 #footer_icon > a {
   color: white;
   margin: 1rem;
-  /*  @include breakpoint-down("medium") {
-      font-size: 0rem;
-    } */
 }
 
 @media screen and (max-width: 87.43755em) {
@@ -413,18 +393,6 @@ footer {
 
 .footer_arrow {
   width: 5rem;
-}
-
-@-webkit-keyframes fade-in {
-  to {
-    color: blue;
-  }
-}
-
-@keyframes fade-in {
-  to {
-    color: blue;
-  }
 }
 
 @-webkit-keyframes slide {
@@ -1483,7 +1451,7 @@ input[type="reset"] {
 }
 
 .sem:hover {
-  background-color: #b3b0bc80;
+  background-color: #b3b0bc9f;
 }
 
 /* 2020 */

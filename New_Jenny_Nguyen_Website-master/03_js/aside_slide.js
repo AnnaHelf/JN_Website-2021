@@ -1,3 +1,5 @@
+/* Startseite - semester preview */
+
 var slideIndex = 0;
 showSlides();
 

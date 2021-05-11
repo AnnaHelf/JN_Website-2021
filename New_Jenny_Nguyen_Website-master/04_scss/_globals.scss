@@ -1,6 +1,4 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
-/* @import url("../css/font_stylesheet.css"); */
-@import url("./_variables.scss");
 /*  SMALL RESET */
 * {
   margin: 0;
@@ -111,7 +109,7 @@ body {
 }
 
 /* BODY BREAKPOINTS SO I SEE WHERE I AM */
-body {
+/* body {
   @include breakpoint-down("xllarge") {
     background-color: rgb(226, 226, 149);
   }
@@ -132,6 +130,7 @@ body {
     background-color: rgb(192, 235, 195);
   }
 }
+ */
 
 /* A TAGS */
 
@@ -273,9 +272,6 @@ nav.nav_top {
     @include breakpoint-down("large") {
       font-size: 1rem;
     }
-    /*  @include breakpoint-down("medium") {
-      font-size: 0rem;
-    } */
   }
 }
 

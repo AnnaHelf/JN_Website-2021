@@ -1,3 +1,5 @@
+/* On click slide semitransparent div */
+
 const images = document.querySelectorAll(".firstSemImg");
 const gridGallery = document.querySelector(".grid_gallery");
 const lightBox = document.querySelector(".lightBox");
@@ -6,6 +8,7 @@ const closeX = document.querySelector(".lightBox_close");
 
 images.forEach((img) => {
   img.addEventListener("click", (e) => {
+    console.log("img clicked");
     lightBoxOpen();
   });
 });

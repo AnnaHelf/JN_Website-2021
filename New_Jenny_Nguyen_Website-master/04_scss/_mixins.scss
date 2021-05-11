@@ -27,20 +27,3 @@ $breakpoint-down: (
     @content;
   }
 }
-
-/* Breakpoints only for the voice-over :( */
-
-$breakpoint-down-voiceOver: (
-  "one": "100em",
-  "two": "105em",
-  "three": "100em",
-  "four": "98em",
-  "five": "96em",
-  "six": "94em",
-);
-
-@mixin breakpoint-down-voiceOver($size) {
-  @media screen and (max-width: map-get($map: $breakpoint-down-voiceOver, $key: $size)) {
-    @content;
-  }
-}

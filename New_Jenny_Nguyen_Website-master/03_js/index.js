@@ -6,7 +6,7 @@ function scrollBackToTop() {
 const jennyLogoBtn = document.querySelector(".jenny_nguyen_logo");
 jennyLogoBtn.addEventListener("click", scrollBackToTop);
 
-/* cursor */
+/* Custom Cursor */
 
 const cursor = document.querySelector(".hiddenCursor");
 const hiddenInfoDiv = document.querySelector(".jennyNguyen-infos");

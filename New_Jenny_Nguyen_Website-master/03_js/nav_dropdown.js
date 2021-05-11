@@ -32,5 +32,4 @@ if ($(window).width() < 600) {
 
 $(".fa-arrow-left").click(function () {
   $(".nav_xsmall").hide();
-  /* $(".nav_xsmall").css("overflowY", "hidden"); */
 });
