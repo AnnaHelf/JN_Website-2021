@@ -59,7 +59,7 @@ header.fourth {
 }
 
 section.fourth {
-  border: solid 1px violet;
+  /*  border: solid 1px violet; */
   width: 100%;
   height: auto;
   top: 100vh;
@@ -103,6 +103,19 @@ img.fourth {
   }
   @include breakpoint-down("xsmall") {
     width: 20rem;
+  }
+}
+
+/* ON CLICK */
+.clickedImg {
+  position: absolute;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.486);
+  img {
+    width: 100%;
+    height: 100%;
   }
 }
 #footer-wrapper_fourth {
