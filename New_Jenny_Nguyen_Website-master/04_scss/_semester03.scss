@@ -5,10 +5,9 @@
   background-color: $thirdS_senf;
 }
 
-/* Asides */
+/* ASIDES */
 
 .left {
-  /*   border: solid 1px yellow */
   top: 10rem;
   width: 10rem;
   height: 150rem;
@@ -24,7 +23,6 @@
 }
 
 .right {
-  /*  border: solid 1px yellow */
   right: 0;
   top: 10rem;
   width: 10rem;
@@ -39,10 +37,9 @@
   }
 }
 
-/* Header */
+/* HEADER */
 
 .thirdSem {
-  /*   border: solid 1px rgb(182, 25, 122); */
   width: 70%;
   height: 100%;
   top: 10rem;
@@ -94,7 +91,6 @@
       width: 100%;
     }
     &_text {
-      /*   border: solid 1px green; */
       font-size: 7rem;
       color: $thirdS_brown;
       text-shadow: 5px 5px 2px $thirdS_light_greyish_orange;
@@ -112,7 +108,6 @@
 }
 
 .karlsruhe {
-  /*   border: solid 1px hotpink */
   width: 60%;
   height: 30rem;
   bottom: -80rem;
@@ -153,7 +148,6 @@
 }
 
 #slideshow {
-  /*  border: solid 1px greenyellow; */
   bottom: -90rem;
   left: -15rem;
   width: 100%;
@@ -174,7 +168,7 @@
   height: 200px;
   list-style: none;
 }
-/* Slides */
+/* SLIDES */
 #slideshow ul li {
   position: relative;
   display: block;
@@ -241,10 +235,9 @@ a.button_next {
   right: 0;
 }
 
-/* More infos */
+/* MORE INFOS */
 
 .baptiste {
-  /*   border: solid 1px orange; */
   width: 80%;
   height: 30rem;
   margin: auto;
@@ -263,7 +256,6 @@ a.button_next {
     left: 0;
   }
   & div {
-    /*  border: solid 1px yellow; */
     width: 60rem;
     margin: 1rem;
     @include breakpoint-down("medium") {

@@ -4,7 +4,6 @@
 
 /* ASIDE */
 .aside_right {
-  /*   border: solid 1px wheat; */
   width: 50%;
   height: 80rem;
   background-color: $aside_right;
@@ -20,7 +19,6 @@
 
   &-slideshow {
     &_container {
-      /*  border: soldi 1px blueviolet; */
       width: 60%;
       margin-top: 10rem;
       @include breakpoint-down("large") {
@@ -60,7 +58,6 @@ em.fa-arrow-down {
 /* HEADER LEFT SIDE */
 
 .left_side {
-  /*  border: solid 1px white; */
   width: 50%;
   height: 40rem;
   top: 10rem;
@@ -78,7 +75,6 @@ em.fa-arrow-down {
   }
 
   &-h1 {
-    /*  border: solid 2px green; */
     font-size: 10rem;
     font-weight: 500;
     color: $dark_font;
@@ -101,7 +97,6 @@ em.fa-arrow-down {
   }
 
   &-info {
-    /*     border: solid 1px yellow; */
     font-size: 1.5rem;
     color: $darker_font;
     @include breakpoint-down("small") {
@@ -131,7 +126,6 @@ video > source {
 }
 
 .bachelor {
-  /*  border: solid 1px yellow; */
   width: 80%;
   height: 50rem;
   top: 60rem;
@@ -153,7 +147,6 @@ video > source {
   }
 
   &_items {
-    /*   border: solid 1px rgb(13, 151, 105); */
     width: 100%;
     height: 100%;
     @include breakpoint-down("medium") {
@@ -189,14 +182,12 @@ video > source {
   }
 
   &_info {
-    /*   border: solid 1px rgb(185, 13, 134); */
     height: 30rem;
     margin: 1rem;
     @include breakpoint-down("small") {
       height: 25rem;
     }
     &-title {
-      /*  border: solid 1px white; */
       font-size: 7rem;
       font-weight: 400;
       color: $dark_font;
@@ -209,14 +200,12 @@ video > source {
     }
 
     &-year {
-      /* border: solid 1px white; */
       font-size: 3rem;
       font-weight: 400;
       color: $dark_font;
       margin-top: 1rem;
     }
     &-txt {
-      /* border: solid 1px orange; */
       font-size: 1.5rem;
     }
   }
@@ -231,7 +220,6 @@ a.bachelor_btn {
 /* SELECTION - CONTAINER */
 
 .selection_container {
-  /*   border: solid 1px white; */
   margin: 20rem 3rem 10rem 3rem;
   top: 50rem;
   @include breakpoint-down("xllarge") {
@@ -263,8 +251,6 @@ img.semester {
 /* SEMESTER - CONTAINER */
 
 .semester_container {
-  /*   border: solid 1px rgb(39, 74, 189); */
-
   margin: 5rem 0 10rem 0;
 
   width: 90%;
@@ -280,7 +266,6 @@ img.semester {
     width: 80%;
   }
   @include breakpoint-down("xsmall") {
-    /* display: block; */
     position: relative;
     width: 100%;
   }
@@ -326,7 +311,6 @@ img.semester {
   }
 
   &-preinfo {
-    /*    border: solid 1px red; */
     font-family: $main_font;
     font-weight: $middle;
     font-size: 1.5rem;
@@ -362,10 +346,7 @@ img.semester {
       left: 0rem;
     }
   }
-
   &-image_wraper {
-    /*  border: 1px yellow; */
-
     &-year {
       z-index: 10;
     }
@@ -373,7 +354,6 @@ img.semester {
 }
 
 h4.year {
-  /*  border: solid 1px yellow; */
   font-size: 10rem;
   font-family: $main_font_exp;
   font-weight: $bold;
@@ -407,7 +387,6 @@ h4.year {
 
 /* JENNY NGUYEN */
 .jennyNguyen {
-  /*  border: solid 1px yellow; */
   z-index: -1;
   width: 30%;
   height: 60rem;
@@ -435,7 +414,6 @@ h4.year {
   }
 
   &_portrait {
-    /*  border: solid 1px black; */
     width: 80%;
     margin-top: 5rem;
   }
@@ -450,7 +428,6 @@ h4.year {
   }
 
   &-infos {
-    /*  border: solid 1px khaki; */
     border: solid 3px $aside_right;
     width: 50%;
     height: 30rem;
@@ -510,7 +487,6 @@ h4.year {
 /* LETS TALK */
 
 .lets_talk {
-  /*   border: solid 1px yellow; */
   width: 100%;
   top: 30rem;
   @include breakpoint-down("small") {
@@ -532,7 +508,6 @@ h4.year {
 /* CONTACT FORM */
 
 .contact_me {
-  /* border: solid 1px white; */
   bottom: -50rem;
   margin: auto;
   width: 90%;
@@ -552,7 +527,6 @@ h4.year {
   }
 
   &-nameEtc {
-    /*  border: solid 1px yellow; */
     background-color: $color_grey;
     width: 50%;
     height: 20rem;
@@ -561,7 +535,6 @@ h4.year {
     }
   }
   &-message {
-    /* border: solid 1px yellow; */
     background-color: $color_greyish_blue;
     width: 50%;
     height: 20rem;

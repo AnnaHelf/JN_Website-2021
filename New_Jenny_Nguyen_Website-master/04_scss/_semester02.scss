@@ -8,7 +8,6 @@
 /* HEADER GRID */
 
 .header_grid {
-  /*  border: solid 1px yellow; */
   height: 100vh;
   width: auto;
   margin: 10rem 5rem 5rem 5rem;
@@ -147,7 +146,6 @@ h6.line_two {
 }
 
 .middle {
-  /*   border: solid 1px yellow */
   width: 90%;
   margin: 5rem;
   bottom: -60rem;
@@ -163,7 +161,6 @@ h6.line_two {
     }
 
     &-line {
-      /* border: solid 1px fuchsia; */
       width: 100%;
       height: 5rem;
       margin: 5rem 0;
@@ -172,7 +169,6 @@ h6.line_two {
   }
 
   &-image-grid {
-    /*   border: solid 1px pink; */
     width: 100%;
     bottom: -100rem;
     display: grid;
@@ -220,7 +216,6 @@ h6.line_two {
 }
 
 .end_text {
-  /*   border: solid 1px yellow */
   width: 80vw;
   left: 0;
   margin: 4rem;
